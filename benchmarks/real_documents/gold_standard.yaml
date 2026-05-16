@@ -1,0 +1,225 @@
+# Gold Standard Values for Real-Document Benchmarking
+# ====================================================
+# Approved by Di on 2026-04-13.
+# Used by qa/value_correctness_probe.py to test extractor value correctness.
+
+version: "1.0"
+created: "2026-04-13"
+reviewer: "Di (approved 2026-04-13)"
+
+documents:
+
+  # =====================================================================
+  # NISTmAb SP 260-237 — PRIMARY characterization benchmark
+  # RM 8671 is the reference gold; PS 8670 kept as secondary reference.
+  # =====================================================================
+  - doc_id: NISTMAB-CHAR-001
+    filename: NISTmAb_SP260-237.pdf
+    document_type: CHARACTERIZATION
+
+    expected_values:
+      # --- RM 8671 values (PRIMARY gold standard) ---
+      # Averaged across 3 lots (14HB-D-001, 14HB-D-002, 14HB-D-003)
+      hmw_pct:
+        value: 3.15
+        tolerance: 0.40
+        source_page: 48
+        source_table: "Table A2 (5YSV SEC)"
+        note: "RM 8671 lots HMW: 3.155, 3.296, 3.097 (avg 3.18); system currently extracts from PS 8670 column (~1.05)"
+
+      main_charge_peak_pct:
+        value: 73.0
+        tolerance: 1.0
+        source_page: 49
+        source_table: "Table A4 (CZE)"
+        note: "RM 8671 Charge Purity: 73.341, 72.696, 73.401 (avg 73.15)"
+
+      acidic_variants_pct:
+        value: 16.5
+        tolerance: 1.0
+        source_page: 49
+        source_table: "Table A4 (CZE)"
+        note: "RM 8671 Acidic: 16.495, 16.856, 16.423 (avg 16.59)"
+
+      basic_variants_pct:
+        value: 10.1
+        tolerance: 1.0
+        source_page: 49
+        source_table: "Table A4 (CZE)"
+        note: "RM 8671 Basic: 10.164, 10.448, 10.176 (avg 10.26)"
+
+      # PS 8670 fields removed — PS is the internal reference sample,
+      # not the gold standard. Extractor correctly prioritizes RM 8671.
+
+      # --- Uncertain by design (NOT expected values) ---
+      # afucosylation_pct: NOT quantified in this PDF. System must mark UNCERTAIN.
+      # potency_relative_pct: NOT quantified in this PDF. System must mark UNCERTAIN.
+
+    expected_classification: CHARACTERIZATION
+    expected_classification_confidence_min: 0.70
+    expected_completeness_score_min: 0.80
+    expected_completeness_score_max: 0.95
+
+    # Fields that MUST be populated (not None)
+    required_populated_fields:
+      - hmw_pct
+      - main_charge_peak_pct
+      - acidic_variants_pct
+
+    # Fields that MUST be UNCERTAIN (system correctly recognizes data absence)
+    required_uncertain_fields:
+      - afucosylation_pct
+      - potency_relative_pct
+
+    # Gold standard FAILS if any of these appear in critical_gaps
+    forbidden_critical_gaps_substrings:
+      - "missing potency"
+      - "missing bioactivity"
+      - "missing afucosylation"
+      - "no potency data"
+      - "no bioassay"
+
+    required_sections_found:
+      - "Primary Structure"
+      - "Higher-Order Structure"
+      - "Aggregation / Size Variants"
+      - "Charge Heterogeneity"
+      - "Glycosylation / PTMs"
+
+    expected_reference_standard_identified: true
+
+
+  # =====================================================================
+  # Xbonzy EPAR — STABILITY benchmark (denosumab biosimilar)
+  # =====================================================================
+  - doc_id: XBONZY-STAB-001
+    filename: Xbonzy_EPAR.pdf
+    document_type: STABILITY
+
+    expected_values:
+      proposed_shelf_life_months:
+        value: 24
+        tolerance: 0
+        source_page: 25
+        source_text: "The applicant proposed a shelf life of 24 months at 2-8C"
+
+      max_timepoint_months:
+        value: 60
+        tolerance: 12
+        note: "Extraction returns 60, may be cumulative across lots"
+
+    expected_classification: STABILITY
+    expected_classification_confidence_min: 0.80
+
+    required_conditions_tested:
+      - "5C"
+      - "25C/60RH"
+      - "40C/75RH"
+
+    # Tightened after P0.2 OOS glossary false-positive fix.
+    expected_oos_events_max: 1
+    expected_oos_events_min: 0
+
+    required_populated_fields:
+      - proposed_shelf_life
+      - conditions_tested
+
+
+  # =====================================================================
+  # NISTmAb RM 8671 Certificate — Small-document sanity check
+  # =====================================================================
+  - doc_id: NISTMAB-CERT-001
+    filename: NISTmAb_RM8671_Certificate.pdf
+    document_type: CHARACTERIZATION
+
+    # Certificate has NIST-certified values; detailed review deferred.
+    # This benchmark tests that small/simple docs also work correctly.
+    expected_classification: CHARACTERIZATION
+    expected_classification_confidence_min: 0.60
+    expected_completeness_score_min: 0.50
+
+    # Certificate should have reference standard identified (it IS the reference)
+    expected_reference_standard_identified: true
+
+    # Certificate is small — should not produce false "missing section" cascade
+    forbidden_critical_gaps_substrings:
+      - "missing potency"
+      - "missing bioactivity"
+
+
+  # =====================================================================
+  # ICH Q14 — KEPT TEMPORARILY as weak ANALYTICAL_METHOD benchmark
+  # POST-MVP: replace with a real method validation report (open-access paper)
+  # Candidates to search post-MVP: AAPS Journal, J Pharm Sci, PMC
+  # Search terms: "SEC-HPLC method validation monoclonal antibody"
+  #               "CEX method validation therapeutic antibody ICH Q2"
+  # =====================================================================
+  - doc_id: ICH-Q14-ANALYTICAL-001
+    filename: ICH_Q14_2023.pdf
+    document_type: ANALYTICAL_METHOD
+    _note: "WEAK BENCHMARK — ICH Q14 is a guideline with an example, not a validation report. Replace post-MVP."
+
+    expected_classification: ANALYTICAL_METHOD
+    expected_classification_confidence_min: 0.90
+
+    required_validation_studies_min: 5  # of 8 possible per ICH Q2(R2)
+
+
+  # =====================================================================
+  # Darzalex EPAR — CHARACTERIZATION benchmark (EPAR summary format)
+  # Tests: section-rich but value-poor document handling
+  # =====================================================================
+  - doc_id: DARZALEX-CHAR-001
+    filename: Darzalex_EPAR.pdf
+    document_type: CHARACTERIZATION
+
+    # EPAR has all 8 Q6B sections mentioned but no extractable numeric CQA values
+    expected_classification: CHARACTERIZATION
+    expected_classification_confidence_min: 0.70
+    expected_completeness_score_min: 0.90
+    expected_completeness_score_max: 1.0
+
+    # All CQA values should be UNCERTAIN (mentioned in text but not in tables)
+    required_uncertain_fields:
+      - hmw_pct
+      - main_charge_peak_pct
+      - afucosylation_pct
+      - potency_relative_pct
+
+    required_sections_found:
+      - "Primary Structure"
+      - "Higher-Order Structure"
+      - "Aggregation / Size Variants"
+      - "Charge Heterogeneity"
+      - "Glycosylation / PTMs"
+      - "Biological Activity / Potency"
+
+    # EPAR doesn't identify a specific reference standard lot
+    expected_reference_standard_identified: false
+
+
+# =====================================================================
+# Global thresholds
+# =====================================================================
+global:
+  default_numeric_tolerance_pct: 10
+  treat_none_as_failure: true
+  confirmed_absent_vs_uncertain_strict: true
+
+  # A capability passes if:
+  #   - expected_classification matches
+  #   - all required_populated_fields have non-None values within tolerance
+  #   - all required_uncertain_fields have state == UNCERTAIN
+  #   - zero critical_gaps contain any forbidden substring
+  #   - (for stability) all required_conditions_tested are detected
+  #   - (for analytical) validation_studies_found count >= required_validation_studies_min
+
+
+# =====================================================================
+# POST-MVP TODO (not enforced by this file, tracked for future)
+# =====================================================================
+post_mvp_todos:
+  - "Replace ICH-Q14-ANALYTICAL-001 with a real open-access method validation paper"
+  - "Fix OOS glossary false-positive extraction (tighten expected_oos_events_max from 2 to 1)"
+  - "Add gold standard for Darzalex EPAR once characterization extractor stabilizes"
+  - "Add G0F/G1F/G2F qualitative glycan detection (distinct from quantitative afucosylation %)"

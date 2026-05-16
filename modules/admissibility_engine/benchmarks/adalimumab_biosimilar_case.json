@@ -1,0 +1,63 @@
+{
+  "description": "Adalimumab biosimilar (Hadlima) — retrospective evidence chain for FDA approval",
+  "reference": "FDA BLA 761059, approved 2019",
+  "expected_action": "push_forward",
+  "claims": [
+    {
+      "claim_text": "Hadlima demonstrates analytical similarity to Humira across all critical quality attributes including structure, function, and purity",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["adalimumab", "Hadlima", "Humira", "analytical similarity", "structure", "purity"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Comparative PK study demonstrated bioequivalence in healthy volunteers with 90% CI within 80-125% for AUC and Cmax",
+      "source_type": "journal_paper",
+      "extracted_entities": ["pharmacokinetics", "bioequivalence", "AUC", "Cmax", "healthy volunteers"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Clinical efficacy study in moderate-to-severe RA patients showed equivalent ACR20 response rate within pre-specified equivalence margin",
+      "source_type": "journal_paper",
+      "extracted_entities": ["clinical efficacy", "rheumatoid arthritis", "ACR20", "equivalence"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Comparative immunogenicity assessment showed similar anti-drug antibody incidence rates between Hadlima and Humira",
+      "source_type": "journal_paper",
+      "extracted_entities": ["immunogenicity", "anti-drug antibody", "ADA", "comparative"],
+      "evidence_strength": "moderate",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Manufacturing process validated with 3 consecutive PPQ batches demonstrating consistent quality attributes within specifications",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["manufacturing", "process validation", "PPQ", "specifications"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Stability program conducted per ICH Q1A and Q5C with 24-month real-time data supporting proposed shelf life of 36 months",
+      "source_type": "journal_paper",
+      "extracted_entities": ["stability", "ICH Q1A", "Q5C", "shelf life", "real-time"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Functional equivalence demonstrated via TNF-alpha neutralization assay and ADCC reporter assay",
+      "source_type": "journal_paper",
+      "extracted_entities": ["functional equivalence", "TNF-alpha", "neutralization", "ADCC"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Viral clearance studies demonstrate adequate safety margin with >4 log reduction across 4 orthogonal steps",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["viral clearance", "safety margin", "log reduction", "viral safety"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    }
+  ]
+}

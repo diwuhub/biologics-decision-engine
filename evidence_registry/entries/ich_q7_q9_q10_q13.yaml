@@ -1,0 +1,507 @@
+entries:
+- id: ICH-Q7-001
+  type: guideline_clause
+  source: ICH Q7
+  title: Quality Assurance and Management of GMP Systems
+  content: Quality assurance encompasses all activities ensuring product meets specifications. Quality system should include
+    organization, process, and management structure with adequate personnel, facilities, procedures, controls, and testing.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - documentation
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - quality_system
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-002
+  type: guideline_clause
+  source: ICH Q7
+  title: Personnel Requirements and Training
+  content: Adequate qualified personnel must be available for all functions. Training program must cover GMP principles, role-specific
+    competencies, and ongoing professional development. Management must ensure adequate staffing and competency assessment.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - management
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - personnel
+  - training
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-003
+  type: guideline_clause
+  source: ICH Q7
+  title: Documentation System and Procedures
+  content: Comprehensive written procedures must cover all manufacturing operations including process controls, testing, lot
+    release, and deviation handling. Procedures should define manufacturing steps, acceptance criteria, and contingencies.
+  applicable_categories:
+  - manufacturing
+  - documentation
+  - quality
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - documentation
+  - procedures
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-004
+  type: guideline_clause
+  source: ICH Q7
+  title: Facility Design and Maintenance
+  content: Buildings and facilities must be designed to prevent contamination and mix-ups. Layout should separate incompatible
+    activities; facilities must be properly maintained, cleaned, and monitored for environmental controls.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - environment
+  confidence: 0.96
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - facility
+  - contamination_control
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-005
+  type: guideline_clause
+  source: ICH Q7
+  title: Equipment Qualification and Calibration
+  content: Equipment must be selected to ensure product quality, qualified (IQ/OQ/PQ), and regularly calibrated. Maintenance
+    program must document repairs, replacements, and performance history.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - validation
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - equipment
+  - validation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-006
+  type: guideline_clause
+  source: ICH Q7
+  title: Raw Materials and Starting Materials Specification
+  content: Appropriate specifications must be established for all raw materials, starting materials, and intermediates. Supplier
+    qualification, certificate of analysis verification, and incoming testing must ensure material quality.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - supplier_management
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - raw_materials
+  - supplier_qualification
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-007
+  type: guideline_clause
+  source: ICH Q7
+  title: In-Process Controls and Process Monitoring
+  content: In-process tests must be designed to monitor manufacturing critical parameters. Controls address temperature, pH,
+    time, pressure, and other critical variables. Tests should correlate with product quality outcomes.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - process_control
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - process_control
+  - monitoring
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-008
+  type: guideline_clause
+  source: ICH Q7
+  title: Finished Product Specifications and Release
+  content: Specifications for finished product must include identity, assay, purity, and microbial limits. Release decisions
+    require demonstrated conformance to specifications. Testing may be reduced if justified by process validation.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - potency
+  - purity
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - product_specification
+  - release_criteria
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-009
+  type: guideline_clause
+  source: ICH Q7
+  title: Laboratory Controls and Analytical Methods
+  content: Laboratory methods must be validated per ICH Q2. Tests must demonstrate product identity, assay, impurity detection,
+    and safety (sterility, pyrogens, microbial). Test frequency defined by risk and product stability.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - analytical
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - analytical_methods
+  - validation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-010
+  type: guideline_clause
+  source: ICH Q7
+  title: Process Validation Strategy
+  content: Process validation must demonstrate process performs as intended under normal operation. Validation typically includes
+    three commercial batches; justification needed for alternatives. Documented protocol and report required.
+  applicable_categories:
+  - manufacturing
+  - validation
+  - quality
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - process_validation
+  - commercial_batches
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-011
+  type: guideline_clause
+  source: ICH Q7
+  title: Batch Consistency and Trending
+  content: Production records must demonstrate batch-to-batch consistency. Analysis should monitor trends in analytical results,
+    process parameters, and batch release data to ensure ongoing process control and predict deviations.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - monitoring
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - batch_consistency
+  - trending
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-012
+  type: guideline_clause
+  source: ICH Q7
+  title: Deviation and Change Management
+  content: Deviations from procedures must be investigated, documented, and corrected. Changes to process, procedures, or
+    facilities require impact assessment, validation, and management approval. Major changes may require regulatory notification.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - management
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - deviation_management
+  - change_control
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-013
+  type: guideline_clause
+  source: ICH Q7
+  title: Stability Testing and Storage
+  content: Stability testing must demonstrate product remains suitable during storage under recommended conditions. Testing
+    frequency and methodology per ICH Q1A/Q1B. Storage conditions should control temperature, humidity, and light.
+  applicable_categories:
+  - manufacturing
+  - stability
+  - quality
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - stability
+  - storage
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-014
+  type: guideline_clause
+  source: ICH Q7
+  title: Microbial Monitoring and Control
+  content: Environmental monitoring program must assess manufacturing area microbiological status. Action limits define corrective
+    action triggers. Microbiological testing frequency depends on process design and control strategy.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - safety
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - microbiology
+  - contamination
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-015
+  type: guideline_clause
+  source: ICH Q7
+  title: Cleaning Validation
+  content: Procedures must establish that cleaning removes residues to acceptable levels. Validation should address worst-case
+    scenarios. Carryover limits should be based on toxicological data or 0.1% rule when safety margin unclear.
+  applicable_categories:
+  - manufacturing
+  - validation
+  - quality
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - cleaning_validation
+  - carryover
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q7-016
+  type: guideline_clause
+  source: ICH Q7
+  title: Batch Records and Archiving
+  content: Batch records must contain or reference all information concerning production of a batch including personnel, equipment
+    used, in-process tests, and deviation/investigation records. Archives must be secure, retrievable, and retained per regulatory
+    requirement.
+  applicable_categories:
+  - manufacturing
+  - documentation
+  - quality
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2000
+  tags:
+  - gmp
+  - api
+  - batch_records
+  - archiving
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q9-001
+  type: guideline_clause
+  source: ICH Q9(R1)
+  title: Quality Risk Management Principles and Framework
+  content: Quality Risk Management (QRM) uses scientific and statistical tools to systematically evaluate probability and
+    severity of harm. A tiered approach addresses chemistry and manufacturing variability using Failure Mode and Effects Analysis
+    (FMEA), Fault Tree Analysis (FTA), or risk matrices.
+  applicable_categories:
+  - quality
+  - risk_management
+  - manufacturing
+  confidence: 0.99
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2005
+  tags:
+  - qrm
+  - fmea
+  - risk_assessment
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q9-002
+  type: guideline_clause
+  source: ICH Q9(R1)
+  title: Critical Quality Attributes (CQAs) Identification
+  content: CQAs are physical, chemical, biological, or microbiological characteristics within acceptance criteria influencing
+    quality, efficacy, or safety. Identification considers regulatory requirements, development data, and clinical relevance.
+    CQAs guide control strategy development.
+  applicable_categories:
+  - quality
+  - risk_management
+  - manufacturing
+  confidence: 0.99
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2005
+  tags:
+  - cqa
+  - critical_attributes
+  - qrm
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q9-003
+  type: guideline_clause
+  source: ICH Q9(R1)
+  title: Risk Assessment and Prioritization
+  content: Risk assessment identifies potential failure modes and evaluates probability (likelihood) and severity of occurrence.
+    Severity considers impact on quality, efficacy, or safety; probability reflects manufacturing process robustness.
+  applicable_categories:
+  - quality
+  - risk_management
+  - manufacturing
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2005
+  tags:
+  - risk_assessment
+  - qrm
+  - probability
+  - severity
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q10-001
+  type: guideline_clause
+  source: ICH Q10
+  title: Pharmaceutical Quality System (PQS) Framework
+  content: A comprehensive PQS encompasses process design, process control, process monitoring, continual improvement, and
+    management responsibility. System should integrate GMP, process validation, and post-approval change management into a
+    lifecycle approach.
+  applicable_categories:
+  - quality
+  - manufacturing
+  - management
+  confidence: 0.99
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2008
+  tags:
+  - pqs
+  - quality_system
+  - lifecycle
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q10-002
+  type: guideline_clause
+  source: ICH Q10
+  title: Product Lifecycle and Process Design
+  content: Product lifecycle encompasses drug substance/product development, technology transfer, commercial production, and
+    discontinuation. Process design should be based on sound science, knowledge management, and risk assessment. Design space,
+    when established, defines range of operating parameters.
+  applicable_categories:
+  - quality
+  - manufacturing
+  - validation
+  confidence: 0.99
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2008
+  tags:
+  - pqs
+  - process_design
+  - design_space
+  - lifecycle
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q13-001
+  type: guideline_clause
+  source: ICH Q13
+  title: Continuous Manufacturing (CM) Applicability and Benefits
+  content: Continuous manufacturing integrates unit operations into uninterrupted operation, reducing intermediate storage
+    and improving product quality. Applicable to drug substance and product manufacturing. Benefits include enhanced process
+    control, real-time monitoring, and efficient scale-up.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - validation
+  confidence: 0.95
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2017
+  tags:
+  - continuous_manufacturing
+  - process_integration
+  - control
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q13-002
+  type: guideline_clause
+  source: ICH Q13
+  title: CM Process Characterization and Control Strategy
+  content: CM processes require comprehensive characterization including residence time distribution, mixing, reaction kinetics,
+    and transition states. Control strategy must address steady-state operation, input hold-up, sensor qualification, and
+    proportional model adaptation.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - validation
+  confidence: 0.96
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2017
+  tags:
+  - continuous_manufacturing
+  - process_characterization
+  - control
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-Q13-003
+  type: guideline_clause
+  source: ICH Q13
+  title: In-Line Real-Time Monitoring for CM
+  content: In-line measurement provides real-time product and process monitoring. Process Analytical Technology (PAT) tools
+    enable timely decisions. Sensors require qualification; mapping ensures spatial representation across continuous operation.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - analytical
+  confidence: 0.95
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2017
+  tags:
+  - continuous_manufacturing
+  - pat
+  - in_line_monitoring
+  - sensors
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final

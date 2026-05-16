@@ -1,0 +1,13 @@
+[project]
+name = "biologics-decision-engine"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24", "pandas>=2.0", "scipy>=1.10", "scikit-learn>=1.3",
+    "fastapi>=0.100", "uvicorn>=0.23", "pydantic>=2.0",
+    "python-docx>=1.1", "networkx>=3.1", "requests>=2.31", "pyyaml>=6.0",
+]
+[project.optional-dependencies]
+reg-intel = ["reg-intel-biopharma"]
+[tool.setuptools.packages.find]
+include = ["pipelines*", "services*", "schemas*", "models*", "modules*", "evidence_registry*", "config*", "utils*", "api*", "reports*", "content*", "specs*"]

@@ -1,0 +1,70 @@
+{
+  "case_id": "GC-07",
+  "title": "Should Abstain",
+  "case_context": {
+    "molecule_class": "fusion_protein",
+    "change_type": "process_change",
+    "change_description": "Multiple critical attributes with contradictory inter-method data, conflicting US/EU stances, and no applicable normative guidance",
+    "lifecycle_stage": "post_approval",
+    "target_geography": "global",
+    "flagged_attribute_ids": ["potency_activity", "potency_cell_based", "glycosylation_profile"],
+    "flagged_categories": ["potency", "physicochemical"],
+    "identified_gaps": ["no_precedent", "no_normative_guidance"]
+  },
+  "attribute_results": [
+    {
+      "attribute_id": "potency_activity",
+      "category": "potency",
+      "pre_value": 100.0,
+      "post_value": 80.0,
+      "unit": "%",
+      "concern_level": "critical",
+      "is_cqa": true,
+      "score": 0.35,
+      "gaps": ["no_normative_guidance"],
+      "contradiction_present": true
+    },
+    {
+      "attribute_id": "potency_cell_based",
+      "category": "potency",
+      "pre_value": 100.0,
+      "post_value": 110.0,
+      "unit": "%",
+      "concern_level": "critical",
+      "is_cqa": true,
+      "score": 0.30,
+      "gaps": ["no_normative_guidance"],
+      "contradiction_present": true
+    },
+    {
+      "attribute_id": "glycosylation_profile",
+      "category": "physicochemical",
+      "pre_value": 95.0,
+      "post_value": 82.0,
+      "unit": "%_g0f",
+      "concern_level": "critical",
+      "is_cqa": true,
+      "score": 0.25,
+      "gaps": ["no_precedent", "no_normative_guidance"]
+    },
+    {
+      "attribute_id": "purity_sec_hplc",
+      "category": "purity",
+      "pre_value": 99.0,
+      "post_value": 97.5,
+      "unit": "%",
+      "concern_level": "minor",
+      "is_cqa": true,
+      "score": 0.80,
+      "gaps": []
+    }
+  ],
+  "expected_decision": {
+    "verdict": "defer_package",
+    "confidence_band": "low",
+    "blocking_cluster_count": 2,
+    "abstain_flag": true,
+    "key_reviewer_concern": "Insufficient authority basis for any defensible judgment; human review required",
+    "risk_semantics": "contradiction"
+  }
+}

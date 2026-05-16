@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 520" role="img" aria-labelledby="title desc">
+  <title id="title">Biologics Decision Engine deployment architecture</title>
+  <desc id="desc">PDF or DOCX input flows through parsing, document classification, rule-based extraction, evidence model, guideline checks, evidence gap analysis, decision layer, reports, and Streamlit UI with optional logged LLM fallback.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f2e8; }
+      .box { fill: #fffdf7; stroke: #294d52; stroke-width: 2; rx: 18; }
+      .box2 { fill: #edf5f2; stroke: #294d52; stroke-width: 2; rx: 18; }
+      .warn { fill: #fff7e8; stroke: #9b6a22; stroke-width: 2; rx: 18; }
+      .text { fill: #182327; font: 600 20px Arial, sans-serif; }
+      .small { fill: #526267; font: 16px Arial, sans-serif; }
+      .label { fill: #1d5960; font: 700 15px Arial, sans-serif; letter-spacing: 1px; }
+      .arrow { stroke: #294d52; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #9b6a22; stroke-width: 3; fill: none; stroke-dasharray: 8 8; marker-end: url(#arrowWarn); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#294d52"/>
+    </marker>
+    <marker id="arrowWarn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9b6a22"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1320" height="520"/>
+  <text x="60" y="54" class="label">BIOLOGICS DECISION ENGINE</text>
+  <text x="60" y="88" class="text" style="font-size:30px">Auditable CMC document decision support</text>
+  <text x="60" y="118" class="small">Decision support only. Verify findings with source documents and qualified reviewers.</text>
+
+  <rect class="box" x="60" y="170" width="165" height="110"/>
+  <text x="88" y="214" class="text">Input</text>
+  <text x="88" y="240" class="small">PDF / DOCX</text>
+
+  <rect class="box" x="270" y="170" width="165" height="110"/>
+  <text x="300" y="206" class="text">Parsing</text>
+  <text x="300" y="232" class="small">text + tables</text>
+
+  <rect class="box" x="480" y="170" width="190" height="110"/>
+  <text x="510" y="206" class="text">Classifier</text>
+  <text x="510" y="232" class="small">characterization,</text>
+  <text x="510" y="254" class="small">stability, method</text>
+
+  <rect class="box2" x="715" y="170" width="210" height="110"/>
+  <text x="744" y="206" class="text">Extraction</text>
+  <text x="744" y="232" class="small">CQAs, sections,</text>
+  <text x="744" y="254" class="small">lot context</text>
+
+  <rect class="box2" x="970" y="120" width="250" height="110"/>
+  <text x="1002" y="156" class="text">Evidence Model</text>
+  <text x="1002" y="182" class="small">present, uncertain,</text>
+  <text x="1002" y="204" class="small">confirmed absent</text>
+
+  <rect class="box2" x="970" y="290" width="250" height="110"/>
+  <text x="1002" y="326" class="text">Guideline Checks</text>
+  <text x="1002" y="352" class="small">ICH Q6B, Q5E,</text>
+  <text x="1002" y="374" class="small">Q1A/Q5C, Q2(R2)</text>
+
+  <rect class="box" x="715" y="350" width="210" height="90"/>
+  <text x="744" y="388" class="text">Decision Layer</text>
+  <text x="744" y="414" class="small">5-level action</text>
+
+  <rect class="box" x="480" y="350" width="190" height="90"/>
+  <text x="510" y="388" class="text">Reports</text>
+  <text x="510" y="414" class="small">DOCX / CSV / text</text>
+
+  <rect class="box" x="270" y="350" width="165" height="90"/>
+  <text x="300" y="388" class="text">Streamlit UI</text>
+  <text x="300" y="414" class="small">audit trail</text>
+
+  <rect class="warn" x="60" y="350" width="165" height="90"/>
+  <text x="88" y="388" class="text">Optional LLM</text>
+  <text x="88" y="414" class="small">fallback only</text>
+
+  <path class="arrow" d="M225 225 H270"/>
+  <path class="arrow" d="M435 225 H480"/>
+  <path class="arrow" d="M670 225 H715"/>
+  <path class="arrow" d="M925 210 C950 190 950 178 970 176"/>
+  <path class="arrow" d="M1095 230 V290"/>
+  <path class="arrow" d="M970 345 H925"/>
+  <path class="arrow" d="M715 395 H670"/>
+  <path class="arrow" d="M480 395 H435"/>
+  <path class="dash" d="M225 395 C410 470 710 470 820 280"/>
+</svg>

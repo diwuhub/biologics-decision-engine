@@ -1,0 +1,31 @@
+{
+  "case_id": "READY-002",
+  "title": "Package with Stability Gaps (Kidney Organoid Nephrotoxicity)",
+  "category": "review_readiness",
+  "source": "synthetic (inspired by emerging kidney organoid qualification efforts)",
+  "expected_readiness_tier": "medium",
+  "expected_readiness_score_min": 0.40,
+  "expected_readiness_score_max": 0.74,
+  "expected_gap_count_min": 2,
+  "nam_type": "organoid",
+  "context_of_use": "safety_pharmacology",
+  "species_replaced": "rat",
+  "validation_evidence": [
+    {
+      "study_type": "concordance",
+      "concordance_rate": 0.72,
+      "sample_size": 40,
+      "reference": "Takasato et al. 2022 - Kidney organoid nephrotoxicity assessment"
+    },
+    {
+      "study_type": "sensitivity_analysis",
+      "concordance_rate": 0.65,
+      "sample_size": 15,
+      "reference": "Internal validation study - limited compound panel"
+    }
+  ],
+  "regulatory_precedent": [
+    "FDA accepted liver organoid for DILI screening (2023, related but not kidney-specific)"
+  ],
+  "qualification_pathway": "voluntary_submission"
+}

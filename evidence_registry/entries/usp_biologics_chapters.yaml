@@ -1,0 +1,286 @@
+entries:
+- id: USP-1030-001
+  type: guideline_clause
+  source: USP <1030>
+  title: Biological Assay Overview and Objectives
+  content: USP <1030> provides guidance on design, validation, and interpretation of biological assays for potency determination.
+    Covers assays addressing bioactivity, binding affinity, and functional properties. Appropriate for antibodies, cytokines,
+    growth factors, and receptors.
+  applicable_categories:
+  - analytical
+  - potency
+  - validation
+  confidence: 0.96
+  url: https://www.usp.org
+  year: 2022
+  tags:
+  - usp
+  - bioassay
+  - potency
+  - validation
+  content_type: paraphrase
+  document_status: final
+- id: USP-1032-001
+  type: guideline_clause
+  source: USP <1032>
+  title: Bioassay Design Principles and Experimental Design
+  content: USP <1032> addresses statistical design of bioassays including reference standard selection, dose-response characterization,
+    and assay robustness. Covers parametric (parallel-line, slope-ratio) and non-parametric analysis methods.
+  applicable_categories:
+  - analytical
+  - validation
+  - statistics
+  confidence: 0.97
+  url: https://www.usp.org
+  year: 2022
+  tags:
+  - usp
+  - bioassay
+  - design
+  - statistical_analysis
+  content_type: paraphrase
+  document_status: final
+- id: USP-1033-001
+  type: guideline_clause
+  source: USP <1033>
+  title: Bioassay Validation - Specificity, Accuracy, Precision
+  content: 'USP <1033> establishes validation acceptance criteria: specificity (selectivity for target), accuracy (recovery
+    80-120%), precision (RSD <15%), linearity (correlation >0.99). Validation design based on intended use and risk assessment.'
+  applicable_categories:
+  - analytical
+  - validation
+  - potency
+  confidence: 0.98
+  url: https://www.usp.org
+  year: 2022
+  tags:
+  - usp
+  - bioassay
+  - validation
+  - acceptance_criteria
+  content_type: paraphrase
+  document_status: final
+- id: USP-1033-002
+  type: guideline_clause
+  source: USP <1033>
+  title: Bioassay Stability Indicating Method Validation
+  content: USP <1033> requires demonstrating method ability to detect product degradation. Degraded/stressed samples tested
+    to confirm method discriminates between potent and degraded forms. Stress conditions include temperature, light, pH, oxidation.
+  applicable_categories:
+  - analytical
+  - validation
+  - stability
+  confidence: 0.97
+  url: https://www.usp.org
+  year: 2022
+  tags:
+  - usp
+  - bioassay
+  - validation
+  - stability_indicating
+  content_type: paraphrase
+  document_status: final
+- id: USP-1034-001
+  type: guideline_clause
+  source: USP <1034>
+  title: Bioassay Data Analysis - Dose-Response and Potency Calculation
+  content: USP <1034> covers potency calculation using parallel-line assay model, slope-ratio model, and quantal response
+    analysis. Includes confidence interval estimation, equivalence testing, and statistical assumptions validation.
+  applicable_categories:
+  - analytical
+  - statistics
+  - potency
+  confidence: 0.97
+  url: https://www.usp.org
+  year: 2022
+  tags:
+  - usp
+  - bioassay
+  - data_analysis
+  - potency_calculation
+  content_type: paraphrase
+  document_status: final
+- id: USP-1034-002
+  type: guideline_clause
+  source: USP <1034>
+  title: Bioassay Analysis Failure Criteria and Troubleshooting
+  content: 'USP <1034> defines assay failure criteria: dose-response slope not significant, parallelism test failure, linearity
+    failure, or reference standard recovery outside 80-120%. Recommends troubleshooting and repeat assay protocol.'
+  applicable_categories:
+  - analytical
+  - potency
+  - validation
+  confidence: 0.96
+  url: https://www.usp.org
+  year: 2022
+  tags:
+  - usp
+  - bioassay
+  - failure_criteria
+  - troubleshooting
+  content_type: paraphrase
+  document_status: final
+- id: USP-1041-001
+  type: guideline_clause
+  source: USP <1041>
+  title: Biologics General Chapter - Characterization of Monoclonal Antibodies
+  content: 'USP <1041> covers analytical characterization of mAbs: identity (ELISA, western blot), isoelectric focusing, SEC-HPLC,
+    SDS-PAGE, mass spectrometry, and size exclusion. Addresses higher-order structure and charge variants.'
+  applicable_categories:
+  - analytical
+  - identity
+  - physicochemical
+  confidence: 0.97
+  url: https://www.usp.org
+  year: 2020
+  tags:
+  - usp
+  - biologics
+  - mab
+  - characterization
+  content_type: paraphrase
+  document_status: final
+- id: USP-1041-002
+  type: guideline_clause
+  source: USP <1041>
+  title: Biologics - Purity Assessment and Impurity Profiling
+  content: USP <1041> covers purity assessment including HPLC, capillary electrophoresis, and mass spectrometry. Addresses
+    host cell proteins, DNA, endotoxins, aggregates, and product-related impurities. Methods demonstrate product consistency.
+  applicable_categories:
+  - analytical
+  - purity
+  - quality
+  confidence: 0.97
+  url: https://www.usp.org
+  year: 2020
+  tags:
+  - usp
+  - biologics
+  - purity
+  - impurity_profiling
+  content_type: paraphrase
+  document_status: final
+- id: USP-1058-001
+  type: guideline_clause
+  source: USP <1058>
+  title: Analytical Instrument Qualification - IQ/OQ/PQ Framework
+  content: USP <1058> establishes instrument qualification standards. Installation Qualification (IQ) confirms system meets
+    design specifications; Operational Qualification (OQ) verifies system operation under normal conditions; Performance Qualification
+    (PQ) demonstrates suitability for intended use.
+  applicable_categories:
+  - analytical
+  - validation
+  - quality
+  confidence: 0.98
+  url: https://www.usp.org
+  year: 2018
+  tags:
+  - usp
+  - instrument_qualification
+  - iq_oq_pq
+  - validation
+  content_type: paraphrase
+  document_status: final
+- id: USP-1058-002
+  type: guideline_clause
+  source: USP <1058>
+  title: Instrument Qualification - Acceptance Criteria and Maintenance
+  content: USP <1058> defines acceptance criteria for routine instrument performance testing. Suggests periodic calibration
+    intervals and maintenance requirements. Records should demonstrate ongoing suitability and enable trend analysis.
+  applicable_categories:
+  - analytical
+  - validation
+  - quality
+  confidence: 0.97
+  url: https://www.usp.org
+  year: 2018
+  tags:
+  - usp
+  - instrument_qualification
+  - maintenance
+  - validation
+  content_type: paraphrase
+  document_status: final
+- id: USP-1106-001
+  type: guideline_clause
+  source: USP <1106>
+  title: Immunogenicity Assays - Overview and Applications
+  content: 'USP <1106> covers immunogenicity assessment including anti-drug antibody (ADA) detection. Discusses assay design,
+    interpretation, and clinical relevance. Addresses assay formats: ELISA, radioimmunoassay, electrochemiluminescence.'
+  applicable_categories:
+  - analytical
+  - safety
+  - immunogenicity
+  confidence: 0.96
+  url: https://www.usp.org
+  year: 2022
+  tags:
+  - usp
+  - immunogenicity
+  - ada_assays
+  - safety
+  content_type: paraphrase
+  document_status: final
+- id: USP-1106-002
+  type: guideline_clause
+  source: USP <1106>
+  title: Anti-Drug Antibody (ADA) Assay Validation and Clinical Interpretation
+  content: 'USP <1106> establishes validation criteria for ADA assays: sensitivity (lower limit of detection), specificity
+    (no cross-reactivity), precision, and dynamic range. Clinical interpretation addresses neutralizing vs. non-neutralizing
+    antibodies and impact on efficacy.'
+  applicable_categories:
+  - analytical
+  - safety
+  - immunogenicity
+  confidence: 0.97
+  url: https://www.usp.org
+  year: 2022
+  tags:
+  - usp
+  - immunogenicity
+  - ada_assays
+  - validation
+  content_type: paraphrase
+  document_status: final
+- id: USP-1132-001
+  type: guideline_clause
+  source: USP <1132>
+  title: Host Cell Protein (HCP) Assays and Acceptance Limits
+  content: USP <1132> covers HCP detection and quantitation methods (ELISA, western blot, mass spectrometry). Discusses acceptance
+    limits typically 100 ng/dose for therapeutic proteins. Specifications address process capability and purification effectiveness.
+  applicable_categories:
+  - analytical
+  - purity
+  - quality
+  - safety
+  confidence: 0.97
+  url: https://www.usp.org
+  year: 2021
+  tags:
+  - usp
+  - hcp
+  - host_cell_proteins
+  - purity
+  - specifications
+  content_type: paraphrase
+  document_status: final
+- id: USP-1132-002
+  type: guideline_clause
+  source: USP <1132>
+  title: HCP Assay Qualification and Batch Testing
+  content: USP <1132> requires assay qualification addressing accuracy (recovery), precision, specificity, and limit of detection.
+    Batch testing protocols define sampling frequency and acceptance decisions. Trending supports process control assessment.
+  applicable_categories:
+  - analytical
+  - validation
+  - quality
+  confidence: 0.97
+  url: https://www.usp.org
+  year: 2021
+  tags:
+  - usp
+  - hcp
+  - assay_qualification
+  - batch_testing
+  content_type: paraphrase
+  document_status: final

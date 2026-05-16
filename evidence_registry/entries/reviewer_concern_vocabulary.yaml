@@ -1,0 +1,339 @@
+entries:
+- id: RCV-POTENCY-CONTRADICTION
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: Potency assay contradiction concern pattern
+  content: 'Canonical concern: Contradictory potency assay results without resolution guidance. Trigger: Two or more potency
+    assays produce discordant results (e.g., activity assay shows comparable while cell-based assay shows significant reduction).
+    Pattern phrase: ''Potency assays show contradictory results; no guidance on resolution''. Resolution requires investigation
+    of root cause, method sensitivity comparison, and determination of which assay is more clinically relevant.
+
+    '
+  applicable_categories:
+  - potency
+  confidence: 0.95
+  authority_quality_tier: contextual
+  evidence_weight: advisory
+  temporal_status: current
+  year: 2024
+  tags:
+  - reviewer_concern
+  - potency
+  - contradiction
+  - canonical_phrase
+  likely_concern_categories:
+  - CQA_potency
+  recommended_followup:
+    type: additional_testing
+    rationale: Contradictory potency results require method investigation and resolution.
+  content_type: structured_metadata
+- id: RCV-POTENCY-ORTHOGONAL-GAP
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: Potency CQA orthogonal method gap concern pattern
+  content: 'Canonical concern: Potency CQA lacks orthogonal method support per ICH Q5E. Trigger: CQA potency attribute has
+    single-method support without orthogonal confirmation. Pattern phrase: ''Potency CQA lacks orthogonal method support per
+    ICH Q5E''. This is a blocking concern when potency is a CQA.
+
+    '
+  applicable_categories:
+  - potency
+  confidence: 0.95
+  authority_quality_tier: contextual
+  evidence_weight: advisory
+  temporal_status: current
+  year: 2024
+  tags:
+  - reviewer_concern
+  - potency
+  - orthogonal_gap
+  - canonical_phrase
+  likely_concern_categories:
+  - CQA_potency
+  recommended_followup:
+    type: additional_testing
+    rationale: Orthogonal method gap for CQA potency requires supplemental assay data.
+  content_type: structured_metadata
+- id: RCV-PURITY-TREND
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: Purity trending concern pattern
+  content: 'Canonical concern: Downward purity trend at accelerated stability requires extended monitoring. Trigger: Purity
+    attribute shows consistent downward trend even when values remain within specification. Pattern phrase: ''Downward purity
+    trend at accelerated stability requires extended monitoring''.
+
+    '
+  applicable_categories:
+  - purity
+  - stability
+  confidence: 0.9
+  authority_quality_tier: contextual
+  evidence_weight: advisory
+  temporal_status: current
+  year: 2024
+  tags:
+  - reviewer_concern
+  - purity
+  - trend
+  - stability
+  - canonical_phrase
+  likely_concern_categories:
+  - CQA_purity
+  recommended_followup:
+    type: enhanced_monitoring
+    rationale: Trending within spec requires extended stability monitoring commitment.
+  content_type: structured_metadata
+- id: RCV-FAVORABLE-SHIFT
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: Favorable shift immunogenicity rationale concern pattern
+  content: 'Canonical concern: Favorable purity shift requires immunogenicity impact rationale. Trigger: Significant improvement
+    in purity attributes (e.g., aggregate reduction) that may alter the immunogenicity profile. Pattern phrase: ''Favorable
+    purity shift requires immunogenicity impact rationale''.
+
+    '
+  applicable_categories:
+  - purity
+  - safety
+  - immunogenicity
+  confidence: 0.85
+  authority_quality_tier: contextual
+  evidence_weight: advisory
+  temporal_status: current
+  year: 2024
+  tags:
+  - reviewer_concern
+  - purity
+  - favorable_shift
+  - immunogenicity
+  - canonical_phrase
+  recommended_followup:
+    type: additional_testing
+    rationale: Favorable shift requires demonstration of no adverse immunogenicity impact.
+  content_type: structured_metadata
+- id: RCV-NO-PRECEDENT
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: No precedent normative-only concern pattern
+  content: 'Canonical concern: No direct precedent for format; relying on normative basis only. Trigger: Novel molecule format
+    (bispecific, ADC, etc.) with no direct BLA/NDA precedent. Pattern phrase: ''No direct precedent for [format]; relying
+    on normative basis only''. Per GUARD-002, missing precedent triggers confidence downgrade but NEVER triggers default abstain.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - physicochemical
+  confidence: 0.85
+  authority_quality_tier: contextual
+  evidence_weight: advisory
+  temporal_status: current
+  year: 2024
+  tags:
+  - reviewer_concern
+  - no_precedent
+  - normative_only
+  - canonical_phrase
+  recommended_followup:
+    type: enhanced_monitoring
+    rationale: No precedent cases benefit from enhanced post-change monitoring commitment.
+  content_type: structured_metadata
+- id: RCV-GEOGRAPHY-DIVERGENCE
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: Geography divergence concern pattern
+  content: 'Canonical concern: Divergent FDA/EMA acceptance criteria require geography-specific filing strategy. Trigger:
+    Different regulatory expectations between jurisdictions on the same quality attribute. Pattern phrase: ''Divergent FDA/EMA
+    [attribute] acceptance criteria require geography-specific filing strategy''.
+
+    '
+  applicable_categories:
+  - stability
+  - specifications
+  - potency
+  - purity
+  confidence: 0.88
+  authority_quality_tier: contextual
+  evidence_weight: advisory
+  temporal_status: current
+  geography:
+  - US
+  - EU
+  - global
+  year: 2024
+  tags:
+  - reviewer_concern
+  - geography
+  - divergence
+  - canonical_phrase
+  recommended_followup:
+    type: bridging_study
+    rationale: Geography divergence may require jurisdiction-specific data packages.
+  content_type: structured_metadata
+- id: RCV-DATED-SUPPORT
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: Dated support dominates concern pattern
+  content: 'Canonical concern: All supporting precedents are pre-QbD era; current guideline expectations may differ. Trigger:
+    Majority of supporting evidence is > 10 years old or predates current ICH guideline revision. Pattern phrase: ''All supporting
+    precedents are pre-QbD era; current guideline expectations may differ''.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - process_validation
+  confidence: 0.8
+  authority_quality_tier: contextual
+  evidence_weight: informative
+  temporal_status: current
+  year: 2024
+  tags:
+  - reviewer_concern
+  - dated_support
+  - temporal
+  - canonical_phrase
+  recommended_followup:
+    type: additional_testing
+    rationale: Dated precedent support warrants supplemental current-era evidence.
+  content_type: structured_metadata
+- id: RCV-PATTERN-ONLY
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: Concern pattern only / weak normative concern pattern
+  content: 'Canonical concern: Only concern pattern references available; no normative or precedent support. Trigger: No normative_refs
+    and no precedent_refs in the AuthorityContextPack. Pattern phrase: ''Only concern pattern references available; no normative
+    or precedent support''. Per GUARD-001, pattern-only evidence CANNOT set package_blocking = True.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - physicochemical
+  confidence: 0.75
+  authority_quality_tier: contextual
+  evidence_weight: contextual
+  temporal_status: current
+  year: 2024
+  tags:
+  - reviewer_concern
+  - pattern_only
+  - weak_normative
+  - canonical_phrase
+  recommended_followup:
+    type: additional_testing
+    rationale: Pattern-only authority requires supplemental normative or precedent evidence.
+  content_type: structured_metadata
+- id: RCV-HIDDEN-PACKAGE-GAP
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: Hidden package insufficiency concern pattern
+  content: 'Canonical concern: Package-level gap where required method type is missing despite individual comparability. Trigger:
+    All individual attributes pass but a required method type per ICH Q5E is absent from the analytical package. Pattern phrase:
+    ''Package-level gap: required [method] type missing per ICH Q5E despite individual comparability''.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  confidence: 0.9
+  authority_quality_tier: contextual
+  evidence_weight: advisory
+  temporal_status: current
+  year: 2024
+  tags:
+  - reviewer_concern
+  - hidden_gap
+  - package_level
+  - canonical_phrase
+  likely_concern_categories:
+  - CQA_potency
+  - CQA_purity
+  recommended_followup:
+    type: additional_testing
+    rationale: Hidden package gaps require addition of the missing analytical method.
+  content_type: structured_metadata
+- id: RCV-MIXED-WEAK-EVIDENCE
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: Mixed weak evidence non-blocking concern pattern
+  content: 'Canonical concern: Mixed evidence strength with some normative support but limited precedent. Trigger: Normative
+    refs exist but precedent refs are sparse or dated, no contradiction. Pattern phrase: ''Mixed evidence strength; some normative
+    support but limited precedent''. Per FALL-002, must NOT overreact to mixed weakness.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - physicochemical
+  confidence: 0.8
+  authority_quality_tier: contextual
+  evidence_weight: advisory
+  temporal_status: current
+  year: 2024
+  tags:
+  - reviewer_concern
+  - mixed_evidence
+  - weak
+  - non_blocking
+  - canonical_phrase
+  recommended_followup:
+    type: enhanced_monitoring
+    rationale: Mixed evidence benefits from enhanced monitoring but does not require blocking action.
+  content_type: structured_metadata
+- id: RCV-ABSTAIN-INSUFFICIENT
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Regulatory Reviewer Pattern Analysis
+  title: Abstain / insufficient authority basis concern pattern
+  content: 'Canonical concern: Insufficient authority basis for any defensible judgment; human review required. Trigger: Multiple
+    critical clusters with contradictions, conflicting geography stances, AND no applicable normative guidance. Pattern phrase:
+    ''Insufficient authority basis for any defensible judgment; human review required''.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - physicochemical
+  confidence: 0.95
+  authority_quality_tier: contextual
+  evidence_weight: advisory
+  temporal_status: current
+  year: 2024
+  tags:
+  - reviewer_concern
+  - abstain
+  - human_review
+  - canonical_phrase
+  triggers_escalation: true
+  recommended_followup:
+    type: additional_testing
+    rationale: Abstain-level cases require comprehensive human expert review.
+  content_type: structured_metadata

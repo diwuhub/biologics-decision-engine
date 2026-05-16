@@ -1,0 +1,16 @@
+.git
+__pycache__
+*.pyc
+tests/
+docs/
+*.md
+.github/
+.env
+*.egg-info/
+.pytest_cache/
+logs/
+*.log
+models/
+*.pt
+*.pth
+*.onnx

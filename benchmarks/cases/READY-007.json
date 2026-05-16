@@ -1,0 +1,38 @@
+{
+  "case_id": "READY-007",
+  "title": "PBPK Model for Bioequivalence Waiver (FDA DDT-Qualified)",
+  "category": "review_readiness",
+  "source": "synthetic (inspired by FDA-qualified PBPK models used for bioequivalence waivers in generic drug applications)",
+  "expected_readiness_tier": "high",
+  "expected_readiness_score_min": 0.75,
+  "expected_gap_count_max": 1,
+  "nam_type": "in_silico",
+  "context_of_use": "bioequivalence",
+  "species_replaced": null,
+  "validation_evidence": [
+    {
+      "study_type": "concordance",
+      "concordance_rate": 0.92,
+      "sample_size": 200,
+      "reference": "Grimstein et al. 2019 - PBPK model qualification for BE waiver across 30+ drugs"
+    },
+    {
+      "study_type": "external_validation",
+      "concordance_rate": 0.88,
+      "sample_size": 75,
+      "reference": "FDA Office of Clinical Pharmacology 2022 - Independent PBPK BE waiver validation"
+    },
+    {
+      "study_type": "sensitivity_analysis",
+      "concordance_rate": 0.85,
+      "sample_size": 100,
+      "reference": "Zhang et al. 2020 - PBPK sensitivity to formulation and population variability"
+    }
+  ],
+  "regulatory_precedent": [
+    "FDA DDT qualification of PBPK for bioequivalence waiver decisions (2018)",
+    "FDA accepted >40 PBPK-based BE waivers in ANDA submissions (2015-2024)",
+    "EMA guideline on PBPK modeling for drug-drug interaction and BE (2018)"
+  ],
+  "qualification_pathway": "DDT"
+}

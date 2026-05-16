@@ -1,0 +1,89 @@
+# Vision Spec -- Biologics Decision Engine Document Capabilities
+# Phase 0 (Anchor) baseline established 2026-03-30
+#
+# Each capability tracks:
+#   status: implemented | planned
+#   description: what the capability does
+#   acceptance: how we verify it works
+
+version: "1.0"
+created: "2026-03-30"
+phase: "Phase 0 - Anchor"
+
+capabilities:
+  CAP-001:
+    name: "Comparability DOCX"
+    status: implemented
+    description: >
+      Ingest a DOCX comparability report with pre/post tables.
+      Extract attributes, run full comparability assessment pipeline,
+      produce verdict and DOCX/CSV export.
+    acceptance:
+      - "DOCX with comparability tables produces ExtractedAttributes"
+      - "Pipeline produces Comparable / Not Comparable verdict"
+      - "Export generates valid DOCX and CSV"
+
+  CAP-002:
+    name: "Characterization PDF"
+    status: implemented
+    description: >
+      Ingest a PDF characterization report (e.g., higher-order structure,
+      post-translational modifications). Extract quality attributes for
+      cross-document reconciliation.
+    acceptance:
+      - "PDF tables extracted with confidence scores"
+      - "Attributes map to physicochemical / identity categories"
+      - "value_correctness_passes >= 3"
+      - "false_critical_gaps == 0"
+
+  CAP-003:
+    name: "Stability PDF"
+    status: implemented
+    description: >
+      Ingest ICH Q5C stability data from PDF/DOCX reports. Extract timepoint
+      data, degradation trends, OOS/OOT flags, and shelf-life projections.
+      Assess sufficiency per ICH Q1A/Q5C.
+    acceptance:
+      - "Timepoint data extracted from stability tables"
+      - "Trend detection flags accelerated degradation"
+      - "OOS/OOT events detected from tables and text"
+      - "Shelf-life claim sufficiency assessed"
+      - "value_correctness_passes >= 1"
+      - "false_critical_gaps == 0"
+
+  CAP-004:
+    name: "Analytical Method PDF"
+    status: implemented
+    description: >
+      Ingest analytical method validation reports (PDF/DOCX). Extract method
+      parameters, acceptance criteria, and validation summary per ICH Q2(R2).
+      Assess completeness and identify gaps.
+    acceptance:
+      - "Method parameters extracted with units"
+      - "Validation status (qualified/validated) detected"
+      - "ICH Q2 study completeness scored"
+      - "Critical gaps identified for missing studies"
+      - "value_correctness_passes >= 0"
+      - "false_critical_gaps == 0"
+
+  CAP-005:
+    name: "PDF Format for Comparability"
+    status: planned
+    description: >
+      Support PDF format as an alternative to DOCX for comparability
+      reports. Same extraction logic, different parser frontend.
+    acceptance:
+      - "PDF comparability report produces same attributes as DOCX equivalent"
+      - "Pipeline verdict matches DOCX-based verdict"
+
+  CAP-006:
+    name: "UNKNOWN Document -- No Crash, Partial Output"
+    status: implemented
+    description: >
+      When an unrecognized document type is uploaded, the system must not
+      crash. It should return an empty or partial result with a warning,
+      allowing the user to proceed or provide a different document.
+    acceptance:
+      - "Upload of non-comparability DOCX returns empty attributes with warning"
+      - "Pipeline continues without fatal error"
+      - "UI displays informative message instead of traceback"

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PTM Root-Cause Attribution",
+  "type": "object",
+  "required": ["molecule_id", "ptm_observations", "causal_hypotheses"],
+  "properties": {
+    "molecule_id": { "type": "string" },
+    "ptm_observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["site", "modification", "level_pct", "assay"],
+        "properties": {
+          "site": { "type": "string", "description": "e.g., M255, N364, D102" },
+          "modification": { "type": "string", "enum": ["oxidation", "deamidation", "isomerization", "glycation", "clipping", "disulfide_shuffle", "other"] },
+          "level_pct": { "type": "number" },
+          "assay": { "type": "string" },
+          "region": { "type": "string", "enum": ["CDR", "framework", "hinge", "CH2", "CH3", "other"] },
+          "is_cqa": { "type": "boolean" }
+        }
+      }
+    },
+    "causal_hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["hypothesis", "mechanism", "evidence_for", "evidence_against", "confidence"],
+        "properties": {
+          "hypothesis": { "type": "string" },
+          "mechanism": { "type": "string", "enum": ["process_related", "formulation_related", "intrinsic_sequence", "storage_related", "analytical_artifact"] },
+          "evidence_for": { "type": "array", "items": { "type": "string" } },
+          "evidence_against": { "type": "array", "items": { "type": "string" } },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "recommended_action": { "type": "string" }
+        }
+      }
+    },
+    "impact_assessment": {
+      "type": "object",
+      "properties": {
+        "potency_risk": { "type": "string", "enum": ["high", "medium", "low", "none"] },
+        "safety_risk": { "type": "string", "enum": ["high", "medium", "low", "none"] },
+        "regulatory_risk": { "type": "string", "enum": ["high", "medium", "low", "none"] }
+      }
+    }
+  }
+}

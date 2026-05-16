@@ -1,0 +1,54 @@
+{
+  "case_id": "REG-002",
+  "title": "Biologics Contamination Finding",
+  "category": "regulatory_classification",
+  "source": "synthetic (inspired by FDA biologics contamination enforcement actions and ICH Q5A viral safety)",
+  "expected_action": "observe",
+  "expected_severity": "critical",
+  "expected_categories": ["contamination", "viral_safety", "process_controls"],
+  "description": "Biologics manufacturing facility identified adventitious viral contamination in upstream cell culture. Mycoplasma testing also revealed positive results in 2 of 8 production bioreactors. Product from affected lots was quarantined pending investigation.",
+  "claims": [
+    {
+      "claim_text": "Adventitious agent testing detected murine minute virus (MMV) contamination in CHO cell culture harvest from 2000L production bioreactor B3",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["adventitious agent", "MMV", "CHO", "cell culture", "contamination", "bioreactor"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Mycoplasma testing by qPCR and culture method showed positive results in bioreactors B3 and B5, affecting 4 production lots of anti-TNF mAb drug substance",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["mycoplasma", "qPCR", "culture method", "drug substance", "anti-TNF"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Viral clearance validation study demonstrated only 2.8 log reduction for MMV across the downstream purification process, below the 4 log target per ICH Q5A",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["viral clearance", "log reduction", "MMV", "ICH Q5A", "purification"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Environmental monitoring program did not include viral testing of raw materials and single-use components as recommended by PDA TR-47",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["environmental monitoring", "raw materials", "single-use", "PDA TR-47"],
+      "evidence_strength": "moderate",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Facility's contamination response SOP was last revised in 2019 and did not include provisions for adventitious virus events in single-use bioreactor systems",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["SOP", "contamination response", "adventitious virus", "single-use bioreactor"],
+      "evidence_strength": "moderate",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "All affected product lots were quarantined within 24 hours of initial detection and have not been released for distribution",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["quarantine", "lot disposition", "product hold"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    }
+  ]
+}

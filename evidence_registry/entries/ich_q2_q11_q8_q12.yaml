@@ -1,0 +1,644 @@
+entries:
+- id: Q2R2-1
+  type: guideline_clause
+  source: ICH Q2(R2)
+  title: Specificity - Definition and Requirements
+  content: 'Specificity is the ability to assess unequivocally the analyte in the presence of components which may be expected
+    to be present. Such components may include impurities, degradation products, matrix, etc. Lack of specificity of an analytical
+    procedure may be compensated by other supporting analytical procedures.
+
+    '
+  applicable_categories:
+  - identity
+  - purity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q2%28R2%29%20Guideline.pdf
+  year: 2023
+  tags:
+  - analytical_validation
+  - specificity
+  - acceptance_criteria
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q2R2-2
+  type: guideline_clause
+  source: ICH Q2(R2)
+  title: Accuracy - Definition and Validation Approach
+  content: 'Accuracy is the closeness of test results obtained by the analytical procedure to the true value (content) of
+    the sample. Accuracy of an analytical procedure is established across its range. Three concentrations: low (20%), middle
+    (50%), and high (100%) of the target concentration are recommended. Minimum of nine determinations recommended (3 replicates
+    × 3 concentration levels).
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q2%28R2%29%20Guideline.pdf
+  year: 2023
+  tags:
+  - analytical_validation
+  - accuracy
+  - precision
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q2R2-3
+  type: guideline_clause
+  source: ICH Q2(R2)
+  title: Precision - Repeatability and Intermediate Precision
+  content: 'Precision is the degree of agreement among individual test results when the procedure is applied repeatedly to
+    a homogeneous sample. Repeatability (intra-assay precision) is assessed with 6 replicates at 100% concentration. Intermediate
+    precision should consider variables such as different days, analysts, equipment within a single laboratory environment.
+    Relative Standard Deviation (RSD) acceptance typically ≤ 2% for potency assays.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q2%28R2%29%20Guideline.pdf
+  year: 2023
+  tags:
+  - analytical_validation
+  - precision
+  - repeatability
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q2R2-4
+  type: guideline_clause
+  source: ICH Q2(R2)
+  title: Linearity and Range - Design and Acceptance Criteria
+  content: 'Linearity is the ability of the procedure to obtain test results that are directly proportional to the analyte
+    concentration within a given range. A minimum of 5 concentration levels covering at least 80% to 120% of the target concentration
+    is recommended. The correlation coefficient should be ≥ 0.99. Range is typically established from lower to upper acceptance
+    limits (LOD to highest expected concentration).
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q2%28R2%29%20Guideline.pdf
+  year: 2023
+  tags:
+  - analytical_validation
+  - linearity
+  - range
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q2R2-5
+  type: guideline_clause
+  source: ICH Q2(R2)
+  title: Detection Limit and Quantitation Limit - Determination Methods
+  content: 'Detection Limit (DL) is the lowest amount of analyte that can be detected but not necessarily quantitated. Quantitation
+    Limit (QL) is the lowest amount that can be quantitated with acceptable accuracy and precision (typically RSD ≤ 10%, recovery
+    80-120%). Determination may use signal-to-noise ratio (3:1 for DL, 10:1 for QL), standard deviation of response and slope,
+    or visual evaluation methods for biological assays.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q2%28R2%29%20Guideline.pdf
+  year: 2023
+  tags:
+  - analytical_validation
+  - detection_limit
+  - quantitation_limit
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q2R2-6
+  type: guideline_clause
+  source: ICH Q2(R2)
+  title: Robustness - Evaluation of Analytical Procedure Stability
+  content: 'Robustness is the capacity of an analytical procedure to remain unaffected by small variations in method parameters.
+    Typical variables assessed include pH, temperature, mobile phase composition, flow rate, column chemistry, organic solvent
+    percentage, and ionic strength. One factor-at-a-time variation or design of experiments (DoE) approaches are acceptable.
+    Results should demonstrate the procedure is suitable for its intended use despite minor parameter variations.
+
+    '
+  applicable_categories:
+  - physicochemical
+  - potency
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q2%28R2%29%20Guideline.pdf
+  year: 2023
+  tags:
+  - analytical_validation
+  - robustness
+  - method_transfer
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q2R2-7
+  type: guideline_clause
+  source: ICH Q2(R2)
+  title: System Suitability Testing Requirements
+  content: 'System Suitability Testing (SST) is an integral part of many analytical procedures. SST parameters must be established
+    during method validation. For chromatographic methods, typical parameters include: plate number (N), peak tailing factor
+    (Tf), resolution (Rs), and relative standard deviation (RSD). Limits are procedure-specific and must be justified. SST
+    must be performed with each analytical batch to ensure system is performing adequately.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q2%28R2%29%20Guideline.pdf
+  year: 2023
+  tags:
+  - analytical_validation
+  - system_suitability
+  - acceptance_criteria
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q2R2-8
+  type: guideline_clause
+  source: ICH Q2(R2)
+  title: Validation of Analytical Procedures for Biological/Immunochemical Assays
+  content: 'For biological and immunochemical assays, additional considerations apply: use of reference standards or reference
+    materials with known purity/potency; parallelism and validity testing to demonstrate assay biology; dose-response curve
+    evaluation; selectivity assessment in presence of matrix components; stability of analyte in matrix. Protein recovery
+    and cross-reactivity must be evaluated. Statistical approaches (e.g., probit analysis) may be required. Positive and negative
+    controls are essential validation elements.
+
+    '
+  applicable_categories:
+  - potency
+  - identity
+  - purity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q2%28R2%29%20Guideline.pdf
+  year: 2023
+  tags:
+  - analytical_validation
+  - biological_assays
+  - immunochemical_assays
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q11-1
+  type: guideline_clause
+  source: ICH Q11
+  title: Process Development Principles for Biotech Products
+  content: 'Process development should be based on the understanding of how process parameters affect product quality attributes.
+    A systematic approach is recommended: establish CQAs based on intended use and pharmacology; identify process parameters
+    affecting CQAs; conduct risk assessment of parameter impact; design and optimize process through experimentation. For
+    biologics, cell culture conditions (temperature, dissolved oxygen, pH, osmolality), media composition, inoculum preparation,
+    bioreactor operation, and purification step conditions must be systematically evaluated. Linkage between in-process parameters
+    and final product quality is fundamental.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - identity
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q11_Guideline.pdf
+  year: 2019
+  tags:
+  - process_development
+  - biotech
+  - design_space
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q11-2
+  type: guideline_clause
+  source: ICH Q11
+  title: Critical Quality Attributes (CQAs) Identification and Control
+  content: 'Critical Quality Attributes (CQAs) are physical, chemical, biological, or microbiological properties or characteristics
+    that should be within an appropriate limit, range, or distribution to ensure the desired product quality. CQAs are derived
+    from knowledge of how drug substance characteristics relate to safety and efficacy. For monoclonal antibodies, typical
+    CQAs include: potency, purity (product-related impurities), identity (isotope pattern, molecular weight), host cell protein
+    (HCP) levels, process-related impurities, aggregate content, charge variants, glycosylation pattern, and stability-indicating
+    parameters. CQAs must be justified with scientific rationale.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q11_Guideline.pdf
+  year: 2019
+  tags:
+  - critical_quality_attributes
+  - cqa
+  - risk_assessment
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q11-3
+  type: guideline_clause
+  source: ICH Q11
+  title: Critical Process Parameters (CPPs) and Design Space
+  content: 'Critical Process Parameters (CPPs) are process parameters whose variability has an impact on a CQA and therefore
+    should be monitored or controlled to ensure that the process produces the intended quality. Design Space is the multidimensional
+    combination of input variables (e.g., material attributes, process parameters) and process conditions that have been demonstrated
+    to provide assurance of quality. It is the proposed design space during development, not the control space. For cell culture
+    processes, CPPs may include: temperature setpoint, aeration rate, agitation, pH control, feed rate of media, inoculum
+    density. Purification CPPs may include: pH, salt concentration, temperature, resin lot, column flow rate. DoE is the recommended
+    approach for design space establishment.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - identity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q11_Guideline.pdf
+  year: 2019
+  tags:
+  - critical_process_parameters
+  - design_space
+  - doe
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q11-4
+  type: guideline_clause
+  source: ICH Q11
+  title: Control Strategy Development and Implementation
+  content: 'Control strategy is the planned set of controls, derived from current process understanding, that assures process
+    performance and product quality. It is not just the specification but encompasses: parameters monitored during manufacturing;
+    in-process tests and acceptance criteria; finished product specifications; and risk management. A multi-variate approach
+    is preferred over single-parameter acceptance. Controls should address: raw material quality, process parameter variation,
+    in-process control points, intermediate stability, finished product testing. The control strategy links to design space
+    and supports post-approval flexibility. Regular review and continuous improvement are inherent in control strategy management.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q11_Guideline.pdf
+  year: 2019
+  tags:
+  - control_strategy
+  - process_monitoring
+  - acceptance_criteria
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q11-5
+  type: guideline_clause
+  source: ICH Q11
+  title: Process Validation Linkage and Batch Definition
+  content: 'Process validation should confirm that the process as established during development consistently produces drug
+    substance of the intended quality. Process validation studies should use process parameters within the established design
+    space. A minimum of three commercial-scale batches is recommended (may be reduced if supportive data available). For continuous
+    processes, alternative approaches to demonstrate state of control are acceptable. Batch definition must be scientifically
+    justified and consider: homogeneity of final product, process flow, time-dependent changes, and realistic worst-case operating
+    conditions. Changes made post-validation require assessment under ICH Q12 (post-approval change management).
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q11_Guideline.pdf
+  year: 2019
+  tags:
+  - process_validation
+  - batch_definition
+  - commercial_scale
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q11-6
+  type: guideline_clause
+  source: ICH Q11
+  title: Raw Material Controls for Cell Culture Processes
+  content: 'Raw materials used in cell culture, including media supplements, buffers, and cell banks, should be appropriately
+    characterized and controlled. Critical raw materials with potential impact on CQAs require: supplier qualification; certificate
+    of analysis verification; in-house testing for critical attributes (e.g., endotoxin, sterility for culture supplements);
+    stability data; and traceability. Master Cell Bank (MCB) and Working Cell Bank (WCB) characterization must include: viability,
+    identity (species and cell line), mycoplasma testing, microbial contaminants, adventitious agents, potency, and karyology.
+    Seed lot comparability assessment demonstrates consistent product quality across different manufacturing campaigns.
+
+    '
+  applicable_categories:
+  - purity
+  - identity
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q11_Guideline.pdf
+  year: 2019
+  tags:
+  - raw_materials
+  - cell_culture
+  - cell_bank_characterization
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q11-7
+  type: guideline_clause
+  source: ICH Q11
+  title: Continuous Process Verification and Real-Time Control
+  content: 'A state of control may be demonstrated by traditional process validation or through continuous process monitoring
+    and real-time control strategies. Continuous monitoring includes: in-process parameter surveillance using Process Analytical
+    Technology (PAT); multivariate analysis of batch data; control charts and statistical methods to detect out-of-control
+    conditions. This approach enables real-time corrective actions and trend analysis across batches. Continuous verification
+    is particularly applicable to continuous manufacturing processes. The strategy must define normal operating ranges, action/alert
+    limits, and response procedures for parameter excursions.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - identity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q11_Guideline.pdf
+  year: 2019
+  tags:
+  - process_verification
+  - continuous_monitoring
+  - pat
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q8R2-1
+  type: guideline_clause
+  source: ICH Q8(R2)
+  title: Quality by Design (QbD) - Holistic Framework
+  content: 'Quality by Design is a systematic approach to development that begins with predefined objectives and emphasizes
+    product and process understanding and control. QbD comprises: Quality Target Product Profile (QTPP); identification of
+    CQAs; linkage between raw materials, manufacturing processes, and CQAs; design space establishment; control strategy definition;
+    and continued process verification. QbD is not equivalent to one specific tool or method but represents an integrated
+    philosophy where quality is built in during development, not tested in at the end. Application of QbD enables post-approval
+    flexibility and risk-based regulatory decisions.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - stability
+  - physicochemical
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q8%28R2%29%20Guideline.pdf
+  year: 2009
+  tags:
+  - quality_by_design
+  - qbd
+  - development_approach
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q8R2-2
+  type: guideline_clause
+  source: ICH Q8(R2)
+  title: Quality Target Product Profile (QTPP) Definition
+  content: 'The Quality Target Product Profile (QTPP) is a prospective summary of the quality characteristics of a drug product
+    that ideally will be achieved to ensure the desired quality, taking into account safety and efficacy. QTPP is established
+    based on the intended clinical use and may include: dosage form, strength, route of administration, container closure
+    system, stability, and relevant quality attributes. For biologics, QTPP characteristics include: potency (as it relates
+    to biological activity), purity (absence of product-related and process-related impurities), identity (isoform pattern),
+    stability (shelf-life), pH, osmolality, appearance, and sterility. QTPP drives CQA identification and is the link between
+    clinical requirements and manufacturing reality.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q8%28R2%29%20Guideline.pdf
+  year: 2009
+  tags:
+  - quality_target_product_profile
+  - qtpp
+  - development
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q8R2-3
+  type: guideline_clause
+  source: ICH Q8(R2)
+  title: Risk Assessment and Link to ICH Q9
+  content: 'Risk assessment, as described in ICH Q9 (Quality Risk Management), is central to QbD. Risk assessment should identify
+    which material attributes and process parameters have the greatest impact on CQAs. Methods such as Failure Mode and Effects
+    Analysis (FMEA), fault tree analysis, or design of experiments (DoE) are appropriate. High-risk parameters are those with
+    potential to significantly affect quality if not controlled. The assessment should justify the selection of CPPs and set
+    their ranges. Risk assessment is not a one-time activity but should be revisited as manufacturing experience accumulates.
+    Documented risk decisions support the scientific rationale for the control strategy.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q8%28R2%29%20Guideline.pdf
+  year: 2009
+  tags:
+  - risk_assessment
+  - quality_risk_management
+  - fmea
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q8R2-4
+  type: guideline_clause
+  source: ICH Q8(R2)
+  title: Control Strategy Development and Flexibility
+  content: 'Control strategy is the set of controls, derived from understanding, that ensures that the drug product will meet
+    its QTPP. Controls include: input material attributes and controls, process parameters and in-process controls, intermediate
+    controls, and finished product specifications. A strong control strategy, founded on good development understanding, provides
+    the scientific basis for post-approval changes and can support regulatory flexibility (e.g., wider acceptance criteria,
+    reduced testing). Controls are not limited to finished product testing but encompass the entire process. Multivariate
+    approaches to control are preferred. Documentation of the scientific rationale for each control element strengthens regulatory
+    submissions.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - physicochemical
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q8%28R2%29%20Guideline.pdf
+  year: 2009
+  tags:
+  - control_strategy
+  - post_approval_flexibility
+  - specifications
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q8R2-5
+  type: guideline_clause
+  source: ICH Q8(R2)
+  title: Real-Time Release Testing and Process Analytical Technology
+  content: 'Real-time release testing (RTRT) is the ability to release manufactured batches based on process and in-process
+    data rather than relying solely on finished product testing. RTRT is enabled by Process Analytical Technology (PAT) -
+    tools and approaches for analyzing and controlling manufacturing processes. PAT tools include: spectroscopy, process monitoring,
+    chemometrics, and design of experiments. RTRT requires strong process understanding and development data demonstrating
+    equivalence between in-process measurements and finished product quality. Implementation must be supported by validation
+    and risk assessment. RTRT can reduce time to release, improve supply chain agility, and provide better control of product
+    quality.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - physicochemical
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q8%28R2%29%20Guideline.pdf
+  year: 2009
+  tags:
+  - real_time_release_testing
+  - process_analytical_technology
+  - pat
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q12-1
+  type: guideline_clause
+  source: ICH Q12
+  title: Established Conditions (ECs) - Regulatory Framework
+  content: 'Established Conditions (ECs) are the conditions (parameters, ranges, acceptance criteria) that are established
+    during drug development and supported by experimental data or theoretical justification. ECs are proposed in the initial
+    regulatory submission (NDA/BLA) and are subject to formal approval. Once approved, changes within ECs may be implemented
+    and reported to the regulatory authority through a Post-Approval Change Management (PACM) module rather than requiring
+    pre-approval. ECs provide a science-based, predetermined regulatory framework that enables post-approval flexibility.
+    Categories of changes within ECs are pre-approved, reducing regulatory burden while maintaining safety and efficacy. ECs
+    may include: process parameters, raw material specifications, analytical methods, and acceptance criteria.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - identity
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q12_Guideline.pdf
+  year: 2019
+  tags:
+  - established_conditions
+  - lifecycle_management
+  - regulatory_framework
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q12-2
+  type: guideline_clause
+  source: ICH Q12
+  title: Post-Approval Change Management (PACM) Protocols
+  content: 'Post-Approval Change Management (PACM) is the systematic approach to introducing changes to approved drug products
+    throughout their lifecycle. Changes within Established Conditions can be reported in the PACM module without prior regulatory
+    approval. Changes outside ECs require traditional change protocols (e.g., CBE, CBE-0, CBE-30 in the US). PACM submission
+    must include: description of the change; justification for why change is within ECs; analytical/manufacturing data supporting
+    the change; comparative data if applicable; and proposed updates to product documentation. The timing and mode of PACM
+    reporting (annual, quarterly, or other) are specified. This framework balances flexibility with appropriate regulatory
+    oversight and transparency.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q12_Guideline.pdf
+  year: 2019
+  tags:
+  - post_approval_changes
+  - pacm
+  - lifecycle_management
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q12-3
+  type: guideline_clause
+  source: ICH Q12
+  title: Regulatory Flexibility Based on Enhanced Knowledge
+  content: 'ICH Q12 enables regulatory flexibility based on enhanced knowledge gained during drug development and post-approval
+    manufacturing experience. Established Conditions can be expanded or refined (e.g., wider process parameter ranges, additional
+    equipment options) if supported by data demonstrating quality is not compromised. For example: bioreactor scale-up within
+    established CQA ranges; supplier changes supported by equivalent characterization; analytical method improvements that
+    maintain or improve specificity and accuracy; equipment substitution with equivalent or superior capability. The concept
+    of "continued process verification" supports prospective flexibility by demonstrating process robustness across operating
+    ranges. This regulatory framework encourages continuous improvement and innovation throughout the product lifecycle.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q12_Guideline.pdf
+  year: 2019
+  tags:
+  - regulatory_flexibility
+  - enhanced_knowledge
+  - post_approval_changes
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q12-4
+  type: guideline_clause
+  source: ICH Q12
+  title: Comparability Assessment for Post-Approval Changes
+  content: 'Comparability protocols establish the scientific framework for demonstrating that a post-approval change does
+    not adversely affect the safety or efficacy of the drug product. Comparability is established through: analytical characterization
+    of pre- and post-change batches; in vitro bioassay data; nonclinical and/or clinical data if appropriate. For changes
+    to manufacturing site, process equipment, or supplier of critical raw material, comprehensive comparability packages may
+    be required. Head-to-head comparisons of batches made before and after the change, using validated analytical methods,
+    are the foundation of comparability assessment. Statistical approaches (e.g., equivalence testing) and similarity limits
+    based on historical batch variability are applied. Comparability documentation supports the regulatory decision that the
+    change maintains product quality.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - identity
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q12_Guideline.pdf
+  year: 2019
+  tags:
+  - comparability
+  - post_approval_changes
+  - equivalence_assessment
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q12-5
+  type: guideline_clause
+  source: ICH Q12
+  title: Product Lifecycle Approach - Continuous Monitoring and Improvement
+  content: 'ICH Q12 promotes a product lifecycle perspective where manufacturing is not static after approval but subject
+    to continuous monitoring, assessment, and strategic improvement. Manufacturers should: maintain systems to monitor process
+    performance (e.g., statistical process control charts); analyze trends in quality data to identify process improvements;
+    periodically review and update control strategies based on accumulated knowledge; implement root cause analysis for deviations;
+    and document rationale for process changes. Periodic evaluation of raw material quality, supplier performance, and analytical
+    methods is expected. This proactive approach enables manufacturers to maintain or improve product quality, increase efficiency,
+    and respond to scientific advances throughout the product lifecycle while maintaining regulatory compliance.
+
+    '
+  applicable_categories:
+  - stability
+  - purity
+  - potency
+  - identity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q12_Guideline.pdf
+  year: 2019
+  tags:
+  - lifecycle_approach
+  - continuous_monitoring
+  - process_improvement
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final

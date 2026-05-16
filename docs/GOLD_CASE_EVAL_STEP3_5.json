@@ -1,0 +1,568 @@
+{
+  "timestamp": "2026-04-12T20:11:28.986897+00:00",
+  "n_cases": 12,
+  "n_success": 12,
+  "matches": {
+    "verdict": 12,
+    "confidence_band": 11,
+    "blocking": 11,
+    "abstain": 12
+  },
+  "critical_behaviors": {
+    "gc07_abstains": {
+      "pass": true,
+      "expected": "abstain_flag=True",
+      "actual": "abstain_flag=True",
+      "verdict": "defer_package"
+    },
+    "gc10_no_blocking": {
+      "pass": true,
+      "expected": "blocking_cluster_count=0",
+      "actual": "blocking_cluster_count=0",
+      "verdict": "proceed_with_conditions"
+    },
+    "gc06_judges_not_abstain": {
+      "pass": true,
+      "expected": "abstain_flag=False",
+      "actual": "abstain_flag=False",
+      "verdict": "proceed_with_conditions"
+    },
+    "gc11_detects_insufficiency": {
+      "pass": true,
+      "expected": "blocking_cluster_count>=1",
+      "actual": "blocking_cluster_count=1",
+      "verdict": "supplement_required"
+    },
+    "gc12_no_overreact": {
+      "pass": true,
+      "expected": "verdict in [proceed, proceed_with_conditions]",
+      "actual": "verdict=proceed_with_conditions",
+      "verdict": "proceed_with_conditions"
+    }
+  },
+  "all_critical_pass": true,
+  "enrichment": {
+    "entries_enriched": 12,
+    "completeness_after": 1.0
+  },
+  "cases": [
+    {
+      "case_id": "GC-01",
+      "title": "Normal Sufficient Comparability",
+      "verdict": "proceed",
+      "confidence": 0.953,
+      "confidence_band": "high",
+      "blocking_cluster_count": 0,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "GUARD-003"
+      ],
+      "n_concerns": 0,
+      "top_concern": "",
+      "top_concern_severity": "",
+      "n_clusters": 4,
+      "blocking_cluster_ids": [],
+      "risk_semantics": [
+        "sufficient_evidence",
+        "sufficient_evidence",
+        "sufficient_evidence",
+        "sufficient_evidence"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-02",
+      "title": "Orthogonal Method Gap",
+      "verdict": "supplement_required",
+      "confidence": 0.623,
+      "confidence_band": "moderate",
+      "blocking_cluster_count": 1,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "AGGR-002",
+        "GUARD-003",
+        "SHIFT-002"
+      ],
+      "n_concerns": 1,
+      "top_concern": "Potency CQA lacks orthogonal method support per ICH Q5E. Affected attributes (CQA): potency_activity",
+      "top_concern_severity": "high",
+      "n_clusters": 3,
+      "blocking_cluster_ids": [
+        "CQA-0B483EA1AA"
+      ],
+      "risk_semantics": [
+        "orthogonal_gap",
+        "sufficient_evidence",
+        "sufficient_evidence"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-03",
+      "title": "Trending Stability Within Spec",
+      "verdict": "proceed_with_conditions",
+      "confidence": 0.78,
+      "confidence_band": "moderate",
+      "blocking_cluster_count": 0,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "GUARD-003",
+        "SHIFT-001"
+      ],
+      "n_concerns": 1,
+      "top_concern": "Downward trend detected in stability at accelerated stability. Affected attributes (CQA): stability_",
+      "top_concern_severity": "medium",
+      "n_clusters": 4,
+      "blocking_cluster_ids": [],
+      "risk_semantics": [
+        "trend_requires_monitoring",
+        "sufficient_evidence",
+        "sufficient_evidence",
+        "sufficient_evidence"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-04",
+      "title": "Better-Than-Reference Purity",
+      "verdict": "proceed",
+      "confidence": 0.962,
+      "confidence_band": "high",
+      "blocking_cluster_count": 0,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "GUARD-003",
+        "SHIFT-001"
+      ],
+      "n_concerns": 1,
+      "top_concern": "Favorable shift detected in purity: post-change values exceed pre-change. While seemingly positive, ",
+      "top_concern_severity": "medium",
+      "n_clusters": 4,
+      "blocking_cluster_ids": [],
+      "risk_semantics": [
+        "favorable_shift_requires_rationale",
+        "sufficient_evidence",
+        "sufficient_evidence",
+        "sufficient_evidence"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-05",
+      "title": "Conflicting Methods",
+      "verdict": "investigation_required",
+      "confidence": 0.508,
+      "confidence_band": "moderate",
+      "blocking_cluster_count": 1,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "AGGR-002",
+        "PREC-001",
+        "GUARD-003",
+        "SHIFT-002",
+        "CLUST-004"
+      ],
+      "n_concerns": 1,
+      "top_concern": "Methods within potency produce conflicting comparability conclusions. Affected attributes (CQA): pot",
+      "top_concern_severity": "critical",
+      "n_clusters": 3,
+      "blocking_cluster_ids": [
+        "CRIT-423CDFD08C"
+      ],
+      "risk_semantics": [
+        "sufficient_evidence",
+        "sufficient_evidence",
+        "contradiction"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-06",
+      "title": "No Precedent, Strong Guideline",
+      "verdict": "proceed_with_conditions",
+      "confidence": 0.78,
+      "confidence_band": "moderate",
+      "blocking_cluster_count": 0,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "GUARD-003",
+        "FALL-003"
+      ],
+      "n_concerns": 4,
+      "top_concern": "Evidence gap noted in potency: no direct regulatory precedent available. Affected attributes (CQA): ",
+      "top_concern_severity": "medium",
+      "n_clusters": 4,
+      "blocking_cluster_ids": [],
+      "risk_semantics": [
+        "assay_gap",
+        "assay_gap",
+        "assay_gap",
+        "assay_gap"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-07",
+      "title": "Should Abstain",
+      "verdict": "defer_package",
+      "confidence": 0.0,
+      "confidence_band": "low",
+      "blocking_cluster_count": 4,
+      "abstain_flag": true,
+      "abstain_reason": "ABST-001: 2 critical clusters with contradictory data; regulatory conflict detected (authority_conflict=True, geography_conflict=False); no applicable normative guidance (normative_refs=5, sparsity=False)",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "AGGR-002",
+        "PREC-001",
+        "AGGR-004",
+        "AGGR-006",
+        "GUARD-003",
+        "ABST-001",
+        "ABST-002",
+        "SHIFT-002",
+        "CLUST-004",
+        "AGGR-003"
+      ],
+      "n_concerns": 6,
+      "top_concern": "Methods within potency produce conflicting comparability conclusions. Affected attributes (CQA): gly",
+      "top_concern_severity": "critical",
+      "n_clusters": 5,
+      "blocking_cluster_ids": [
+        "CRIT-6C22DFE260",
+        "XCAT-B022B0D561",
+        "CRIT-DE6302F574",
+        "CRIT-0BB3C389FE"
+      ],
+      "risk_semantics": [
+        "assay_gap",
+        "sufficient_evidence",
+        "contradiction",
+        "contradiction",
+        "contradiction"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-08",
+      "title": "Geography Conflict",
+      "verdict": "proceed_with_conditions",
+      "confidence": 0.78,
+      "confidence_band": "moderate",
+      "blocking_cluster_count": 0,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "GUARD-003",
+        "FALL-003"
+      ],
+      "n_concerns": 1,
+      "top_concern": "Evidence gap noted in stability: divergent acceptance criteria across jurisdictions. Affected attrib",
+      "top_concern_severity": "medium",
+      "n_clusters": 4,
+      "blocking_cluster_ids": [],
+      "risk_semantics": [
+        "assay_gap",
+        "sufficient_evidence",
+        "sufficient_evidence",
+        "sufficient_evidence"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-09",
+      "title": "Dated Support Dominates",
+      "verdict": "supplement_required",
+      "confidence": 0.65,
+      "confidence_band": "moderate",
+      "blocking_cluster_count": 0,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "AGGR-006",
+        "GUARD-003",
+        "FALL-003"
+      ],
+      "n_concerns": 4,
+      "top_concern": "Evidence gap noted in potency: supporting evidence is dated (pre-QbD era). Affected attributes (CQA)",
+      "top_concern_severity": "medium",
+      "n_clusters": 4,
+      "blocking_cluster_ids": [],
+      "risk_semantics": [
+        "assay_gap",
+        "assay_gap",
+        "assay_gap",
+        "assay_gap"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-10",
+      "title": "Concern Pattern Only / Weak Normative",
+      "verdict": "proceed_with_conditions",
+      "confidence": 0.78,
+      "confidence_band": "moderate",
+      "blocking_cluster_count": 0,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "GUARD-003",
+        "GUARD-001"
+      ],
+      "n_concerns": 1,
+      "top_concern": "Only concern pattern references available for physicochemical; no normative or precedent support for",
+      "top_concern_severity": "low",
+      "n_clusters": 4,
+      "blocking_cluster_ids": [],
+      "risk_semantics": [
+        "pattern_concern_only",
+        "sufficient_evidence",
+        "sufficient_evidence",
+        "sufficient_evidence"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-11",
+      "title": "Hidden Package Insufficiency",
+      "verdict": "supplement_required",
+      "confidence": 0.63,
+      "confidence_band": "moderate",
+      "blocking_cluster_count": 1,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "AGGR-002",
+        "GUARD-003",
+        "SHIFT-002",
+        "AGGR-003"
+      ],
+      "n_concerns": 1,
+      "top_concern": "Package-level gap detected: potency cluster is missing a required method type per ICH Q5E despite in",
+      "top_concern_severity": "high",
+      "n_clusters": 4,
+      "blocking_cluster_ids": [
+        "CAT-72EA1B2562"
+      ],
+      "risk_semantics": [
+        "assay_gap",
+        "sufficient_evidence",
+        "sufficient_evidence",
+        "sufficient_evidence"
+      ],
+      "status": "success"
+    },
+    {
+      "case_id": "GC-12",
+      "title": "Mixed Weak Evidence, Non-Blocking",
+      "verdict": "proceed_with_conditions",
+      "confidence": 0.78,
+      "confidence_band": "moderate",
+      "blocking_cluster_count": 0,
+      "abstain_flag": false,
+      "abstain_reason": "",
+      "decision_rule_ids": [
+        "AGGR-001",
+        "GUARD-003",
+        "FALL-003"
+      ],
+      "n_concerns": 3,
+      "top_concern": "Evidence gap noted in potency: mixed evidence strength with limited precedent. Affected attributes (",
+      "top_concern_severity": "medium",
+      "n_clusters": 4,
+      "blocking_cluster_ids": [],
+      "risk_semantics": [
+        "assay_gap",
+        "assay_gap",
+        "sufficient_evidence",
+        "assay_gap"
+      ],
+      "status": "success"
+    }
+  ],
+  "comparisons": [
+    {
+      "case_id": "GC-01",
+      "title": "Normal Sufficient Comparability",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "proceed",
+      "expected_verdict": "proceed",
+      "actual_confidence_band": "high",
+      "expected_confidence_band": "high",
+      "actual_blocking": 0,
+      "expected_blocking": 0
+    },
+    {
+      "case_id": "GC-02",
+      "title": "Orthogonal Method Gap",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "supplement_required",
+      "expected_verdict": "supplement_required",
+      "actual_confidence_band": "moderate",
+      "expected_confidence_band": "moderate",
+      "actual_blocking": 1,
+      "expected_blocking": 1
+    },
+    {
+      "case_id": "GC-03",
+      "title": "Trending Stability Within Spec",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "proceed_with_conditions",
+      "expected_verdict": "proceed_with_conditions",
+      "actual_confidence_band": "moderate",
+      "expected_confidence_band": "moderate",
+      "actual_blocking": 0,
+      "expected_blocking": 0
+    },
+    {
+      "case_id": "GC-04",
+      "title": "Better-Than-Reference Purity",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "proceed",
+      "expected_verdict": "proceed",
+      "actual_confidence_band": "high",
+      "expected_confidence_band": "high",
+      "actual_blocking": 0,
+      "expected_blocking": 0
+    },
+    {
+      "case_id": "GC-05",
+      "title": "Conflicting Methods",
+      "verdict_match": true,
+      "confidence_band_match": false,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "investigation_required",
+      "expected_verdict": "investigation_required",
+      "actual_confidence_band": "moderate",
+      "expected_confidence_band": "low",
+      "actual_blocking": 1,
+      "expected_blocking": 1
+    },
+    {
+      "case_id": "GC-06",
+      "title": "No Precedent, Strong Guideline",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "proceed_with_conditions",
+      "expected_verdict": "proceed_with_conditions",
+      "actual_confidence_band": "moderate",
+      "expected_confidence_band": "moderate",
+      "actual_blocking": 0,
+      "expected_blocking": 0
+    },
+    {
+      "case_id": "GC-07",
+      "title": "Should Abstain",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": false,
+      "abstain_match": true,
+      "actual_verdict": "defer_package",
+      "expected_verdict": "defer_package",
+      "actual_confidence_band": "low",
+      "expected_confidence_band": "low",
+      "actual_blocking": 4,
+      "expected_blocking": 2
+    },
+    {
+      "case_id": "GC-08",
+      "title": "Geography Conflict",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "proceed_with_conditions",
+      "expected_verdict": "proceed_with_conditions",
+      "actual_confidence_band": "moderate",
+      "expected_confidence_band": "moderate",
+      "actual_blocking": 0,
+      "expected_blocking": 0
+    },
+    {
+      "case_id": "GC-09",
+      "title": "Dated Support Dominates",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "supplement_required",
+      "expected_verdict": "supplement_required",
+      "actual_confidence_band": "moderate",
+      "expected_confidence_band": "moderate",
+      "actual_blocking": 0,
+      "expected_blocking": 0
+    },
+    {
+      "case_id": "GC-10",
+      "title": "Concern Pattern Only / Weak Normative",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "proceed_with_conditions",
+      "expected_verdict": "proceed_with_conditions",
+      "actual_confidence_band": "moderate",
+      "expected_confidence_band": "moderate",
+      "actual_blocking": 0,
+      "expected_blocking": 0
+    },
+    {
+      "case_id": "GC-11",
+      "title": "Hidden Package Insufficiency",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "supplement_required",
+      "expected_verdict": "supplement_required",
+      "actual_confidence_band": "moderate",
+      "expected_confidence_band": "moderate",
+      "actual_blocking": 1,
+      "expected_blocking": 1
+    },
+    {
+      "case_id": "GC-12",
+      "title": "Mixed Weak Evidence, Non-Blocking",
+      "verdict_match": true,
+      "confidence_band_match": true,
+      "blocking_match": true,
+      "abstain_match": true,
+      "actual_verdict": "proceed_with_conditions",
+      "expected_verdict": "proceed_with_conditions",
+      "actual_confidence_band": "moderate",
+      "expected_confidence_band": "moderate",
+      "actual_blocking": 0,
+      "expected_blocking": 0
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence Node",
+  "description": "Base schema for all evidence nodes in the decision engine",
+  "type": "object",
+  "required": ["id", "type", "source", "confidence"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique node identifier" },
+    "type": { "type": "string", "enum": ["measurement", "comparison", "attribution", "decision"] },
+    "source": {
+      "type": "object",
+      "properties": {
+        "assay": { "type": "string" },
+        "lot_id": { "type": "string" },
+        "date": { "type": "string", "format": "date" },
+        "operator": { "type": "string" },
+        "reference": { "type": "string" }
+      }
+    },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "value": {},
+    "impact_claim": { "type": "string" },
+    "linked_nodes": { "type": "array", "items": { "type": "string" } }
+  }
+}

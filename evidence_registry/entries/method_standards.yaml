@@ -1,0 +1,781 @@
+entries:
+- id: MS-SEC-001
+  type: method_standard
+  source: USP <621> / Ph. Eur. 2.2.30
+  title: Size-Exclusion Chromatography for Aggregate Analysis
+  content: 'SEC separates molecules by hydrodynamic radius, measuring high molecular weight (HMW) aggregates, low molecular
+    weight (LMW) fragments, and monomer distribution. For mAbs and therapeutic proteins, aggregates are typically quantified
+    as % monomer. Regulatory acceptance generally requires ≥95% monomer for active pharmaceutical ingredient (API) and drug
+    product. ICH Q6B guidelines specify that aggregate testing must be included in release and stability protocols. SEC is
+    a stability-indicating method that tracks protein degradation pathways. Required during development, IND/CTA, BLA/MAA
+    submissions, and ongoing lot release. Calibration with appropriate standards (globular proteins, dextrans) is critical
+    for accurate size determination. Method typically uses UV detection at 280 nm, with flow rates of 0.5-1.0 mL/min for analytical
+    columns.
+
+    '
+  applicable_categories:
+  - purity
+  - stability
+  - comparability
+  confidence: 0.98
+  url: https://www.usp.org
+  year: 2023
+  tags:
+  - SEC
+  - aggregates
+  - HMW
+  - LMW
+  - fragments
+  - purity
+  - stability
+  - chromatography
+  - monomer
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: MS-CEX-001
+  type: method_standard
+  source: ICH Q6B / Ph. Eur. 2.2.6
+  title: Cation-Exchange Chromatography for Charge Variant Analysis
+  content: 'CEX (cation-exchange) separates proteins by isoelectric point differences, resolving charge variants arising from
+    deamidation, oxidation, phosphorylation, and sialic acid content. Charge variants are expressed as % of total protein.
+    Regulatory acceptance requires characterization of all significant charge variants (typically >1% or major peaks) and
+    functional assessment of minor variants. For mAbs, acidic variants may arise from aspartate isomerization (pAsp) and basic
+    variants from lysine truncation. ICH Q3B guidance requires trend analysis during stability to monitor charge variant emergence.
+    Method is typically run at pH 4.0-4.5 with salt gradients, using UV 280 nm detection. Required in characterization, stability,
+    manufacturing process validation, and comparability studies. Salt gradient can range from 0-250 mM NaCl depending on protein
+    properties.
+
+    '
+  applicable_categories:
+  - purity
+  - characterization
+  - stability
+  - comparability
+  confidence: 0.97
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - CEX
+  - IEX
+  - charge variants
+  - deamidation
+  - oxidation
+  - purity
+  - heterogeneity
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-RP-HPLC-001
+  type: method_standard
+  source: USP <202> / Ph. Eur. 2.2.40
+  title: Reversed-Phase HPLC for Purity and Identity
+  content: 'RP-HPLC measures protein purity by separating proteins and related substances based on hydrophobicity. For intact
+    protein analysis, typically uses ion-pairing reagents (TFA or formic acid) with acetonitrile gradients. Acceptance criteria
+    for drug substance require ≥95% purity; impurities >0.05% must be identified. For peptide mapping analysis, RP-HPLC-UV
+    is the workhorse method in CMC packages, typically achieving >98% purity for therapeutic peptides. UV detection at 214
+    nm (for peptide bond) or 280 nm (aromatic residues) are standard. Regulatory guidance (ICH Q2(R2)) requires stability-indicating
+    capability. Method must resolve all known and related substances. Temperature control (±2°C) is critical. Required in
+    identity, purity, and related substances testing throughout product lifecycle.
+
+    '
+  applicable_categories:
+  - purity
+  - identity
+  confidence: 0.98
+  url: https://www.usp.org
+  year: 2023
+  tags:
+  - RP-HPLC
+  - HPLC
+  - purity
+  - identity
+  - related substances
+  - intact protein
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: MS-HIC-001
+  type: method_standard
+  source: Ph. Eur. 2.2.33
+  title: Hydrophobic Interaction Chromatography for Oxidation Variants
+  content: 'HIC separates proteins based on surface hydrophobicity, effectively resolving oxidation-induced variants, particularly
+    methionine and tryptophan oxidation. Oxidized variants elute later (increased hydrophobicity) than native protein. Regulatory
+    acceptance requires oxidation variants to be <5% of total protein for most mAbs and recombinant proteins. HIC is complementary
+    to CEX as oxidation can occur across charge variants. The method uses high salt mobile phases (ammonium sulfate, sodium
+    phosphate) with decreasing salt gradients at 20-30°C. UV detection at 280 nm. Stability-indicating method required in
+    stability protocols. Trend analysis of oxidation variants is critical in storage condition studies. Required during characterization,
+    stability, and comparability assessment.
+
+    '
+  applicable_categories:
+  - purity
+  - stability
+  - characterization
+  confidence: 0.96
+  url: https://www.edqm.eu
+  year: 2023
+  tags:
+  - HIC
+  - oxidation
+  - variants
+  - methionine
+  - tryptophan
+  - stability
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+- id: MS-AC-001
+  type: method_standard
+  source: ICH Q6B
+  title: Affinity Chromatography for Active Content and Identity
+  content: 'Affinity chromatography measures functional/active content by capturing protein via specific binding interactions
+    (e.g., Protein A for mAbs, HSA-binding domains for fusion proteins). Elution is quantitative relative to standards. For
+    mAbs, Protein A chromatography is standard; acceptance criteria typically require recovery of 90-110% relative to total
+    protein. FcRn-based affinity methods measure neonatal Fc receptor binding, relevant for half-life and PK. Method provides
+    orthogonal confirmation of identity and estimates of functional protein content vs. total mass. Regulatory expectation
+    is inclusion in release testing and stability protocols. Buffer conditions, ligand capacity, and binding kinetics must
+    be characterized during method development. Required in potency assessment, manufacturing process validation, and comparability
+    studies.
+
+    '
+  applicable_categories:
+  - purity
+  - identity
+  - potency
+  - characterization
+  confidence: 0.95
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - affinity chromatography
+  - Protein A
+  - active content
+  - identity
+  - functional protein
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-UPLC-001
+  type: method_standard
+  source: USP <621> / Ph. Eur. 2.2.40
+  title: Ultra-Performance Liquid Chromatography for Rapid Purity Assessment
+  content: 'UPLC (2-5 μm particles, higher pressures ~15,000 psi) provides improved resolution and reduced analysis time vs.
+    traditional HPLC. Used for peptide mapping, impurity detection, and related substances analysis in both drug substance
+    and drug product. Acceptance criteria align with HPLC methods (>95-98% purity). UPLC is increasingly preferred in manufacturing
+    QC and stability monitoring due to throughput and robustness. Methods must employ stability-indicating capability (typically
+    gradient RP-UPLC with UV or MS detection). Column chemistry (BEH, CSH, Cortecs) impacts selectivity and reproducibility.
+    Regulatory acceptance is equivalent to HPLC if method development follows ICH Q2(R2) guidelines. Required in high-throughput
+    stability monitoring, manufacturing release, and comparability programs.
+
+    '
+  applicable_categories:
+  - purity
+  - identity
+  confidence: 0.94
+  url: https://www.usp.org
+  year: 2023
+  tags:
+  - UPLC
+  - HPLC
+  - high-pressure
+  - rapid analysis
+  - purity
+  - efficiency
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: MS-CE-SDS-001
+  type: method_standard
+  source: Ph. Eur. 2.2.47
+  title: Capillary Electrophoresis-SDS for Purity and Subunit Analysis
+  content: 'CE-SDS (reduced and non-reduced) measures purity under denaturing conditions, separating subunits and related
+    substances by charge and size. Reduced conditions break disulfide bonds; non-reduced maintains tertiary structure. For
+    mAbs, typical acceptance is ≥95% purity on non-reduced CE-SDS (intact IgG), and ≥95% on reduced CE-SDS (heavy and light
+    chains). Method is fast (~30 min) and requires minimal sample. Complementary to SEC and RP-HPLC, providing orthogonal
+    separation mechanism. UV detection at 214 nm. Regulatory expectation includes both reduced and non-reduced analysis in
+    characterization and stability. Method development per ICH Q2(R2) requires buffer system optimization (borate buffer,
+    pH 8.0-8.5 typical). Required in identity, purity, and manufacturing QC protocols.
+
+    '
+  applicable_categories:
+  - purity
+  - identity
+  - characterization
+  confidence: 0.96
+  url: https://www.edqm.eu
+  year: 2023
+  tags:
+  - CE-SDS
+  - capillary electrophoresis
+  - SDS
+  - purity
+  - reduced
+  - non-reduced
+  - subunits
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+- id: MS-cIEF-001
+  type: method_standard
+  source: Ph. Eur. 2.2.37 / USP <857>
+  title: Capillary Isoelectric Focusing for Charge Heterogeneity
+  content: 'cIEF and iCIEF (imaged cIEF) measure charge heterogeneity by separating proteins at their isoelectric points within
+    a pH gradient. Each charge variant appears as discrete peak; pI can be determined with appropriate standards. For mAbs,
+    typical specification requires characterization and quantification of all variants >0.5%. Main variants (monomer and any
+    acidic/basic variants) typically represent >95% of total. Method provides complementary information to CEX but with better
+    resolution of closely spaced charge variants. iCIEF includes automated peak detection and pI calculation. Regulatory expectation
+    includes characterization in stability and comparability studies. Method requires careful pH gradient preparation, neutral
+    capillary coating, and ampholyte selection. Currently preferred for mAb and recombinant protein characterization in development
+    and manufacturing.
+
+    '
+  applicable_categories:
+  - characterization
+  - purity
+  confidence: 0.94
+  url: https://www.usp.org
+  year: 2023
+  tags:
+  - cIEF
+  - iCIEF
+  - charge heterogeneity
+  - isoelectric point
+  - variants
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: MS-CGE-001
+  type: method_standard
+  source: Ph. Eur. 2.2.33
+  title: Capillary Gel Electrophoresis for Molecular Weight Determination
+  content: 'CGE provides size-based separation under denaturing conditions, similar to SDS-PAGE but with improved automation
+    and quantitation. Particularly useful for measuring monomer MW and detecting size variants (fragmentation, C-terminal
+    processing). Acceptance criteria vary by molecule but typically require ≥95% of expected MW population. Method can resolve
+    1-2 kDa differences, useful for detecting clipped forms (heavy chain C-terminal clipping, signal peptide retention). Regulatory
+    guidance requires MW determination by multiple orthogonal methods (intact MS, peptide mapping MW calculation, CGE). CGE
+    is faster than traditional SDS-PAGE and more quantitative. Required in characterization and when MW variants are suspected.
+    Buffer conditions (glycine, SDS concentration) must be optimized for target protein.
+
+    '
+  applicable_categories:
+  - characterization
+  - identity
+  confidence: 0.93
+  url: https://www.edqm.eu
+  year: 2023
+  tags:
+  - CGE
+  - capillary gel
+  - electrophoresis
+  - molecular weight
+  - size variants
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+- id: MS-INTACT-MS-001
+  type: method_standard
+  source: ICH Q6B / FDA CMC Guidance
+  title: Intact Mass Spectrometry Analysis by ESI-MS and MALDI
+  content: 'Intact MS measures the total molecular weight of the protein including all post-translational modifications (glycosylation,
+    oxidation, etc.). ESI-MS (electrospray ionization) is preferred for aqueous samples and provides charge state distribution;
+    MALDI (matrix-assisted laser desorption/ionization) requires matrix and is suited for dried samples. Typical acceptance
+    criteria require measured MW to match theoretical within ±1% (or ±100 Da for mAbs). Multiple charge states in ESI-MS can
+    be deconvoluted to provide monoisotopic mass. Method is critical for detecting unexpected modifications (e.g., N-terminal
+    truncations, unexpected glycosylation). Regulatory expectation includes intact MS in IND/CTA and BLA/MAA submissions.
+    Mass accuracy and mass resolution depend on instrument capability (TOF, Orbitrap, Q-TOF). Required in characterization,
+    process development, and stability to detect emerging variants. Post-translational modifications can shift mass by 1-3
+    kDa (e.g., N-glycan ±2.5 kDa).
+
+    '
+  applicable_categories:
+  - characterization
+  - identity
+  - purity
+  confidence: 0.97
+  url: https://www.fda.gov
+  year: 2023
+  tags:
+  - intact MS
+  - ESI-MS
+  - MALDI
+  - mass spectrometry
+  - molecular weight
+  - modifications
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-PMAP-001
+  type: method_standard
+  source: ICH Q3B / USP <621>
+  title: Peptide Mapping by LC-MS/MS for Identity and Purity
+  content: 'Peptide mapping (tryptic or peptic digest followed by RP-HPLC or RP-UPLC coupled to MS/MS) provides high-confidence
+    protein identification and detects trace impurities and modifications. Each peptide peak is identified by mass and fragmentation
+    pattern. Regulatory expectation requires all major peaks (>0.5%) to be identified; coverage should ideally exceed 85-90%
+    of protein sequence. Method is stability-indicating and detects oxidation, deamidation, clipping, and unexpected proteolysis.
+    MS/MS detection (selected reaction monitoring, SRM) provides excellent specificity. Acceptance criteria for drug substance
+    require ≥95% purity, and identified related substances must be characterized. Required in IND, manufacturing process validation,
+    stability, and comparability studies. Enzymatic digestion conditions (buffer, temperature, enzyme:substrate ratio, digestion
+    time) must be standardized.
+
+    '
+  applicable_categories:
+  - identity
+  - purity
+  - characterization
+  confidence: 0.98
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - peptide mapping
+  - LC-MS/MS
+  - identity
+  - purity
+  - proteolysis
+  - modifications
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: MS-GLYCAN-MS-001
+  type: method_standard
+  source: ICH Q6B / Pharmacopeial Methods
+  title: Glycan Profiling by MALDI-TOF MS or LC-MS
+  content: 'Glycan profiling characterizes N- and O-linked glycosylation by releasing glycans (enzymatic: PNGase F for N-glycans;
+    or chemical: hydrazine for O-glycans), then analyzing by MALDI-TOF or LC-MS/MS. Major glycan species are quantified as
+    % of total glycans. For mAbs, typical acceptance requires ≥95% core fucosylated, galactosylated biantennary complex N-glycans;
+    afucosylated and non-fucosylated variants are typically <5%. O-glycosylation (if present) must be characterized. Glycosylation
+    impacts Fc effector functions (ADCC, CDC), drug product stability, and PK. ICH Q6B requires glycan characterization in
+    characterization and comparability studies. Method development includes glycan derivatization (e.g., permethylation, labeling
+    with 2-AB) to enhance ionization. Required in process development, manufacturing changes, and comparability programs to
+    ensure consistent glycosylation.
+
+    '
+  applicable_categories:
+  - characterization
+  - comparability
+  confidence: 0.95
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - glycan profiling
+  - MALDI
+  - LC-MS
+  - N-glycan
+  - O-glycan
+  - fucosylation
+  - characterization
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-HCP-LCMS-001
+  type: method_standard
+  source: ICH Q3A / Pharmacopeial Methods
+  title: Host Cell Protein Identification by LC-MS/MS
+  content: 'HCP identification by quantitative proteomics (LC-MS/MS) detects and identifies residual host cell proteins in
+    drug substance and drug product. Unbiased mass spectrometry approach identifies all proteins present above detection limit
+    (~1 ng/mL for sensitive methods). Regulatory acceptance requires control of HCP at <100 ng/mg (mAb or recombinant protein)
+    with characterization of any single HCP >1 ng/mg. Method uses tryptic digestion, RP-UPLC-MS/MS, and spectral library matching
+    for protein identification. Supports ELISA-based HCP methods by identifying specific species driving regulatory limits.
+    Trending HCP levels during manufacturing process validation is critical. Required in process characterization, manufacturing
+    process validation, and lot release testing when HCP concerns exist.
+
+    '
+  applicable_categories:
+  - purity
+  - characterization
+  confidence: 0.94
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - host cell protein
+  - HCP
+  - LC-MS/MS
+  - proteomics
+  - identification
+  content_type: paraphrase
+  document_status: final
+- id: MS-POTENCY-CBPA-001
+  type: method_standard
+  source: ICH Q6B / USP <801>
+  title: 'Cell-Based Potency Assay: Reporter Gene Assay'
+  content: 'Reporter gene assays measure target engagement and downstream signaling by using engineered cell lines with target
+    receptors and luciferase or fluorescent protein reporters. For example, cytokine/growth factor therapeutics are measured
+    by dose-dependent reporter activation. Acceptance criteria typically define a potency range (e.g., 80-120% relative to
+    reference standard) with coefficient of variation <20%. Assay specificity is critical; off-target activation must be <5%
+    of on-target signal. Method development requires optimization of cell line, incubation conditions (temperature, time,
+    CO2), reporter detection format (luminescence, fluorescence), and reference standard qualification. Regulatory expectation
+    includes cell line characterization (mycoplasma-free, identity, banking). Required in potency specification, stability,
+    manufacturing process validation, and lot release. Trend analysis during storage is essential to detect loss of potency.
+
+    '
+  applicable_categories:
+  - potency
+  - characterization
+  confidence: 0.92
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - cell-based potency
+  - reporter gene
+  - bioassay
+  - luciferase
+  - fluorescence
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-POTENCY-PROLIF-001
+  type: method_standard
+  source: ICH Q6B / USP <801>
+  title: 'Cell-Based Potency Assay: Proliferation and Viability Assay'
+  content: 'Proliferation assays measure therapeutic activity by monitoring cell growth/viability in response to drug (e.g.,
+    growth factor-induced proliferation, cytotoxic antibody-induced cell death). Common endpoints include ATP-based viability
+    (CellTiter-Glo), LDH release (cytotoxicity), or cell counting. Potency is expressed as EC50 or IC50 relative to reference
+    standard. Acceptance criteria require dose-response with R² >0.95, potency within 80-120% of target, and inter-assay CV
+    <20%. Assay robustness requires control of cell passage number, culture conditions, incubation time, and temperature.
+    Regulatory expectation includes multiple cell sources (primary and/or cell lines) and species validation. Required in
+    potency specification, stability, and comparability assessment (especially for manufacturing process changes). Results
+    inform patient dosing and efficacy predictions.
+
+    '
+  applicable_categories:
+  - potency
+  - characterization
+  confidence: 0.92
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - cell-based potency
+  - proliferation
+  - viability
+  - cytotoxicity
+  - EC50
+  - IC50
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-SPR-001
+  type: method_standard
+  source: ICH Q6B / FDA CMC Guidance
+  title: Surface Plasmon Resonance for Binding Kinetics (KON, KOFF, KD)
+  content: 'SPR (Surface Plasmon Resonance) and BLI (Biolayer Interferometry) measure real-time binding kinetics between therapeutic
+    protein and target. Kinetic parameters (kon, koff, KD) are derived from association and dissociation curves. Acceptance
+    criteria typically require KD consistency (within 2-fold of reference) and kinetic parameters consistent across lots.
+    Method development includes immobilization strategy (amine coupling, streptavidin capture), flow rate optimization, and
+    regeneration buffer selection. Regulatory expectation includes characterization during process development and comparative
+    kinetics for manufacturing changes (CMC). Binding kinetics relate to efficacy and PK (target occupancy, clearance). Required
+    in comparability studies (especially biosimilar development and manufacturing process changes). Temperature control (25°C
+    standard) is critical for reproducibility.
+
+    '
+  applicable_categories:
+  - characterization
+  - comparability
+  confidence: 0.94
+  url: https://www.fda.gov
+  year: 2023
+  tags:
+  - SPR
+  - BLI
+  - binding kinetics
+  - KON
+  - KOFF
+  - KD
+  - surface plasmon resonance
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-ELISA-TARGET-001
+  type: method_standard
+  source: ICH Q6B / USP <825>
+  title: ELISA for Target Binding and Functional Content
+  content: 'ELISA (sandwich or competitive format) quantifies target-binding capacity by capturing drug with immobilized target
+    (or vice versa). For mAbs, sandwich ELISA using target and detection antibody quantifies total protein binding functional
+    antigen. Acceptance criteria require dose-response with R² >0.98, accuracy 90-110%, and inter-assay precision (CV) <15%.
+    Method development includes optimal plate coating, blocking, incubation temperatures, and detection format (HRP-TMB, chemiluminescence).
+    Reference standard qualification is critical; may differ from mass-based reference (e.g., deglycosylated vs. native).
+    Regulatory expectation includes qualification of capture reagents (antibodies, antigens) and stability. Required in potency
+    specification, stability, manufacturing process validation, and lot release. Trending during stability indicates loss
+    of target-binding functionality.
+
+    '
+  applicable_categories:
+  - potency
+  - characterization
+  confidence: 0.93
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - ELISA
+  - target binding
+  - sandwich
+  - competitive
+  - functional content
+  - potency
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-FCRNBINDING-001
+  type: method_standard
+  source: ICH Q6B / FDA CMC Guidance
+  title: FcRn Binding Assay for Neonatal Fc Receptor Interaction
+  content: 'FcRn binding assay measures the interaction between mAb Fc domain and neonatal Fc receptor (FcRn), which determines
+    serum half-life and neonatal transfer. Typically measured by SPR, ELISA, or bio-layer interferometry. FcRn binding affinity
+    directly correlates with mAb circulating half-life; binding defects lead to rapid clearance. Acceptance criteria require
+    FcRn binding comparable to reference standard (within 2-fold). Method development includes pH-dependent binding characterization
+    (FcRn binds mAb at acidic pH ~6.0, not at neutral pH ~7.4). Regulatory expectation includes FcRn binding assessment in
+    characterization and comparability (especially post-Fc domain changes). Required in process development and manufacturing
+    changes that could affect Fc glycosylation or sequence. Mutation confirmation is critical for engineered mAbs (e.g., M252Y/S254T
+    for enhanced half-life).
+
+    '
+  applicable_categories:
+  - characterization
+  - comparability
+  - potency
+  confidence: 0.93
+  url: https://www.fda.gov
+  year: 2023
+  tags:
+  - FcRn
+  - neonatal Fc receptor
+  - half-life
+  - SPR
+  - ELISA
+  - Fc binding
+  - PK
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-DSC-001
+  type: method_standard
+  source: ICH Q6B / Pharmacopeial Methods
+  title: Differential Scanning Calorimetry for Thermal Stability
+  content: 'DSC measures protein thermal stability by recording enthalpy changes during heating. Melting temperature (Tm)
+    and transition enthalpy (ΔH) characterize protein unfolding. For mAbs, typical Tm ranges 60-75°C. Acceptance criteria
+    require Tm within ±2°C of reference standard; major onset temperature should be consistent. DSC is stability-indicating;
+    decreased Tm or appearance of additional transitions indicates aggregation or degradation. Method development includes
+    scan rate optimization (2-5°C/min typical), buffer selection, and reference baseline subtraction. Regulatory expectation
+    includes DSC in characterization, stability, and process development. DSC predicts protein shelf-life at ambient conditions
+    based on Arrhenius extrapolation. Complementary to differential scanning fluorimetry (DSF) for high-throughput screening.
+    Required in formulation development and excipient compatibility studies.
+
+    '
+  applicable_categories:
+  - characterization
+  - stability
+  confidence: 0.93
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - DSC
+  - DSF
+  - thermal stability
+  - melting temperature
+  - Tm
+  - differential scanning
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-DLS-001
+  type: method_standard
+  source: ICH Q6B / Pharmacopeial Methods
+  title: Dynamic Light Scattering for Particle Size and Polydispersity
+  content: 'DLS measures particle size distribution and polydispersity index (PDI) by analyzing laser light scattered from
+    brownian motion of particles. For mAb solutions, typical hydrodynamic diameter is 8-12 nm with PDI <0.2 (monodisperse).
+    Acceptance criteria require size consistency with reference standard (within ±1 nm) and PDI <0.3 (indicating homogenous
+    population without aggregates). Method is sensitive to aggregates; presence of HMW species shifts size distribution and
+    increases PDI. DLS is complementary to SEC and orthogonal detection of aggregation. Sample preparation is critical (0.22
+    μm filter, absence of dust). Regulatory expectation includes DLS in formulation development, process optimization, and
+    stability assessment (especially freeze-thaw, shaking stress). Temperature control (typically 25°C) essential for reproducibility.
+    Required when aggregate control is critical.
+
+    '
+  applicable_categories:
+  - characterization
+  - stability
+  confidence: 0.92
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - DLS
+  - dynamic light scattering
+  - particle size
+  - polydispersity
+  - aggregates
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-AUC-001
+  type: method_standard
+  source: ICH Q6B / Pharmacopeial Methods
+  title: Analytical Ultracentrifugation for Size and Shape Characterization
+  content: 'AUC (sedimentation velocity and sedimentation equilibrium) measures protein molecular weight, oligomeric state,
+    and shape (via sedimentation coefficient). Sedimentation velocity provides hydrodynamic properties; sedimentation equilibrium
+    gives MW independent of shape. For mAbs, MW should match theoretical (~150 kDa for IgG monomer). Oligomeric state is confirmed
+    (e.g., monomer vs. dimer). Acceptance criteria require MW within ±5% of theoretical and confirmed oligomerization (98%+
+    monomer expected). AUC detects aggregates and fragmentation not apparent in SEC or DLS. Method is precision technique
+    requiring careful sample dialysis, absorbance optimization (280 nm or 230 nm), and data analysis. Regulatory expectation
+    includes AUC in characterization when oligomeric state is in question or during process development. Required in comparability
+    studies to confirm MW equivalence post-manufacturing changes.
+
+    '
+  applicable_categories:
+  - characterization
+  - comparability
+  confidence: 0.91
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - AUC
+  - analytical ultracentrifugation
+  - sedimentation
+  - molecular weight
+  - oligomeric state
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-CD-001
+  type: method_standard
+  source: ICH Q6B / Pharmacopeial Methods
+  title: Circular Dichroism Spectroscopy for Secondary Structure
+  content: 'CD spectroscopy measures protein secondary structure content (α-helix, β-sheet, random coil) via differential
+    absorption of left and right circularly polarized light. Far-UV CD (190-250 nm) measures backbone conformation; near-UV
+    CD (250-350 nm) reports aromatic residue environment. For mAbs, typical secondary structure is ~50% α-helix, ~40% β-sheet.
+    Acceptance criteria require CD spectra consistent with reference standard (visual superimposition or numerical deconvolution
+    within ±10% secondary structure content). CD is sensitive to unfolding, aggregation, and oxidation. Method development
+    includes cuvette selection (quartz 0.1-1 mm path length), scan speed, and buffer compatibility (avoid high salt/absorbance).
+    Regulatory expectation includes CD in characterization and stability to detect structural changes. Required when secondary
+    structure integrity is critical (e.g., enzyme therapeutics).
+
+    '
+  applicable_categories:
+  - characterization
+  - stability
+  confidence: 0.91
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - circular dichroism
+  - CD
+  - secondary structure
+  - alpha-helix
+  - beta-sheet
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-HCP-ELISA-001
+  type: method_standard
+  source: ICH Q3A / USP <801>
+  title: Host Cell Protein ELISA for Residual Impurity Control
+  content: 'HCP ELISA quantifies total residual host cell protein using anti-HCP antiserum (typically rabbit antibodies raised
+    against whole host cell lysate) in sandwich ELISA format. Detection limit is typically 1-10 ng/mL; method is quantitative
+    to <1000 ng/mL. Regulatory acceptance requires HCP <100 ng/mg drug substance for mammalian cell-derived products; E. coli-derived
+    products may tolerate higher levels depending on safety assessment. Method development includes qualification of anti-HCP
+    antibody (specificity, cross-reactivity), reference standard preparation, and assay optimization. HCP limits are product-specific
+    and set during process development based on toxicology (repeat-dose animal studies) and comparability to reference product.
+    Required in manufacturing process validation, lot release, and comparability assessment. Trending HCP levels indicates
+    process control and consistency.
+
+    '
+  applicable_categories:
+  - purity
+  - characterization
+  confidence: 0.96
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - HCP
+  - ELISA
+  - host cell protein
+  - impurities
+  - mammalian cell
+  - E. coli
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: MS-DNA-QPCR-001
+  type: method_standard
+  source: ICH Q3A / USP <822>
+  title: Residual DNA Detection by qPCR
+  content: 'qPCR (real-time PCR) quantifies residual DNA from host cell (mammalian, bacterial, insect, fungal) by amplifying
+    target DNA sequences and measuring fluorescent product accumulation. Detection limit <1 ng/mL; linear range typically
+    0.1-100 ng/mL. Regulatory acceptance requires residual DNA <100 pg/dose for parenteral products based on ICH Q5A recommendations.
+    Method development includes primer design (host-specific), validation of amplification efficiency, and reference standard
+    preparation (purified genomic DNA). Single-stranded DNA from viral vectors or RNA therapeutics requires nuclease treatment
+    before qPCR. Required in manufacturing process validation, lot release, and comparability assessment. Trending DNA levels
+    indicates process control. Alternative methods include PicoGreen fluorescence assay (less specific) or digital PCR (higher
+    sensitivity).
+
+    '
+  applicable_categories:
+  - purity
+  - characterization
+  confidence: 0.95
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - residual DNA
+  - qPCR
+  - PCR
+  - host cell DNA
+  - impurity
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: MS-PROTA-ELISA-001
+  type: method_standard
+  source: ICH Q6B / Pharmacopeial Methods
+  title: Protein A ELISA for Total mAb Content Confirmation
+  content: 'Protein A ELISA measures total mAb concentration by capturing mAb via Fc domain binding to immobilized Protein
+    A, then detecting with anti-human Fc secondary. This method is orthogonal to mass-based quantitation and specifically
+    detects intact IgG. Acceptance criteria require Protein A ELISA concentration within 90-110% of mass-based reference (e.g.,
+    SEC-HPLC, Bradford, BCA). Method development includes Protein A immobilization, buffer optimization (pH 7.4-8.0 typical),
+    and detection antibody selection. Regulatory expectation includes Protein A ELISA in manufacturing process validation
+    and lot release as orthogonal identity and purity confirmation. Results are combined with total protein (mass-based) to
+    estimate fractional active content (Protein A-positive protein / total protein). Required when mAb fragmentation or modification
+    could reduce Fc binding.
+
+    '
+  applicable_categories:
+  - purity
+  - identity
+  confidence: 0.94
+  url: https://www.ich.org
+  year: 2023
+  tags:
+  - Protein A
+  - ELISA
+  - mAb
+  - IgG
+  - Fc binding
+  - identity
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: MS-ENDOTOXIN-001
+  type: method_standard
+  source: USP <85> / Ph. Eur. 2.6.14
+  title: 'Endotoxin Testing: Limulus Amebocyte Lysate and rFC Methods'
+  content: 'Endotoxin (lipopolysaccharide from gram-negative bacteria) is detected by LAL (Limulus Amebocyte Lysate) assay
+    or rFC (recombinant Factor C) assay. LAL kinetic chromogenic method measures endotoxin as Endotoxin Units (EU/mL). Regulatory
+    acceptance requires <175 EU/V where V is maximum recommended dose volume (ICH Q6B). Parenteral products must meet <5-100
+    EU/dose depending on route and frequency. rFC methods are animal-free alternatives with equivalent sensitivity. Method
+    development includes depyrogenation procedures, test sample preparation, and positive product control (spiking endotoxin).
+    Both methods are limit tests (pass/fail at action limit). LAL is temperature-sensitive (37°C ±1°C critical). Regulatory
+    expectation includes endotoxin testing in raw materials, drug substance, and drug product. Required in manufacturing process
+    validation and lot release. Trending across lots indicates process control.
+
+    '
+  applicable_categories:
+  - purity
+  - safety
+  confidence: 0.96
+  url: https://www.usp.org
+  year: 2023
+  tags:
+  - endotoxin
+  - LAL
+  - rFC
+  - limulus amebocyte
+  - bacterial endotoxin
+  - safety
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final

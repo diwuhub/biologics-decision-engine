@@ -1,0 +1,533 @@
+# Decision Rule Catalog -- Machine-Readable Version
+# Step 0D: Frozen for Judgment Core Refactor
+# Every judgment logic path must reference a rule_id from this catalog.
+
+catalog_version: "1.0.0"
+frozen_date: "2026-03-30"
+
+rules:
+  # =====================================================================
+  # Category 1: Package Aggregation Rules (AGGR)
+  # =====================================================================
+  - rule_id: "AGGR-001"
+    category: "AGGR"
+    scope: "package"
+    rule_text: >
+      Package-level verdict aggregation must weight CQA attributes at 1.5x
+      relative to non-CQA attributes. No simple averaging across all attributes.
+    allowed_inputs:
+      - "RiskCluster.base_cluster_score"
+      - "RiskCluster.contains_cqa"
+      - "attribute_scores"
+    allowed_outputs:
+      - "PackageDecision.confidence"
+      - "PackageDecision.package_verdict"
+    forbidden_effects:
+      - "May not modify RiskCluster fields"
+      - "May not bypass cluster mediation"
+    related_gold_cases: ["GC-01", "GC-02", "GC-11"]
+
+  - rule_id: "AGGR-002"
+    category: "AGGR"
+    scope: "package"
+    rule_text: >
+      Any cluster with package_blocking = True forces package verdict to
+      supplement_required or worse, regardless of other cluster scores.
+    allowed_inputs:
+      - "RiskCluster.package_blocking"
+      - "RiskCluster.concern_level"
+    allowed_outputs:
+      - "PackageDecision.package_verdict"
+      - "PackageDecision.blocking_cluster_ids"
+    forbidden_effects:
+      - "May not set package_blocking on clusters (cluster-level only)"
+    related_gold_cases: ["GC-02", "GC-05", "GC-07", "GC-11"]
+
+  - rule_id: "AGGR-003"
+    category: "AGGR"
+    scope: "package"
+    rule_text: >
+      Package aggregation must detect gaps that no single attribute surfaces.
+      If a CQA cluster is missing a REQUIRED method type per ICH Q5E, the
+      package must identify this as a blocking gap even if all individual
+      attributes score comparable.
+    allowed_inputs:
+      - "RiskCluster.affected_attribute_ids"
+      - "CaseContext.identified_gaps"
+      - "cluster_method_coverage"
+    allowed_outputs:
+      - "PackageDecision.package_verdict"
+      - "PackageDecision.blocking_cluster_ids"
+    forbidden_effects:
+      - "May not override individual attribute scores"
+      - "May not invent new cluster types"
+    related_gold_cases: ["GC-11"]
+
+  - rule_id: "AGGR-004"
+    category: "AGGR"
+    scope: "package"
+    rule_text: >
+      When 2+ clusters have concern_level >= major, package confidence is
+      floored at 0.4 regardless of individual cluster scores.
+    allowed_inputs:
+      - "RiskCluster.concern_level across all clusters"
+    allowed_outputs:
+      - "PackageDecision.confidence"
+    forbidden_effects:
+      - "May not modify cluster concern_levels"
+    related_gold_cases: ["GC-05", "GC-07"]
+
+  - rule_id: "AGGR-005"
+    category: "AGGR"
+    scope: "package"
+    rule_text: >
+      A favorable shift in one cluster does not offset concerns in another
+      cluster. Package verdict aggregation treats favorable shifts as
+      informational, not as credit against other concerns.
+    allowed_inputs:
+      - "RiskCluster.risk_semantics"
+      - "other cluster concern_levels"
+    allowed_outputs:
+      - "PackageDecision.package_verdict"
+    forbidden_effects:
+      - "May not use favorable shift to cancel blocking clusters"
+      - "May not reduce concern_level of unrelated clusters"
+    related_gold_cases: ["GC-04"]
+
+  - rule_id: "AGGR-006"
+    category: "AGGR"
+    scope: "package"
+    rule_text: >
+      When all supporting authority evidence has temporal_status = historical
+      (pre-QbD or > 10 years), package confidence is capped at 0.65 and
+      verdict cannot be proceed (must be at minimum proceed_with_conditions
+      or supplement_required).
+    allowed_inputs:
+      - "AuthorityContextPack.temporal_conflict_flag"
+      - "ref temporal_status"
+    allowed_outputs:
+      - "PackageDecision.confidence"
+      - "PackageDecision.package_verdict"
+    forbidden_effects:
+      - "May not modify cluster fields"
+      - "May not lower confidence below the cap floor"
+    related_gold_cases: ["GC-09"]
+
+  # =====================================================================
+  # Category 2: Cluster Escalation Rules (CLUST)
+  # =====================================================================
+  - rule_id: "CLUST-001"
+    category: "CLUST"
+    scope: "cluster"
+    rule_text: >
+      CQA attributes with concern_level >= major must be escalated to a
+      dedicated cqa_concern cluster, separate from the primary category_risk
+      cluster.
+    allowed_inputs:
+      - "attribute concern_level"
+      - "is_cqa flag"
+    allowed_outputs:
+      - "New RiskCluster with cluster_type = cqa_concern"
+    forbidden_effects:
+      - "May not modify the original category_risk cluster's attributes"
+    related_gold_cases: ["GC-02", "GC-05"]
+
+  - rule_id: "CLUST-002"
+    category: "CLUST"
+    scope: "cluster"
+    rule_text: >
+      Any attribute with concern_level = critical must form its own
+      single_attribute_critical cluster, regardless of category or CQA status.
+    allowed_inputs:
+      - "attribute concern_level"
+    allowed_outputs:
+      - "New RiskCluster with cluster_type = single_attribute_critical"
+    forbidden_effects:
+      - "May not leave critical attributes in category_risk clusters"
+    related_gold_cases: ["GC-05", "GC-07"]
+
+  - rule_id: "CLUST-003"
+    category: "CLUST"
+    scope: "cluster"
+    rule_text: >
+      When 2+ analytical categories share the same gap type, form an
+      additional cross_category_gap cluster spanning the affected attributes.
+    allowed_inputs:
+      - "attribute gaps"
+      - "category assignments"
+    allowed_outputs:
+      - "New RiskCluster with cluster_type = cross_category_gap"
+    forbidden_effects:
+      - "May not remove attributes from their primary clusters"
+    related_gold_cases: ["GC-06", "GC-09"]
+
+  - rule_id: "CLUST-004"
+    category: "CLUST"
+    scope: "cluster"
+    rule_text: >
+      Any cluster with risk_semantics = contradiction must have
+      package_blocking = True pending conflict resolution. Contradiction
+      means methods within the same analytical category produce conflicting
+      comparability conclusions.
+    allowed_inputs:
+      - "RiskCluster.risk_semantics"
+      - "attribute contradiction_present flags"
+    allowed_outputs:
+      - "RiskCluster.package_blocking = True"
+    forbidden_effects:
+      - "May not set package_blocking on clusters without contradiction evidence"
+    related_gold_cases: ["GC-05", "GC-07"]
+
+  # =====================================================================
+  # Category 3: No-Precedent Fallback Rules (FALL)
+  # =====================================================================
+  - rule_id: "FALL-001"
+    category: "FALL"
+    scope: "package"
+    rule_text: >
+      Missing precedent triggers confidence downgrade + normative reasoning +
+      possible human review. It NEVER triggers default abstain. The system
+      must make a judgment using available normative guidance.
+    allowed_inputs:
+      - "AuthorityContextPack.authority_sparsity_flag"
+      - "precedent_refs count"
+    allowed_outputs:
+      - "PackageDecision.confidence (downgraded)"
+      - "PackageDecision.required_followups"
+    forbidden_effects:
+      - "MUST NOT set abstain_flag = True solely due to missing precedent"
+    related_gold_cases: ["GC-06", "GC-09"]
+
+  - rule_id: "FALL-002"
+    category: "FALL"
+    scope: "package"
+    rule_text: >
+      When evidence is weak but not absent (some normative refs, limited
+      precedent, no pattern alignment), the system must not overreact.
+      Verdict should be proceed_with_conditions, not supplement_required or
+      worse. Mixed weak evidence does not constitute a blocking gap.
+    allowed_inputs:
+      - "AuthorityContextPack ref counts"
+      - "authority_sparsity_flag"
+    allowed_outputs:
+      - "PackageDecision.package_verdict (proceed_with_conditions)"
+      - "PackageDecision.confidence"
+    forbidden_effects:
+      - "MUST NOT escalate to supplement_required purely due to evidence weakness"
+      - "MUST NOT set package_blocking"
+    related_gold_cases: ["GC-12"]
+
+  - rule_id: "FALL-003"
+    category: "FALL"
+    scope: "package"
+    rule_text: >
+      When no precedent is available, ICH guidelines serve as primary
+      authority source. The system must articulate its judgment basis using
+      normative references and flag the lack of precedent as a confidence
+      modifier, not a verdict modifier.
+    allowed_inputs:
+      - "AuthorityContextPack.normative_refs"
+      - "AuthorityContextPack.precedent_refs"
+    allowed_outputs:
+      - "PackageDecision.authority_confidence_summary"
+      - "PackageDecision.confidence"
+    forbidden_effects:
+      - "May not treat normative-only authority as grounds for escalation beyond proceed_with_conditions"
+    related_gold_cases: ["GC-06", "GC-12"]
+
+  # =====================================================================
+  # Category 4: Guardrail Rules (GUARD)
+  # =====================================================================
+  - rule_id: "GUARD-001"
+    category: "GUARD"
+    scope: "cluster,package"
+    rule_text: >
+      Concern pattern references alone CANNOT set package_blocking = True or
+      escalate verdict. They may raise attention, lower confidence, or
+      suggest follow-up only.
+    allowed_inputs:
+      - "AuthorityContextPack.concern_pattern_refs"
+    allowed_outputs:
+      - "confidence adjustment (minor)"
+      - "follow-up suggestions"
+    forbidden_effects:
+      - "MUST NOT set package_blocking = True"
+      - "MUST NOT escalate verdict based solely on concern patterns"
+    related_gold_cases: ["GC-10"]
+
+  - rule_id: "GUARD-002"
+    category: "GUARD"
+    scope: "package"
+    rule_text: >
+      No precedent does not equal no judgment. Missing precedent triggers
+      confidence downgrade + normative reasoning + possible human review.
+      Never triggers default abstain.
+    allowed_inputs:
+      - "AuthorityContextPack.authority_sparsity_flag"
+    allowed_outputs:
+      - "confidence downgrade"
+      - "human review flag"
+    forbidden_effects:
+      - "MUST NOT set abstain_flag = True due to missing precedent alone"
+    related_gold_cases: ["GC-06", "GC-09"]
+
+  - rule_id: "GUARD-003"
+    category: "GUARD"
+    scope: "package"
+    rule_text: >
+      Package-level adjustment must account for what cluster-level already
+      adjusted. The same gap or concern cannot reduce confidence twice.
+    allowed_inputs:
+      - "RiskCluster.concern_level (already adjusted)"
+      - "PackageDecision.confidence"
+    allowed_outputs:
+      - "PackageDecision.confidence"
+    forbidden_effects:
+      - "MUST NOT apply the same penalty at both cluster and package level"
+    related_gold_cases: ["GC-01", "GC-09"]
+
+  - rule_id: "GUARD-004"
+    category: "GUARD"
+    scope: "concern"
+    rule_text: >
+      Reviewer concern engine may modify confidence and follow-up priority,
+      but may NOT invent new verdict categories or blocking logic outside
+      the rule catalog.
+    allowed_inputs:
+      - "preliminary PackageDecision"
+      - "ReviewerConcerns"
+    allowed_outputs:
+      - "PackageDecision.confidence (within bounds)"
+      - "cluster priority_score"
+    forbidden_effects:
+      - "MUST NOT create new verdict categories"
+      - "MUST NOT set package_blocking outside cataloged rules"
+    related_gold_cases: ["GC-04", "GC-10"]
+
+  - rule_id: "GUARD-005"
+    category: "GUARD"
+    scope: "package,cluster,concern"
+    rule_text: >
+      Any logic in Steps 1-5 that changes cluster.concern_level,
+      package_blocking, package_verdict, confidence, or abstain_flag MUST
+      reference an existing rule from this catalog. No new implicit judgment
+      rules may be introduced in implementation code.
+    allowed_inputs:
+      - "all judgment-affecting inputs"
+    allowed_outputs:
+      - "all judgment-affecting outputs"
+    forbidden_effects:
+      - "Any judgment change without a catalog rule reference is unauthorized"
+    related_gold_cases: ["GC-01", "GC-02", "GC-03", "GC-04", "GC-05", "GC-06", "GC-07", "GC-08", "GC-09", "GC-10", "GC-11", "GC-12"]
+
+  # =====================================================================
+  # Category 5: Abstain Trigger Rules (ABST)
+  # =====================================================================
+  - rule_id: "ABST-001"
+    category: "ABST"
+    scope: "package"
+    rule_text: >
+      Abstain (defer_package + abstain_flag = True) is triggered ONLY when
+      ALL of the following are present simultaneously: (1) multiple critical
+      attributes with contradictory inter-method data, (2) conflicting
+      regulatory stances (US vs EU), AND (3) no applicable normative
+      guidance for this combination. No single condition triggers abstain.
+    allowed_inputs:
+      - "RiskCluster contradiction flags"
+      - "AuthorityContextPack.geography_conflict_flag"
+      - "AuthorityContextPack.authority_sparsity_flag"
+      - "normative_refs"
+    allowed_outputs:
+      - "PackageDecision.abstain_flag = True"
+      - "PackageDecision.package_verdict = defer_package"
+    forbidden_effects:
+      - "MUST NOT trigger abstain from any single condition alone"
+    related_gold_cases: ["GC-07"]
+
+  - rule_id: "ABST-002"
+    category: "ABST"
+    scope: "package"
+    rule_text: >
+      When abstain_flag = True, abstain_reason must be populated with a
+      specific explanation citing which conditions of ABST-001 are met.
+      Generic 'insufficient data' is not acceptable.
+    allowed_inputs:
+      - "ABST-001 trigger conditions"
+    allowed_outputs:
+      - "PackageDecision.abstain_reason (specific text)"
+    forbidden_effects:
+      - "May not leave abstain_reason empty when abstain_flag = True"
+    related_gold_cases: ["GC-07"]
+
+  # =====================================================================
+  # Category 6: Geography Divergence Rules (GEOG)
+  # =====================================================================
+  - rule_id: "GEOG-001"
+    category: "GEOG"
+    scope: "cluster,package"
+    rule_text: >
+      When target_geography = global and AuthorityContextPack detects
+      divergent acceptance criteria between FDA and EMA for any CQA cluster,
+      set geography_conflict_flag = True and route to human review.
+    allowed_inputs:
+      - "CaseContext.target_geography"
+      - "AuthorityContextPack.geography_conflict_flag"
+    allowed_outputs:
+      - "geography conflict flag"
+      - "human review routing"
+      - "required_followups"
+    forbidden_effects:
+      - "Geography conflict alone does not trigger abstain"
+    related_gold_cases: ["GC-08"]
+
+  - rule_id: "GEOG-002"
+    category: "GEOG"
+    scope: "package"
+    rule_text: >
+      When geography_conflict_flag = True but all attributes are individually
+      comparable, verdict should be proceed_with_conditions (not
+      supplement_required), with a required follow-up for geography-specific
+      filing strategy.
+    allowed_inputs:
+      - "geography_conflict_flag"
+      - "attribute comparability scores"
+    allowed_outputs:
+      - "PackageDecision.package_verdict = proceed_with_conditions"
+      - "required_followups"
+    forbidden_effects:
+      - "MUST NOT escalate to supplement_required solely due to geography divergence"
+    related_gold_cases: ["GC-08"]
+
+  # =====================================================================
+  # Category 7: Verdict Shift Rules (SHIFT)
+  # =====================================================================
+  - rule_id: "SHIFT-001"
+    category: "SHIFT"
+    scope: "cluster,package"
+    rule_text: >
+      When a CQA attribute shows a favorable shift (better-than-reference),
+      the cluster risk_semantics must be set to
+      favorable_shift_requires_rationale. The system must flag the need for
+      immunogenicity impact rationale. A favorable shift does not
+      automatically upgrade verdict.
+    allowed_inputs:
+      - "attribute delta indicating improvement"
+      - "is_cqa flag"
+    allowed_outputs:
+      - "RiskCluster.risk_semantics = favorable_shift_requires_rationale"
+      - "reviewer concern for rationale"
+    forbidden_effects:
+      - "May not auto-upgrade verdict"
+      - "May not suppress the rationale requirement"
+    related_gold_cases: ["GC-04"]
+
+  - rule_id: "CLUST-005"
+    category: "CLUST"
+    scope: "cluster"
+    rule_text: >
+      Clusters with risk_semantics = trend_requires_monitoring are capped at
+      concern_level = minor, package_blocking = False, and
+      recommended_followup_type = enhanced_monitoring. Trend-only signals
+      require monitoring but do not block the package.
+    allowed_inputs:
+      - "RiskCluster.risk_semantics"
+      - "RiskCluster.base_concern_level"
+    allowed_outputs:
+      - "RiskCluster.concern_level (capped at minor)"
+      - "RiskCluster.package_blocking = False"
+      - "RiskCluster.recommended_followup_type = enhanced_monitoring"
+    forbidden_effects:
+      - "May not escalate concern_level beyond minor"
+      - "May not set package_blocking = True"
+    related_gold_cases: ["GC-03"]
+
+  - rule_id: "SHIFT-002"
+    category: "SHIFT"
+    scope: "concern"
+    rule_text: >
+      ReviewerConcerns with affects_verdict_confidence = True may reduce
+      PackageDecision.confidence by at most 0.15 per concern and 0.30 total
+      across all concerns. Each such concern must cite applied_rule_id.
+    allowed_inputs:
+      - "ReviewerConcern.response_pressure_score"
+      - "applied_rule_id"
+    allowed_outputs:
+      - "PackageDecision.confidence (reduced within bounds)"
+    forbidden_effects:
+      - "MUST NOT reduce confidence by more than 0.30 total"
+      - "MUST NOT modify confidence without applied_rule_id"
+    related_gold_cases: ["GC-05", "GC-07", "GC-09"]
+
+  # =====================================================================
+  # Category 8: Precedent Rules (PREC)
+  # =====================================================================
+  - rule_id: "PREC-001"
+    category: "PREC"
+    scope: "cluster,package"
+    rule_text: >
+      When two or more precedent references for the same attribute category
+      reach conflicting conclusions (one supports comparability, another does
+      not), the system must escalate: set concern_level to at least major,
+      add a required follow-up for expert review, and reduce confidence by
+      0.10. The conflicting precedents must be cited in evidence_trace.
+    allowed_inputs:
+      - "AuthorityContextPack.precedent_refs"
+      - "AuthorityContextPack.authority_conflict_flag"
+    allowed_outputs:
+      - "RiskCluster.concern_level (escalated to major)"
+      - "PackageDecision.confidence (reduced by 0.10)"
+      - "PackageDecision.required_followups (expert review added)"
+    forbidden_effects:
+      - "May not trigger abstain solely from precedent conflict"
+      - "May not override a contradiction-driven blocking status"
+    related_gold_cases: ["GC-05", "GC-09"]
+
+  # =====================================================================
+  # Category 9: Method Bridging Rules (METHOD)
+  # =====================================================================
+  - rule_id: "METHOD-001"
+    category: "METHOD"
+    scope: "cluster"
+    rule_text: >
+      When a post-change analytical method differs from the pre-change
+      method for the same attribute (method bridging scenario), the cluster
+      must require bridging data demonstrating equivalence of the two
+      methods. If bridging data is absent, set concern_level to at least
+      major and recommended_followup_type to bridging_study. Package
+      blocking is set True only if the attribute is a CQA.
+    allowed_inputs:
+      - "attribute method metadata"
+      - "is_cqa flag"
+    allowed_outputs:
+      - "RiskCluster.concern_level (major if bridging data absent)"
+      - "RiskCluster.recommended_followup_type = bridging_study"
+      - "RiskCluster.package_blocking (True if CQA)"
+    forbidden_effects:
+      - "May not downgrade concern_level below current level"
+      - "May not apply when same method is used pre/post change"
+    related_gold_cases: ["GC-06", "GC-11"]
+
+  # =====================================================================
+  # Category 10: Stability Data Rules (STAB)
+  # =====================================================================
+  - rule_id: "STAB-001"
+    category: "STAB"
+    scope: "cluster,package"
+    rule_text: >
+      For stability-category attributes, if only accelerated stability
+      data is available (no long-term real-time data), the system must
+      set concern_level to at least minor, add a required follow-up for
+      long-term stability data collection, and cap the cluster's
+      contribution to package confidence at 0.7. Verdict cannot be
+      proceed (must be at minimum proceed_with_conditions).
+    allowed_inputs:
+      - "attribute stability_type metadata"
+      - "RiskCluster.dominant_category == stability"
+    allowed_outputs:
+      - "RiskCluster.concern_level (at least minor)"
+      - "RiskCluster.recommended_followup_type = enhanced_monitoring"
+      - "PackageDecision.required_followups"
+    forbidden_effects:
+      - "May not apply to non-stability categories"
+      - "May not set package_blocking for accelerated-only data alone"
+    related_gold_cases: ["GC-03"]

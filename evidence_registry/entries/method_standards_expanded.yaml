@@ -1,0 +1,308 @@
+entries:
+- applicable_categories:
+  - biophysical_characterization
+  confidence: 0.93
+  content: 'Determine absolute molecular weight and detect aggregation state without standard calibration Principle: Light
+    scattering at multiple angles determines MW via Rayleigh scattering; coupled with SEC provides size/MW correlation Applications:
+    Aggregate quantification (dimer, multimer detection); Monomeric MW confirmation across buffer conditions; Complex formation
+    assessment; Polydispersity index determination. Acceptance criteria: Monomeric MW within 2% of theoretical; aggregation
+    threshold <2% by mass. Gold standard for MW and aggregation; requires minimal assumptions; expensive instrument'
+  id: MS-EXP-MALS_SEC
+  source: 'ICH Q14 Annex 1 (Advanced Analytics), FDA Guidance: Analytical Procedures and Methods Validation (2015)'
+  tags:
+  - mals_sec
+  - biophysical_characterization
+  title: Multi-Angle Light Scattering coupled with Size Exclusion Chromatography (MALS/SEC-MALS)
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - higher-order_structure
+  confidence: 0.93
+  content: 'Map solvent accessibility and detect structural changes at peptide resolution Principle: Exchange of backbone
+    hydrogens with deuterium; protected (slow exchange) regions indicate structured domains Applications: Higher-order structure
+    comparison (innovator vs biosimilar); Conformational change detection upon stress; Binding site mapping; Dynamics assessment.
+    Acceptance criteria: Deuteration pattern overlay >95% between batches; no new protected/unprotected regions. Detects local
+    structural perturbations invisible to other biophysical methods; requires expertise in mass spec interpretation'
+  id: MS-EXP-HDX_MS
+  source: 'FDA Guidance: Comparability for Therapeutic Protein Products (2019), ICH Q14 Comparability'
+  tags:
+  - hdx_ms
+  - higher-order_structure
+  title: Hydrogen-Deuterium Exchange Mass Spectrometry (HDX-MS)
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - structural_characterization
+  confidence: 0.93
+  content: 'Determine three-dimensional atomic-level protein structure Principle: Protein crystals diffract X-rays; diffraction
+    pattern solved to yield atomic coordinates Applications: Reference structure establishment; Active site confirmation;
+    Posttranslational modification location; Comparability to innovator (for approved products). Acceptance criteria: Structure
+    resolution <2.5 Å (typical for immunoglobulins); R-factor <0.20; no unexplained density. Requires well-diffracting crystals;
+    not always achievable; gold standard when available; one-time characterization typically'
+  id: MS-EXP-XRAY_CRYSTALLOGRAPHY
+  source: 'ICH Q5C (Quality of Biotechnology Products), FDA Guidance: Analytical Procedures and Methods Validation'
+  tags:
+  - xray_crystallography
+  - structural_characterization
+  title: X-ray Crystallography
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - structural_characterization
+  confidence: 0.93
+  content: 'Visualize protein structure and complexes in near-native state at atomic/sub-atomic resolution Principle: Proteins
+    in vitreous ice imaged by transmission EM; computational reconstruction yields 3D structure Applications: Large complex
+    characterization (Fc-receptor complexes); Antibody Fab orientation assessment; Conformational heterogeneity mapping; Conformational
+    equilibrium determination. Acceptance criteria: Map resolution <4 Å for functional insights; validation against X-ray/NMR
+    data. Advantage: no crystallization needed; handles flexible regions; emerging as comparability tool for complex biologics'
+  id: MS-EXP-CRYO_EM
+  source: ICH Q5C (Quality of Biotechnology Products), FDA Guidance on Structural Biology and Antibody Characterization
+  tags:
+  - cryo_em
+  - structural_characterization
+  title: Cryo-Electron Microscopy (Cryo-EM)
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - thermal_stability
+  confidence: 0.93
+  content: 'Measure thermal stability with minimal sample volume using intrinsic fluorescence Principle: Tryptophan fluorescence
+    shift during thermal denaturation; low sample consumption (2-5 µL) Applications: Buffer/excipient screening; Stability
+    trending; Formulation development; Aggregate-free sample characterization. Acceptance criteria: Tm within ±2°C of reference;
+    single cooperative transition indicating homogeneity. Advantages: high throughput, minimal sample; drawback: indirect
+    measure (fluorescence change); complements DSC'
+  id: MS-EXP-NANO_DSF
+  source: FDA Analytical Procedures Validation, ICH Q3B/Q3C (Stability)
+  tags:
+  - nano_dsf
+  - thermal_stability
+  title: Nano Differential Scanning Fluorimetry (Nano-DSF)
+  type: method_standard
+  url: ''
+  year: 2024
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - particulate_matter
+  confidence: 0.93
+  content: 'Characterize and count subvisible particles (1-100 µm) with morphology and composition Principle: MFI: flow-based
+    microscopy with image analysis; FlowCam: holographic imaging and categorization Applications: Aggregation monitoring over
+    shelf-life; Container-closure interaction assessment; Single-use system leachable particle evaluation; Transport/storage
+    condition impact. Acceptance criteria: Particle count/size distribution stable within specification; no increase >25%
+    over timepoint. Regulatory expectation post-2019 FDA guidance; morphology identifies protein vs container origin'
+  id: MS-EXP-SUBVISIBLE_PARTICLE_MFI
+  source: 'USP <788> (Particulate Matter in Injections), Ph.Eur. 2.9.19 (Particulate Matter in Injectables), FDA Guidance:
+    Container Closure System (2017)'
+  tags:
+  - subvisible_particle_mfi
+  - particulate_matter
+  title: Subvisible Particle Analysis - Micro-Flow Imaging (MFI) and FlowCam
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - appearance
+  confidence: 0.93
+  content: 'Detect and quantify microscopic cloudiness from micro-aggregates and microparticulates Principle: Light transmission/scattering
+    measurement; turbidity units (NTU) or nephelometric units Applications: Product appearance acceptance criterion; Aggregate
+    early detection; Visual inspection correlation; Excipient compatibility assessment. Acceptance criteria: NTU <1 typical
+    for transparent solutions; specification set at development phase. Simple, rapid, cost-effective screening; complements
+    microparticulate analysis'
+  id: MS-EXP-TURBIDITY_OPALESCENCE
+  source: USP <855> (Turbidity), Ph.Eur. 2.2.1 (Appearance of Solutions), ICH Q6B (Acceptance Criteria)
+  tags:
+  - turbidity_opalescence
+  - appearance
+  title: Turbidity and Opalescence Measurement
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - drug_product_chemistry
+  confidence: 0.93
+  content: 'Measure effective osmotic pressure; critical for parenteral safety and stability Principle: Freezing-point depression
+    or vapor pressure osmometry measures total dissolved particles Applications: Formulation development (isotonicity verification);
+    Excipient concentration confirmation; Stability monitoring (solute precipitation, water loss); Manufacturing batch release.
+    Acceptance criteria: Typically 240-310 mOsm/kg for IV products (isotonic range). Non-specific measure; detects osmotic
+    changes but not identity of osmolytes'
+  id: MS-EXP-OSMOLALITY
+  source: USP <921> (Osmolality and Osmotic Pressure), ICH Q6B (Acceptance Criteria)
+  tags:
+  - osmolality
+  - drug_product_chemistry
+  title: Osmolality Testing
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - drug_product_chemistry
+  confidence: 0.93
+  content: 'Control and monitor solution pH, critical for protein stability and formulation consistency Principle: pH electrode
+    measurement; typically calibrated with NIST-traceable buffers Applications: Batch release specification; Stability monitoring
+    (pH drift indicates buffer depletion or chemical changes); Manufacturing control point; Formulation consistency verification.
+    Acceptance criteria: Tight specification (typically ±0.5 units) critical for protein charge state and stability. Temperature
+    and measurement technique critical; in-situ measurement preferable to post-bottling for frozen products'
+  id: MS-EXP-PH_MEASUREMENT
+  source: USP <791> (pH), ICH Q3B (Impurities), ICH Q6B (Acceptance Criteria)
+  tags:
+  - ph_measurement
+  - drug_product_chemistry
+  title: pH Measurement and Specification
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - drug_product_chemistry
+  confidence: 0.93
+  content: 'Quantify water content in lyophilized or powder products Principle: Coulometric or volumetric KF titration; iodine
+    oxidation of water in solution Applications: Lyophilized product residual moisture specification; Cake quality acceptance;
+    Moisture ingress during storage (via trending); Excipient water content verification. Acceptance criteria: Typical range
+    1-3% for lyophilized biologics; excipient-dependent specifications. Critical for freeze-dried product; water content impacts
+    stability and cake properties'
+  id: MS-EXP-KARL_FISCHER
+  source: 'USP <921> (Water Determination), USP <921> (Karl Fischer Titration), ICH Q3B (Impurities: Organic Volatiles)'
+  tags:
+  - karl_fischer
+  - drug_product_chemistry
+  title: Karl Fischer Titration - Moisture Content
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - impurities
+  confidence: 0.93
+  content: 'Detect and quantify residual organic solvents from manufacturing/processing Principle: GC-FID or GC-MS with headspace
+    sampling; ICH solvent classification (Class 1, 2, 3) Applications: Purification solvent carryover (e.g., acetonitrile
+    in precipitation steps); Manufacturing process solvent control; Regulatory compliance (ICH limits); Batch release specification.
+    Acceptance criteria: Must meet ICH Q3C limits (e.g., acetonitrile <50 ppm, ethanol <5000 ppm). Many biologics manufacturing
+    minimizes organic solvents; test if precipitation/extraction used'
+  id: MS-EXP-RESIDUAL_SOLVENT
+  source: 'ICH Q3C (Impurities: Residual Solvents), USP <467> (Residual Solvents), FDA Guidance: Analytical Procedures and
+    Methods Validation'
+  tags:
+  - residual_solvent
+  - impurities
+  title: Residual Solvent Testing
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - appearance
+  confidence: 0.93
+  content: 'Detect and classify visible particles, cloudiness, color changes, or other defects Principle: Manual visual inspection
+    under standardized lighting (candle light equivalence) or automated vision systems Applications: Batch release acceptance;
+    Container-closure interaction assessment; Stability monitoring (appearance changes); Manufacturing control. Acceptance
+    criteria: No particles >50 µm; no color change; clear or colorless per specification. Subjective if manual; automated
+    systems more reproducible; complements objective particulate methods'
+  id: MS-EXP-VISIBLE_INSPECTION
+  source: USP <790> (Automated Inspection Equipment), USP <1790> (Visual Inspection of Injectable Drug Product), Ph.Eur. 2.9.20
+    (Particulate Matter)
+  tags:
+  - visible_inspection
+  - appearance
+  title: Visible Inspection - USP <790>/<1790> (Visual Inspection of Injectable Drug Product)
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - method_development
+  confidence: 0.93
+  content: 'Identify primary degradation pathways under stress; design analytical methods to detect them Principle: Expose
+    drug substance/product to stress (heat, light, pH, oxidation); identify new peaks/variants; characterize chemically Applications:
+    Stability-indicating method design; Impurity limits justification; Manufacturing process risk assessment; Storage condition
+    selection. Acceptance criteria: All major degradation pathways identified at >5% level; characterized by mass spec/NMR/amino
+    acid analysis. Foundational study; conducted early in development; informs analytical strategy and specifications'
+  id: MS-EXP-FORCED_DEGRADATION
+  source: 'ICH Q3B (Degradation Pathway Elucidation), FDA Guidance: Analytical Procedures and Methods Validation (2015), ICH
+    Q1A (Stability Testing)'
+  tags:
+  - forced_degradation
+  - method_development
+  title: Forced Degradation Pathway Identification Methodology
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - statistical_method
+  confidence: 0.93
+  content: 'Design and analyze studies establishing equivalence between innovator and biosimilar/variant Principle: Equivalence
+    testing (CI approach); quality ranges derived from innovator multi-lot distribution; statistical design proportional to
+    risk Applications: Biosimilar analytical comparability (vs innovator reference); Manufacturing change assessment; Manufacturing
+    location change; Process improvement validation. Acceptance criteria: Analytical parameters within pre-defined equivalence
+    ranges (±1.5-2 SD of innovator mean); clinical relevance justified. Regulatory expectation for biosimilars and post-approval
+    changes; requires prospective statistical planning; quality ranges justified by risk assessment'
+  id: MS-EXP-COMPARABILITY_DESIGN
+  source: 'FDA Guidance: Comparability for Therapeutic Protein Products (2019), ICH Q5E (Comparability of Biotechnology-Derived
+    Products), ICH Q6B (Acceptance Criteria)'
+  tags:
+  - comparability_design
+  - statistical/method
+  title: Comparability Study Design Methodology (Statistical Equivalence and Quality Ranges)
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- applicable_categories:
+  - method_development
+  confidence: 0.93
+  content: 'Establish purity, identify and quantify impurities, characterize stability, assign potency for analytical reference
+    standards Principle: Multi-technique characterization: HPLC/CE purity, impurity structure elucidation, potency assignment
+    by orthogonal assays Applications: Primary reference standard establishment; Secondary standard qualification; Working
+    standard lot change; Bridging studies between reference lots. Acceptance criteria: ≥98% purity; impurities characterized
+    and <1% individually; assigned potency with uncertainty budget <5%. Foundation for all quantitative assays; comprehensive
+    characterization essential; stability/storage conditions defined'
+  id: MS-EXP-REF_STANDARD_CHAR
+  source: 'ICH Q14 (Analytical Procedures and Methods Validation), USP <1220> (Physical Attributes—Optical Rotation), FDA
+    Guidance: Reference Standards (2017), ICH Q6A/Q6B (Acceptance Criteria)'
+  tags:
+  - ref_standard_char
+  - method_development
+  title: Reference Standard Characterization Methodology
+  type: method_standard
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final

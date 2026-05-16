@@ -1,0 +1,1147 @@
+entries:
+- id: 21CFR-600.3
+  type: guideline_clause
+  source: 21 CFR 600.3
+  title: Definitions
+  content: 'Biological product means a virus, therapeutic serum, toxin, antitoxin, vaccine, blood, blood component or derivative,
+    allergenic product, protein (except any chemically synthesized polypeptide), or analogous product, or arsphenamine or
+    any derivative of arsphenamine (or any other trivalent organic arsenic compound), applicable to the prevention, treatment,
+    or cure of a disease or condition of human beings. Potency is the specific ability or capacity of the product, as indicated
+    by appropriate laboratory tests or by adequately controlled clinical data (including human experience), to effect a given
+    result. Purity means the degree to which the substance is free from extraneous matter. Safety means the relative freedom
+    from harmful effect to persons affected, directly or indirectly, by a product when prudently administered, taking into
+    consideration the character of the product in relation to the condition of the recipient at the time of administration.
+
+    '
+  applicable_categories:
+  - safety
+  - purity
+  - potency
+  - identity
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-600
+  year: 2024
+  tags:
+  - definitions
+  - regulatory-framework
+  - cmc-fundamentals
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-600.10
+  type: guideline_clause
+  source: 21 CFR 600.10
+  title: Personnel Requirements
+  content: 'The manufacturer of a biological product shall employ sufficient personnel qualified by scientific training and
+    experience in the manufacture, processing, assay, and control of biological products to ensure that all requirements of
+    this part will be fulfilled. Each manufacturer shall designate one or more qualified individuals responsible for signing
+    and dating the approval of written procedures, deviations, batch production and control records, and release of each batch
+    of biological product for distribution.
+
+    '
+  applicable_categories:
+  - quality
+  - personnel
+  - management
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-600
+  year: 2024
+  tags:
+  - personnel
+  - quality-control
+  - regulatory-requirements
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-600.11
+  type: guideline_clause
+  source: 21 CFR 600.11
+  title: Physical Establishment — Facilities and Controls
+  content: 'The manufacturer of a biological product shall provide adequate facilities that are suitable for the production
+    of safe, pure, and potent biological products and for the handling of source and in-process materials. Buildings and facilities
+    shall be of suitable construction and equipped with adequate environmental controls, including temperature, humidity,
+    and air filtration, as appropriate for the specific biological product being manufactured. All facilities used in the
+    production of a biological product shall comply with the current good manufacturing practice requirements.
+
+    '
+  applicable_categories:
+  - facility
+  - quality
+  - manufacturing
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-600
+  year: 2024
+  tags:
+  - facility-requirements
+  - cGMP
+  - environmental-controls
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-600.12
+  type: guideline_clause
+  source: 21 CFR 600.12
+  title: Changes to an Approved Application
+  content: 'A manufacturer of a biological product shall notify the FDA of changes to the approved biological product or its
+    manufacturing process. Changes are classified as Prior Approval (requiring written FDA approval before implementation),
+    Supplement—Expedited (CBE-30, requiring FDA review within 30 days), Supplement—Standard (requiring FDA approval), or Annual
+    Report (reported in the next biologics license application annual report). The manufacturer shall provide data supporting
+    the safety, potency, purity, and identity of the biological product after the change.
+
+    '
+  applicable_categories:
+  - regulatory-compliance
+  - change-management
+  - post-approval
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-600
+  year: 2024
+  tags:
+  - post-approval
+  - cbe
+  - prior-approval
+  - supplements
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-600.13
+  type: guideline_clause
+  source: 21 CFR 600.13
+  title: Labeling Requirements
+  content: 'Each container of a biological product shall be plainly and conspicuously labeled to show: the name of the biological
+    product; the statement ''potency'', ''expiration date'', ''lot or control number'', and the lot or control number; the
+    name, address, and license number of the manufacturer; the name of the source material where applicable; and any other
+    information that is necessary to assure safe and effective use of the product. All statements on the label shall be clear,
+    accurate, and not misleading.
+
+    '
+  applicable_categories:
+  - labeling
+  - safety
+  - quality
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-600
+  year: 2024
+  tags:
+  - labeling
+  - compliance
+  - product-identification
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-600.14
+  type: guideline_clause
+  source: 21 CFR 600.14
+  title: Adverse Experience Reporting Requirements
+  content: 'A licensed manufacturer shall establish and maintain records of adverse experiences with the biological product.
+    All adverse experiences that are serious and unexpected shall be reported to FDA. An adverse experience is considered
+    serious if it results in death, a life-threatening condition, hospitalization, persistent or significant disability, congenital
+    anomaly, or required medical intervention. Unexpected means any adverse experience that is not listed in the biological
+    product''s prescribing information or is more severe or frequent than expected.
+
+    '
+  applicable_categories:
+  - safety
+  - post-market
+  - regulatory-compliance
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-600
+  year: 2024
+  tags:
+  - pharmacovigilance
+  - adverse-events
+  - post-market-surveillance
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-610.1
+  type: guideline_clause
+  source: 21 CFR 610.1
+  title: Tests Prior to Release of Biological Products
+  content: 'A biological product shall not be released for distribution until it has been tested and found to comply with
+    established standards for safety, purity, potency, and identity as specified in this part or in an applicable standard.
+    No batch shall be released without completion of all required tests, including but not limited to sterility testing, potency
+    testing, purity testing, identity testing, and general safety testing where applicable. Records of all tests and results
+    shall be maintained and made available for review by the FDA.
+
+    '
+  applicable_categories:
+  - testing
+  - quality
+  - release-criteria
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-610
+  year: 2024
+  tags:
+  - batch-release
+  - testing-requirements
+  - quality-assurance
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-610.2
+  type: guideline_clause
+  source: 21 CFR 610.2
+  title: Test for Sterility
+  content: 'Each batch of a biological product shall be tested for sterility using validated methods. The manufacturer shall
+    use an appropriate test method capable of detecting viable aerobic and anaerobic bacteria and fungi. For products where
+    stability data supports extended testing beyond 14 days, the test method shall be validated to maintain viability detection
+    capability. The results shall be negative (no growth) for the product to be considered sterile and suitable for release.
+    Alternative methods may be used if they are validated and approved by FDA.
+
+    '
+  applicable_categories:
+  - sterility
+  - testing
+  - quality-control
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-610
+  year: 2024
+  tags:
+  - sterility-testing
+  - microbial-limits
+  - release-testing
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-610.9
+  type: guideline_clause
+  source: 21 CFR 610.9
+  title: Equivalent Methods and Procedures
+  content: 'If a manufacturer can demonstrate that an alternative method or procedure for testing a biological product is
+    equivalent to or better than the official method, such alternative method or procedure may be used. The manufacturer shall
+    provide analytical data and validation demonstrating that the alternative method is equivalent in sensitivity, specificity,
+    reproducibility, and reliability. The FDA must approve the alternative method in writing before its use. All changes to
+    approved test methods require prior notification to or approval from the FDA.
+
+    '
+  applicable_categories:
+  - testing
+  - quality
+  - analytical-methods
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-610
+  year: 2024
+  tags:
+  - analytical-methods
+  - validation
+  - alternative-methods
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-610.10
+  type: guideline_clause
+  source: 21 CFR 610.10
+  title: Potency — General Requirements
+  content: 'The potency of a biological product shall be determined using a test method that accurately reflects the clinical
+    efficacy of the product. The potency test shall be performed on each batch of biological product prior to release. The
+    manufacturer shall establish a potency standard that is appropriate for the specific product and shall perform the test
+    under conditions specified in the standard. If a reference standard is used, it shall be validated against a recognized
+    biological reference standard. The potency test results shall fall within established specifications for release.
+
+    '
+  applicable_categories:
+  - potency
+  - testing
+  - efficacy
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-610
+  year: 2024
+  tags:
+  - potency-testing
+  - biological-activity
+  - batch-release
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-610.11
+  type: guideline_clause
+  source: 21 CFR 610.11
+  title: General Safety Test (Historical)
+  content: 'The general safety test (formerly required for all biological products) has been superseded by product-specific
+    safety testing and is no longer universally required. However, manufacturers may be required to perform safety testing
+    appropriate to the specific biological product if there is reason to believe the product could contain contaminants that
+    might cause adverse reactions. Safety testing shall be designed to detect the presence of extraneous agents, toxins, or
+    other contaminants that could be harmful to humans.
+
+    '
+  applicable_categories:
+  - safety
+  - testing
+  - contamination-detection
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-610
+  year: 2024
+  tags:
+  - safety-testing
+  - historical-requirements
+  - product-specific-testing
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-610.12
+  type: guideline_clause
+  source: 21 CFR 610.12
+  title: Purity Requirements
+  content: 'Each batch of a biological product shall be tested to determine the level of purity as defined by the product
+    standard. Purity tests shall detect and quantify contaminants including: host cell proteins (HCP), host cell DNA, process-related
+    impurities, product-related impurities, and other extraneous agents. The manufacturer shall establish specifications for
+    purity and demonstrate that each batch meets those specifications before release. Methods for purity testing shall be
+    validated and capable of detecting the levels of contaminants that could impact product safety or efficacy.
+
+    '
+  applicable_categories:
+  - purity
+  - testing
+  - contaminant-control
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-610
+  year: 2024
+  tags:
+  - purity-testing
+  - impurity-control
+  - quality-control
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-610.13
+  type: guideline_clause
+  source: 21 CFR 610.13
+  title: Identity Tests
+  content: 'Each batch of a biological product shall be tested to verify the identity of the product using a validated test
+    method. The identity test shall confirm that the product is the correct biological entity and matches the specification.
+    Methods may include immunoassays, chromatography, mass spectrometry, peptide mapping, or other validated techniques appropriate
+    to the product. The identity test shall be capable of distinguishing the biological product from related but different
+    products or contaminants that might be present.
+
+    '
+  applicable_categories:
+  - identity
+  - testing
+  - product-verification
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-610
+  year: 2024
+  tags:
+  - identity-testing
+  - characterization
+  - product-specification
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-610.14
+  type: guideline_clause
+  source: 21 CFR 610.14
+  title: Identity Standard for Blood-Derived Products
+  content: 'Blood-derived biological products shall have established identity standards appropriate to the source material
+    and the manufacturing process. The identity of blood-derived products may be established by reference to the source material
+    characteristics, the manufacturing process, and established biochemical markers. Manufacturers shall validate identity
+    methods and maintain consistency across batches. The identity standard shall be established during product development
+    and verified in all batches to ensure consistency and patient safety.
+
+    '
+  applicable_categories:
+  - identity
+  - blood-derived-products
+  - consistency
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-610
+  year: 2024
+  tags:
+  - blood-products
+  - identity-standards
+  - source-material
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.22
+  type: guideline_clause
+  source: 21 CFR 211.22
+  title: Responsibilities of Quality Control Unit
+  content: 'There shall be a quality control unit (which may be separate from or part of the quality assurance unit) with
+    authority independent of the production department and reporting to management. The quality control unit shall have responsibility
+    and authority to approve or reject all components, containers, closures, in-process materials, packaging materials, and
+    finished products. The unit shall establish quality standards, perform required testing, and maintain records. All acceptance
+    and rejection decisions shall be documented with justification and reviewed by authorized personnel.
+
+    '
+  applicable_categories:
+  - quality
+  - management
+  - organization
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - quality-control
+  - organization
+  - cGMP
+  - authority
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.42
+  type: guideline_clause
+  source: 21 CFR 211.42
+  title: Design and Construction Features of Facilities
+  content: 'Any building, building system, or equipment shall be suitable in size, construction, and location to facilitate
+    maintenance, cleaning, and operation in a manner suitable to the manufacture of a biological product. Buildings shall
+    be suitable for protection of components and product from environmental contamination, including dust, insects, and other
+    pests. The layout of facilities shall allow for proper separation of operations to prevent cross-contamination. Equipment
+    shall be designed, constructed, and maintained to prevent product contamination and facilitate cleaning and sanitization.
+    Environmental monitoring and controls shall be documented.
+
+    '
+  applicable_categories:
+  - facility
+  - contamination-control
+  - manufacturing
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - facility-design
+  - environmental-controls
+  - cGMP
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.68
+  type: guideline_clause
+  source: 21 CFR 211.68
+  title: Automatic, Mechanical, and Electronic Equipment — Data Integrity
+  content: 'Any automatic, mechanical, or electronic equipment, including computers or related systems, used in the manufacture
+    of a biological product shall be calibrated, inspected, checked, and maintained on a periodic basis. Equipment performance
+    shall be documented and records maintained. Automated systems shall include audit trails that record all data entries,
+    modifications, and access. Electronic records shall be protected against unauthorized access, alteration, or loss. System
+    validation documentation shall be maintained demonstrating that the equipment performs consistently according to design
+    specifications.
+
+    '
+  applicable_categories:
+  - equipment
+  - data-integrity
+  - manufacturing
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - equipment-maintenance
+  - data-integrity
+  - validation
+  - cGMP
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.100
+  type: guideline_clause
+  source: 21 CFR 211.100
+  title: Written Procedures and Deviations
+  content: 'There shall be written procedures for all significant steps in the manufacture of a biological product. Any deviations
+    from approved procedures shall be documented, investigated, and justified. The investigation shall identify the cause,
+    assess the impact on product quality and safety, and define corrective actions taken to prevent recurrence. Deviations
+    shall be reviewed and approved by qualified personnel including quality control. Records of deviations, investigations,
+    and resolutions shall be maintained and available for regulatory review. Significant deviations may require notification
+    to FDA.
+
+    '
+  applicable_categories:
+  - procedures
+  - quality
+  - compliance
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - procedures
+  - deviations
+  - investigation
+  - cGMP
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.110
+  type: guideline_clause
+  source: 21 CFR 211.110
+  title: Sampling and Testing of In-Process Materials
+  content: 'Control procedures shall be established to monitor output and to validate the performance of manufacturing processes.
+    In-process controls shall be performed at critical control points to ensure that the product is manufactured according
+    to specifications. Samples shall be collected and tested using validated methods. The frequency of testing shall be sufficient
+    to ensure product quality. In-process test results shall be reviewed before the process continues. Failure to meet in-process
+    specifications shall result in investigation and corrective action.
+
+    '
+  applicable_categories:
+  - process-control
+  - testing
+  - quality
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - in-process-controls
+  - process-validation
+  - sampling
+  - cGMP
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.160
+  type: guideline_clause
+  source: 21 CFR 211.160
+  title: General Requirements for Laboratory Controls
+  content: 'Each manufacturer shall establish and maintain control procedures to ensure that all components, containers, closures,
+    and finished products conform to established specifications. Appropriate laboratory facilities, equipment, and trained
+    personnel shall be available. Reference standards and materials shall be established and maintained. Laboratory records
+    shall document all testing, including methodology, equipment used, calibration data, results, and approval by qualified
+    personnel. Testing shall be performed by qualified individuals under the supervision of a qualified chemist or microbiologist
+    or person with comparable training.
+
+    '
+  applicable_categories:
+  - laboratory
+  - testing
+  - quality
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - laboratory-controls
+  - personnel
+  - testing
+  - cGMP
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.165
+  type: guideline_clause
+  source: 21 CFR 211.165
+  title: Testing and Release for Distribution
+  content: 'For each batch of a biological product, appropriate laboratory determination of conformance to the established
+    specifications shall be made on representative samples using validated test methods. Finished product testing shall include
+    all required tests for safety, purity, potency, and identity. No batch shall be released for distribution until all tests
+    have been completed and results reviewed and approved by qualified personnel. Records of testing and release decisions
+    shall be maintained. The release decision shall be based on compliance with all established specifications and quality
+    standards.
+
+    '
+  applicable_categories:
+  - testing
+  - release
+  - quality
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - batch-release
+  - testing
+  - quality-control
+  - cGMP
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.194
+  type: guideline_clause
+  source: 21 CFR 211.194
+  title: Laboratory Records
+  content: 'Any production, control, or other laboratory record shall be retained by a manufacturer for a period that is at
+    least as long as the shelf life of the product plus one year, or as required by the FDA. Records shall include all testing
+    data, methodology employed, identity of testing personnel, date testing was performed, equipment or instruments used,
+    calibration data, and the results of all tests. Records shall be readily available for inspection and copying by FDA representatives.
+    Laboratory records for finished products shall document the complete quality control results prior to release.
+
+    '
+  applicable_categories:
+  - records
+  - documentation
+  - compliance
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - record-retention
+  - documentation
+  - cGMP
+  - regulatory-compliance
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-11.10
+  type: guideline_clause
+  source: 21 CFR Part 11.10
+  title: Controls for Closed Systems
+  content: 'For closed systems (automated systems with controlled access), manufacturers shall implement system validation
+    that includes prospective validation, retrospective validation as appropriate, or revalidation. System validation shall
+    address validation of the system as a whole, the level of security appropriate to the system, validation of any modifications,
+    and training of users. Closed systems shall be protected from unauthorized access, alteration, or loss of electronic records.
+    Change control procedures shall be documented and implemented. Validation documentation shall include protocol, execution,
+    and acceptance criteria.
+
+    '
+  applicable_categories:
+  - electronic-records
+  - data-integrity
+  - validation
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11
+  year: 2024
+  tags:
+  - electronic-records
+  - system-validation
+  - closed-systems
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-11.30
+  type: guideline_clause
+  source: 21 CFR Part 11.30
+  title: Controls for Open Systems
+  content: 'For open systems (systems where external connections exist or where records are transferred out), manufacturers
+    shall implement additional controls. These include validation of systems and external connections, security measures to
+    protect against unauthorized access, and procedures for ensuring the authenticity and integrity of records during transmission.
+    Where open systems are used, manufacturers shall establish and maintain procedures to ensure that data are not altered
+    inappropriately, are protected from unauthorized access, and can be retrieved in their original form.
+
+    '
+  applicable_categories:
+  - electronic-records
+  - data-integrity
+  - open-systems
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11
+  year: 2024
+  tags:
+  - electronic-records
+  - open-systems
+  - data-integrity
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-11.50
+  type: guideline_clause
+  source: 21 CFR Part 11.50
+  title: Signature Manifestations
+  content: 'Electronic signatures shall contain all information normally contained in handwritten signatures including the
+    printed name of the signer, the date and time of signing, and the meaning (such as reviewed by, approved by, or witnessed
+    by). Electronic signatures shall link the signer to the record in a manner that is not susceptible to being altered. When
+    an electronic signature is intended to serve as a legally binding signature, it shall be unique to the individual signer
+    and shall not be reused or reassigned. The signer shall have the sole authority to execute the signature.
+
+    '
+  applicable_categories:
+  - electronic-signatures
+  - data-integrity
+  - documentation
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11
+  year: 2024
+  tags:
+  - electronic-signatures
+  - authentication
+  - compliance
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-11.100
+  type: guideline_clause
+  source: 21 CFR Part 11.100
+  title: General Requirements for Electronic Signatures
+  content: 'Electronic signatures shall be used only by their genuine owners and shall not be reused or reassigned. Before
+    or at the time of use, each individual shall have a unique identification code or password that is not shared. The identity
+    of the signer and the record being signed shall be securely linked. Where a manufacturer uses electronic signatures as
+    a replacement for handwritten signatures, the electronic system shall provide equivalent security, authenticity, non-repudiation,
+    and reliability to the handwritten signature. Training shall be provided to all users of electronic signature systems.
+
+    '
+  applicable_categories:
+  - electronic-signatures
+  - authentication
+  - user-controls
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11
+  year: 2024
+  tags:
+  - electronic-signatures
+  - user-authentication
+  - compliance
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-312.23
+  type: guideline_clause
+  source: 21 CFR 312.23
+  title: IND Content and Format — Chemistry, Manufacturing, Controls (CMC)
+  content: 'An IND application shall include a Chemistry, Manufacturing, and Controls (CMC) section that describes: the composition,
+    manufacturer, and specifications of the drug substance and drug product; the manufacturing process including controls
+    and process validation data; the controls used for each component; in-process controls and specifications; container closure
+    system; stability data supporting the proposed shelf life; analytical methods and their validation; and any impurities
+    or degradation products identified. The CMC section shall provide sufficient information to assure the drug''s identity,
+    strength, quality, purity, and potency.
+
+    '
+  applicable_categories:
+  - cmc
+  - regulatory-submission
+  - manufacturing
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312
+  year: 2024
+  tags:
+  - IND
+  - CMC
+  - regulatory-submission
+  - information-requirements
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-312.30
+  type: guideline_clause
+  source: 21 CFR 312.30
+  title: Protocol Amendments
+  content: 'A sponsor shall notify the FDA of any changes to a protocol or any additional CMC information that could affect
+    the safety of study subjects. Changes to manufacturing processes, sources of drug substance, or test methods that could
+    affect product quality shall be reported. Major changes require prior FDA approval (IND Amendment - Type B). Minor changes
+    that do not significantly alter the CMC section may be reported at the annual update. All protocol amendments with CMC
+    implications shall include supporting data demonstrating that the change does not adversely affect product quality or
+    safety.
+
+    '
+  applicable_categories:
+  - cmc
+  - regulatory-compliance
+  - change-management
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312
+  year: 2024
+  tags:
+  - IND
+  - amendments
+  - CMC
+  - regulatory-submission
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-314.70
+  type: guideline_clause
+  source: 21 CFR 314.70
+  title: Supplements and Other Changes to Approved NDA/BLA
+  content: 'An NDA/BLA holder shall notify the FDA of changes to the approved application. Changes are classified as Prior
+    Approval Supplement (PAS, requiring FDA approval before implementation), Supplement—Expedited (requiring FDA review within
+    30 days), or Annual Report. CMC changes that could affect product quality, safety, purity, or potency shall be reported
+    as PAS. Changes to manufacturing processes, suppliers, test methods, or specifications that affect the approved product
+    require documentation of equivalence or superiority. The applicant shall provide data demonstrating that the change does
+    not adversely affect product quality.
+
+    '
+  applicable_categories:
+  - post-approval
+  - cmc
+  - change-management
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-314
+  year: 2024
+  tags:
+  - BLA
+  - supplements
+  - post-approval
+  - CMC
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-314.81
+  type: guideline_clause
+  source: 21 CFR 314.81
+  title: Other Post-Approval Reports
+  content: 'An applicant holding an approved NDA/BLA shall submit periodic reports to the FDA including: annual reports describing
+    manufacturing changes, process improvements, new analytical methods, and revalidation of test methods; periodic safety
+    update reports summarizing adverse experience data; and reports of any other significant changes or new information. Changes
+    to the approved manufacturing process or specifications that are not reported as supplements shall be reported in the
+    annual report. The annual report provides an opportunity to document gradual improvements in manufacturing and quality
+    control processes.
+
+    '
+  applicable_categories:
+  - post-approval
+  - reporting
+  - compliance
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-314
+  year: 2024
+  tags:
+  - post-approval
+  - annual-reports
+  - regulatory-compliance
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-601.2
+  type: guideline_clause
+  source: 21 CFR 601.2
+  title: Applications for Biologics Licenses
+  content: 'A person may apply for a license to manufacture a biological product by submitting a biologics license application
+    (BLA) that includes: established name of the product; proprietary name; description of the source material; manufacturing
+    process; controls and specifications; stability data; analytical methods and validation; preclinical and clinical data;
+    and proposed labeling. The applicant shall provide sufficient information to establish that the product is safe, pure,
+    potent, and effective for its intended use. The BLA shall be submitted in the format specified by FDA and include a complete
+    CMC section.
+
+    '
+  applicable_categories:
+  - regulatory-submission
+  - cmc
+  - product-approval
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-601
+  year: 2024
+  tags:
+  - BLA
+  - regulatory-submission
+  - manufacturing
+  - quality
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-601.12
+  type: guideline_clause
+  source: 21 CFR 601.12
+  title: Changes to an Approved Application for Biologics
+  content: 'A holder of a biologics license shall notify FDA of changes to the approved biological product, its manufacturing
+    process, or its controls. Changes shall be classified and reported as: Prior Approval Supplement (PAS) requiring FDA written
+    approval before implementation; Supplement—Expedited (requiring FDA acknowledgment within 30 days); Supplement—Standard
+    (requiring written FDA approval); or Annual Report. Changes that could affect safety, purity, potency, or identity of
+    the product require PAS or Supplement—Standard. Data shall be provided demonstrating that the change does not adversely
+    affect the biological product.
+
+    '
+  applicable_categories:
+  - post-approval
+  - change-management
+  - regulatory-compliance
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-601
+  year: 2024
+  tags:
+  - post-approval
+  - supplements
+  - change-management
+  - BLA
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-601.14
+  type: guideline_clause
+  source: 21 CFR 601.14
+  title: Regulatory Hearing for Biologics
+  content: 'If FDA issues an order refusing to approve a BLA or withdrawing approval of a biologics license, the applicant
+    may request a hearing. The applicant may present additional data or information in support of the application. The hearing
+    shall be conducted by an administrative law judge. The applicant has the right to present evidence, cross-examine witnesses,
+    and submit arguments. The hearing provides an opportunity to address FDA''s concerns regarding manufacturing, quality,
+    safety, purity, potency, or other aspects of the product.
+
+    '
+  applicable_categories:
+  - regulatory-process
+  - dispute-resolution
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-601
+  year: 2024
+  tags:
+  - BLA
+  - regulatory-process
+  - appeals
+  - hearings
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-601.20
+  type: guideline_clause
+  source: 21 CFR 601.20
+  title: Approval of Biologics License Application
+  content: 'FDA shall approve a BLA if the data submitted establish that the biological product is safe, pure, potent, and
+    effective, and the product meets all applicable standards. Prior to approval, the applicant shall demonstrate that: the
+    manufacturing process is capable of producing a consistent, uniform product; all manufacturing facilities are suitable;
+    CMC controls are adequate; and all requirements for manufacturing, testing, and release are met. FDA approval shall be
+    issued in writing and shall contain conditions of approval, including post-approval commitments such as additional clinical
+    studies or manufacturing improvements if needed.
+
+    '
+  applicable_categories:
+  - regulatory-approval
+  - cmc
+  - manufacturing
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-601
+  year: 2024
+  tags:
+  - BLA
+  - approval
+  - regulatory-decision
+  - manufacturing
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-601.70
+  type: guideline_clause
+  source: 21 CFR 601.70
+  title: Annual Progress Reports of Postmarketing Studies
+  content: 'Each applicant who has a postmarketing study commitment as a condition of approval shall submit an annual report
+    documenting the progress of the study. The report shall include: the status of patient accrual and enrollment; any significant
+    findings or safety issues; data on primary and secondary endpoints; any modifications to the study protocol; and expected
+    completion date. For CMC-related studies (such as stability studies, manufacturing process improvements, or analytical
+    method development), the applicant shall provide updated data supporting the approved specifications and shelf life.
+
+    '
+  applicable_categories:
+  - post-market
+  - regulatory-reporting
+  - compliance
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-601
+  year: 2024
+  tags:
+  - post-approval
+  - reporting
+  - studies
+  - compliance
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-600.3-potency
+  type: guideline_clause
+  source: 21 CFR 600.3 — Potency
+  title: Potency Definition and Requirements
+  content: 'Potency is the specific ability or capacity of the product, as indicated by appropriate laboratory tests or by
+    adequately controlled clinical data (including human experience), to effect a given result. Each biological product shall
+    have an established potency that is determined using scientifically valid, appropriate methods. The potency test shall
+    be capable of reflecting the clinical activity of the product and shall be performed on each batch prior to release. Potency
+    standards shall be established during product development and shall be based on clinical efficacy data or, where appropriate,
+    appropriate laboratory assays.
+
+    '
+  applicable_categories:
+  - potency
+  - testing
+  - efficacy
+  - specification
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-600
+  year: 2024
+  tags:
+  - potency
+  - clinical-efficacy
+  - batch-testing
+  - quality
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.192
+  type: guideline_clause
+  source: 21 CFR 211.192
+  title: Production and Process Controls — Specification Review
+  content: 'Each manufacturer shall establish written specifications and test procedures for all components and in-process
+    materials. Specifications shall include identity, strength, quality, and purity requirements. Each batch of components
+    shall be tested and approved before use in manufacturing. In-process materials shall be controlled by written procedures
+    and tested at appropriate stages. The manufacturer shall establish acceptance criteria and document all testing results.
+    Changes to specifications or test procedures require documentation, investigation, and appropriate approval.
+
+    '
+  applicable_categories:
+  - specifications
+  - process-controls
+  - quality
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - specifications
+  - process-controls
+  - cGMP
+  - batch-control
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-600.3-purity
+  type: guideline_clause
+  source: 21 CFR 600.3 — Purity
+  title: Purity Definition and Requirements
+  content: 'Purity is defined as the degree to which a substance is free from extraneous matter. For biological products,
+    purity encompasses freedom from chemical impurities, residual process-related impurities, host cell proteins, host cell
+    DNA, endotoxins, and microbiological contamination. Each biological product shall be manufactured under controls designed
+    to ensure consistent purity. Specifications for purity shall be established during product development based on manufacturing
+    process capability and safety/efficacy data. All batches shall be tested to ensure they meet the established purity specifications
+    prior to release for distribution.
+
+    '
+  applicable_categories:
+  - purity
+  - impurity-control
+  - specification
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-600
+  year: 2024
+  tags:
+  - purity
+  - impurity-removal
+  - quality-control
+  - specifications
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.25
+  type: guideline_clause
+  source: 21 CFR 211.25
+  title: Personnel — Training
+  content: 'Each manufacturer shall establish a training program for all individuals who participate in the manufacture, processing,
+    packing, or holding of a biological product. Training shall include instruction on the importance of their particular
+    function in assuring product quality. Training records shall be established and maintained for all personnel. Continuing
+    training shall be provided to keep personnel informed of new procedures, equipment, or regulatory changes. Supervisory
+    personnel shall receive instruction on quality and cGMP principles.
+
+    '
+  applicable_categories:
+  - personnel
+  - training
+  - management
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - personnel
+  - training
+  - competency
+  - cGMP
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.50
+  type: guideline_clause
+  source: 21 CFR 211.50
+  title: Equipment Design and Installation
+  content: 'Equipment and components used in manufacturing shall be designed and constructed to facilitate maintenance, cleaning,
+    and operation to prevent product contamination. All equipment shall be calibrated, inspected, and maintained periodically.
+    Maintenance procedures shall be documented. Equipment that may contact the product shall not present any chemical or physical
+    compatibility issues. Records of equipment maintenance and calibration shall be maintained. Any equipment failures or
+    malfunctions shall be documented and investigated for impact on product quality.
+
+    '
+  applicable_categories:
+  - equipment
+  - maintenance
+  - manufacturing
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - equipment
+  - maintenance
+  - calibration
+  - cGMP
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.63
+  type: guideline_clause
+  source: 21 CFR 211.63
+  title: Equipment Location and Layout
+  content: 'Equipment shall be positioned and located to minimize the possibility of contamination. The layout of equipment
+    shall facilitate cleaning and prevent cross-contamination between different products or processes. Equipment used for
+    manufacturing different products shall be either dedicated or cleaned between products with validated cleaning procedures.
+    Raw materials, components, and products shall be physically separated during storage and manufacturing. Environmental
+    monitoring shall be performed to ensure that the equipment location and layout result in appropriate environmental conditions.
+
+    '
+  applicable_categories:
+  - facility
+  - contamination-control
+  - equipment
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - equipment-layout
+  - contamination-prevention
+  - cGMP
+  - facility
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.192-stability
+  type: guideline_clause
+  source: 21 CFR 211.192
+  title: Stability Testing and Shelf Life Determination
+  content: 'Manufacturers shall establish and maintain a stability program to ensure the identity, strength, quality, purity,
+    and potency of the biological product throughout its stated shelf life. Stability testing shall be performed under appropriate
+    conditions (temperature, humidity, light) and at appropriate time intervals. Data shall be provided to support the proposed
+    expiration date or beyond-use dating. Stability protocols shall include testing of the product in its final container
+    and closure system. Results shall be reviewed and approved by qualified personnel before the shelf life is established
+    or extended.
+
+    '
+  applicable_categories:
+  - stability
+  - shelf-life
+  - quality
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - stability
+  - shelf-life
+  - degradation
+  - quality-assurance
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.80
+  type: guideline_clause
+  source: 21 CFR 211.80
+  title: Contractual Arrangements for Manufacturing Components
+  content: 'Each manufacturer shall ensure that any manufacturing operations performed by a contractor are conducted under
+    appropriate written agreements that specify the work to be performed, the quality standards required, and the responsibility
+    for compliance with cGMP regulations. The manufacturer shall audit and approve all contractors performing manufacturing
+    operations. Records of contractor activities, quality audits, and compliance shall be maintained. The manufacturer retains
+    ultimate responsibility for the quality of the finished product regardless of contractors used.
+
+    '
+  applicable_categories:
+  - quality
+  - manufacturing
+  - oversight
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - contractors
+  - outsourcing
+  - quality-oversight
+  - cGMP
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: 21CFR-211.72
+  type: guideline_clause
+  source: 21 CFR 211.72
+  title: Cleaning and Maintenance of Equipment
+  content: 'Any equipment or container used for manufacturing shall be cleaned and maintained to prevent contamination. Cleaning
+    procedures shall be written and validated. The frequency of cleaning shall be appropriate to prevent accumulation of residue
+    or contamination. Equipment shall be inspected visually for cleanliness before use. Records of cleaning and maintenance
+    shall be maintained. Cleaning agents and sanitizers shall be selected to avoid product contamination. For equipment used
+    to manufacture different products, validated cleaning procedures shall ensure no cross-contamination between batches or
+    products.
+
+    '
+  applicable_categories:
+  - equipment
+  - contamination-control
+  - manufacturing
+  confidence: 1.0
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-E/part-211
+  year: 2024
+  tags:
+  - cleaning
+  - equipment-maintenance
+  - contamination-prevention
+  - cGMP
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final

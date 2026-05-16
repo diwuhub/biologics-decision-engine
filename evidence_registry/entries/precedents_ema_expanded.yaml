@@ -1,0 +1,664 @@
+entries:
+- id: EMA-EXP-001
+  type: precedent
+  source: 'EMA EPAR: Hulio (adalimumab biosimilar)'
+  title: Adalimumab Biosimilar - Analytical Similarity in Protein Characterization
+  content: 'Hulio EPAR demonstrates comprehensive analytical characterization of adalimumab biosimilar including: Primary
+    structure analysis (amino acid sequencing), higher-order structure determination via 2D-NMR, thermal stability assessment,
+    and isoform profiling. Quality-by-Design approach applied to drug substance manufacturing with 12 parameter control strategy.
+    Charge variants, hydrophobic interaction chromatography, and reduced/non-reduced peptide mapping all showed acceptable
+    similarity to Humira reference. Container closure system qualification included extractables/leachables testing. Process
+    validation across three batches demonstrated consistent potency (≥95% relative to reference).
+
+    '
+  applicable_categories:
+  - analytical_similarity
+  - purity
+  - potency
+  - comparability_exercise
+  confidence: 0.92
+  year: 2018
+  tags:
+  - adalimumab
+  - TNF-inhibitor
+  - biosimilar
+  - analytical_characterization
+  - quality_by_design
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-002
+  type: precedent
+  source: 'EMA EPAR: Hyrimoz (adalimumab biosimilar)'
+  title: Adalimumab Biosimilar - Analytical Method Validation and Similarity Margin Setting
+  content: 'Hyrimoz EPAR documents adalimumab biosimilar analytical program with emphasis on similarity margin justification.
+    Gel permeation chromatography (size exclusion), reversed-phase HPLC for aggregate assessment, and capillary isoelectric
+    focusing for charge variant distribution. Margin setting for charge variants established at ±5% relative to reference
+    standard. Structural heterogeneity assessment identified N-terminal pyroglutamate variant at 85-95% (consistent with reference).
+    Disulfide bond mapping via mass spectrometry confirmed intact structure. Process robustness testing evaluated impact of
+    critical parameters (temperature ±2°C, pH ±0.2) on product quality.
+
+    '
+  applicable_categories:
+  - analytical_similarity
+  - method_validation
+  - comparability_exercise
+  - purity
+  confidence: 0.9
+  year: 2018
+  tags:
+  - adalimumab
+  - analytical_margins
+  - charge_variants
+  - disulfide_bonds
+  - process_robustness
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-003
+  type: precedent
+  source: 'EMA EPAR: Ruxience (rituximab biosimilar)'
+  title: CD20 Biosimilar - Glycosylation Profile and Fc Function Characterization
+  content: 'Ruxience EPAR (2020 approval) demonstrates comprehensive rituximab biosimilar quality data including glycosylation
+    analysis via MALDI-TOF mass spectrometry. Complex-type biantennary N-glycans with heterogeneity in fucosylation (88-95%)
+    and galactosylation profiles characterized. Core-fucosylated and afucosylated species quantified with acceptance criteria
+    ±5% vs reference. Fc effector function assessed via ADCC (antibody-dependent cellular cytotoxicity) assay showing comparable
+    potency. Binding to FcγRIIIa receptor confirmed via surface plasmon resonance. Process validation included control of
+    cell culture conditions (pH, dissolved oxygen, temperature) with statistical design of experiments. Manufacturing facility
+    assessment per ICH Q3A impurity classification strategy.
+
+    '
+  applicable_categories:
+  - analytical_similarity
+  - potency
+  - comparability_exercise
+  - glycosylation
+  confidence: 0.94
+  year: 2020
+  tags:
+  - rituximab
+  - CD20
+  - biosimilar
+  - glycosylation
+  - Fc_function
+  - ADCC
+  - afucosylation
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-004
+  type: precedent
+  source: 'EMA EPAR: Ontruzant (trastuzumab biosimilar)'
+  title: HER2 Biosimilar - Functional Assay Correlation and Potency Demonstration
+  content: 'Ontruzant EPAR provides HER2-targeted trastuzumab biosimilar with focus on functional equivalence. Ligand binding
+    ELISA demonstrated dose-response concordance with originator (EC50 within 10%). Cell-based proliferation inhibition assay
+    on HER2-positive BT-474 cell line showed equivalent anti-tumor activity. Trypan blue exclusion assay confirmed cytostatic
+    effect. Fc-mediated functions (ADCC, ADCP) quantified via high-performance reference standards. Stressed stability studies
+    (accelerated temperature, light, freeze-thaw) showed comparable degradation patterns. Extractables from vials assessed
+    per ISO 11193 standards. Drug substance stability at 5°C for 36 months established shelf-life of 36 months when formulated
+    in current container system.
+
+    '
+  applicable_categories:
+  - analytical_similarity
+  - potency
+  - comparability_exercise
+  - functional_assay
+  confidence: 0.93
+  year: 2017
+  tags:
+  - trastuzumab
+  - HER2
+  - biosimilar
+  - potency_assay
+  - ADCC
+  - stability_data
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-005
+  type: precedent
+  source: 'EMA EPAR: Pelgraz (pegfilgrastim biosimilar)'
+  title: Pegylated Biosimilar - Conjugation Integrity and Pegylation Distribution
+  content: 'Pelgraz EPAR demonstrates pegfilgrastim biosimilar with detailed pegylation characterization. Pegylated filgrastim
+    structure confirmed via SEC-MALLS (size-exclusion chromatography with multi-angle light scattering). Pegylation efficiency
+    quantified at 90-100% monopegylation. Charge heterogeneity from different pegylation sites (lysine residues) assessed
+    via ion-exchange chromatography. Molecular weight distribution narrow range ±5% vs reference. Biological activity (G-CSF
+    receptor binding) preserved post-pegylation; cell proliferation assay showed EC50 within reference range. Process scale-up
+    from 2L to 50L bioreactor demonstrated comparable pegylation profiles. Extractables from vial stoppers qualified as low-risk
+    with migration studies per USP <383>. Lyophilization cycle optimization documented via Raman spectroscopy freeze-dry microscopy.
+
+    '
+  applicable_categories:
+  - analytical_similarity
+  - potency
+  - process_scale_up
+  - comparability_exercise
+  confidence: 0.91
+  year: 2018
+  tags:
+  - pegfilgrastim
+  - G-CSF
+  - pegylated_biosimilar
+  - pegylation_distribution
+  - scale_up
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-006
+  type: precedent
+  source: 'EMA EPAR: Terrosa (teriparatide biosimilar)'
+  title: Peptide Biosimilar - Amino Acid Sequencing and Structure Integrity
+  content: 'Terrosa EPAR covers teriparatide (PTH 1-34) peptide biosimilar with comprehensive characterization. Amino acid
+    sequencing via Edman degradation confirmed 34-residue sequence identity with originator. Molecular weight determination
+    via low-resolution mass spectrometry ±0.1 kDa of theoretical value. Secondary structure assessment via circular dichroism
+    spectroscopy showed comparable helical content. Peptide identity confirmed via HPLC-MS/MS fragmentation mapping. Impurity
+    control: acetylated N-terminus quantified at 92-98% (consistent with reference standard). Amino acid composition analysis
+    via HPLC post-hydrolysis verified stoichiometry. Biological potency demonstrated via human PTH1R (PTH receptor) cell-based
+    assay with IP1 accumulation readout. Formulation stability at 25°C/60% RH and 5°C showed comparable degradation kinetics
+    vs reference over 24 months.
+
+    '
+  applicable_categories:
+  - analytical_similarity
+  - potency
+  - peptide_characterization
+  - comparability_exercise
+  confidence: 0.89
+  year: 2017
+  tags:
+  - teriparatide
+  - PTH_1-34
+  - peptide_biosimilar
+  - amino_acid_sequencing
+  - peptide_potency
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-007
+  type: precedent
+  source: 'EMA EPAR: Semglee (insulin glargine biosimilar)'
+  title: Insulin Biosimilar - Isoform Consistency and Metabolic Equivalence
+  content: 'Semglee EPAR demonstrates insulin glargine biosimilar with focus on isoform purity and metabolic activity. Intact
+    mass spectrometry confirmed M+21 molecular weight (21-insulin with A21Gly substitution). Isoform analysis via RP-HPLC
+    (reverse-phase) quantified deamidated and isomerized variants. Acceptance criteria for main component ≥95% with aspartyl
+    isomerization ≤3% and asparagine deamidation ≤2% vs reference standard. Insulin monomer/dimer/hexamer distribution assessed
+    via size-exclusion chromatography; hexamer content 85-98% (physiologically relevant for long-acting activity). Receptor
+    binding affinity (human insulin receptor IR-A and IR-B) demonstrated via surface plasmon resonance with KD values comparable
+    to originator. In vitro potency (3T3-L1 adipocyte glucose uptake assay) confirmed equivalent biological activity. Container
+    closure (FlexPen device) compatibility testing included injection force measurement across temperature range.
+
+    '
+  applicable_categories:
+  - analytical_similarity
+  - potency
+  - insulin_characterization
+  - comparability_exercise
+  confidence: 0.91
+  year: 2018
+  tags:
+  - insulin_glargine
+  - biosimilar
+  - isoform_purity
+  - metabolic_equivalence
+  - receptor_binding
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-008
+  type: precedent
+  source: 'EMA EPAR: Aybintio (bevacizumab biosimilar)'
+  title: VEGF Biosimilar - Binding Affinity and Angiogenesis Inhibition Activity
+  content: 'Aybintio EPAR (2023 approval) demonstrates bevacizumab biosimilar with comprehensive VEGF-binding and anti-angiogenic
+    characterization. Binding affinity to human VEGF-A (full-length and isoforms VEGF165, VEGF121) assessed via ELISA and
+    surface plasmon resonance. KD values within ±20% of originator (Avastin). Neutralization of VEGF bioactivity confirmed
+    via VEGF-induced proliferation inhibition assay on human endothelial cells (HMVEC). Angiogenesis assay (tube formation
+    in matrigel) showed comparable inhibition. Fc-mediated effector functions (ADCC, complement-dependent cytotoxicity) quantified.
+    N-glycosylation profile (biantennary, complex-type) analyzed via MALDI-TOF with core fucosylation 88-94% vs reference.
+    Stability under stressed conditions (light, oxidation) demonstrated comparable degradation pathways. Manufacturing scale-up
+    from 10L to 100L bioreactor with proven equivalence across batches. Risk assessment per ICH Q3B for elemental impurities
+    (lead, cadmium, arsenic).
+
+    '
+  applicable_categories:
+  - analytical_similarity
+  - potency
+  - comparability_exercise
+  - biological_activity
+  confidence: 0.92
+  year: 2023
+  tags:
+  - bevacizumab
+  - VEGF
+  - biosimilar
+  - angiogenesis_inhibition
+  - Fc_function
+  - scale_up
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-009
+  type: precedent
+  source: 'EMA EPAR: Nepexto (etanercept biosimilar)'
+  title: Fc-Fusion Biosimilar - TNF Binding and Receptor Complex Formation
+  content: 'Nepexto EPAR covers etanercept (TNFR-Fc fusion) biosimilar with detailed fusion protein characterization. TNF-α
+    binding affinity via surface plasmon resonance demonstrated KD within ±25% of Enbrel reference. Soluble TNF receptor (sTNFR)
+    domain integrity confirmed via peptide mapping (reduced/non-reduced). Disulfide bond mapping via mass spectrometry identified
+    18 disulfide bridges (expected for Fc-fusion protein). N-glycosylation at two sites (sTNFR and Fc) characterized via MALDI-TOF
+    with comparability margins ±5% for fucosylation content (87-93%). Fc-mediated effector functions (ADCC via NK cell assay,
+    ADCP via monocyte assay) demonstrated with activity ratios 0.80-1.25 vs reference. TNF neutralization bioassay using luciferase-reporter
+    cells confirmed equivalent potency (IC50 ratios 0.85-1.20). Oxidation stress testing at 30°C/75% RH showed comparable
+    degradation profile including methionine oxidation quantification.
+
+    '
+  applicable_categories:
+  - analytical_similarity
+  - potency
+  - Fc_fusion
+  - comparability_exercise
+  confidence: 0.93
+  year: 2016
+  tags:
+  - etanercept
+  - TNF_receptor_Fc
+  - biosimilar
+  - disulfide_bonds
+  - TNF_neutralization
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-010
+  type: precedent
+  source: 'EMA EPAR: Yuflyma (adalimumab biosimilar, high concentration)'
+  title: High-Concentration Adalimumab Formulation - Viscosity Management and Excipient Role
+  content: 'Yuflyma EPAR demonstrates adalimumab biosimilar developed at high concentration (100 mg/0.7 mL vs 40 mg/0.8 mL
+    for Humira Pen). Physicochemical characterization included viscosity measurement at 25°C showing 8-12 cP range (comparable
+    to reference despite concentration difference achieved via excipient optimization). Osmolality measured 290-310 mOsm/kg
+    (isotonic range maintained). Protein aggregation studies via size-exclusion HPLC showed <1% high molecular weight species
+    at concentration. Forced degradation studies (pH 2-10, oxidation, light) characterized degradation products and confirmed
+    identity of major peak >99%. Formulation stability at 25°C/60% RH and 5°C for 36 months. Device (PenPak) injection force
+    testing across temperature range (-20°C to 40°C) with clogging risk assessment. Manufacturing of bulk drug substance at
+    same scale/process as lower concentration version; final formulation fill-finish process qualified with particulate matter
+    testing per USP <788>. User experience testing on injection acceptability documented in section 2.3 of EPAR.
+
+    '
+  applicable_categories:
+  - analytical_similarity
+  - formulation_development
+  - potency
+  - comparability_exercise
+  confidence: 0.9
+  year: 2019
+  tags:
+  - adalimumab
+  - high_concentration
+  - biosimilar
+  - viscosity
+  - formulation_optimization
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-011
+  type: precedent
+  source: 'EMA EPAR: Kymriah (tisagenlecleucel, EU approval)'
+  title: CAR-T Cell Therapy - Release Specification and Potency Assay Challenges
+  content: 'Kymriah EU EPAR documents CAR-T cell therapy manufacturing quality requirements. Product specification includes:
+    cell viability (flow cytometry, ≥80%), viable cell count (trypan blue exclusion), CAR-positive T cell percentage (flow
+    cytometry, ≥70%), transduction efficiency (lentiviral vector copy number integration). Functional potency assay based
+    on CAR-T cells co-cultured with CD19+ target cells with readout of IFN-γ secretion (ELISA) or target cell lysis. Due to
+    inherent product variability (cell therapy from individual patient starting material), acceptance criteria established
+    as in-process controls (cell viability, transduction rate) rather than tight product-release specifications. Comparability
+    approach for manufacturing process changes emphasized process parameter control (culture conditions, lentiviral vector
+    titer, transduction efficiency targets) rather than finished product testing. Sterility testing (USP <71>) and mycoplasma
+    detection required pre-release. Microbial limits per EP <2.6.12>. Characterization of lentiviral vector shedding and integration
+    site distribution documented for safety.
+
+    '
+  applicable_categories:
+  - cell_therapy
+  - potency_assay
+  - comparability_exercise
+  - release_specification
+  confidence: 0.88
+  year: 2018
+  tags:
+  - CAR-T
+  - cell_therapy
+  - lentiviral_vector
+  - potency_assay
+  - transduction_efficiency
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-012
+  type: precedent
+  source: 'EMA EPAR: Zolgensma (onasemnogene abeparvovec, EU approval)'
+  title: Gene Therapy - Vector Potency and Biodistribution Assessment
+  content: 'Zolgensma EPAR covers AAV9-based gene therapy for spinal muscular atrophy with focus on vector characterization.
+    Physical titer (DNase-resistant particles) measured via droplet digital PCR or quantitative reverse transcription PCR.
+    Full/empty capsid ratio assessed via analytical ultracentrifugation or size-exclusion chromatography. Genetic identity
+    confirmed via PCR spanning complete transgene (SMN1 cDNA plus regulatory elements). Transgene expression potency demonstrated
+    via transfection into HEK293 cells with quantification of SMN protein via western blot or ELISA. Endotoxin levels per
+    USP <85> with limit ≤175 EU/dose. Residual host cell DNA quantification via qPCR (<10 pg total DNA per dose). Biodistribution
+    studies in animal models (non-human primates) documented organ-to-liver ratio and durability of transgene expression.
+    Comparability data for manufacturing changes (cell line, culture conditions) emphasized impact on full/empty ratio and
+    potency. Manufacturing process includes recombinant AAV9 production in mammalian cells with buffer exchange for formulation
+    at -20°C.
+
+    '
+  applicable_categories:
+  - gene_therapy
+  - vector_characterization
+  - potency_assay
+  - biodistribution
+  confidence: 0.87
+  year: 2020
+  tags:
+  - AAV9
+  - gene_therapy
+  - spinal_muscular_atrophy
+  - vector_titer
+  - transgene_expression
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-013
+  type: precedent
+  source: 'EMA EPAR: Comirnaty (BNT162b2 mRNA vaccine, EU approval)'
+  title: mRNA Vaccine - Potency Assay and Large-Scale Manufacturing Comparability
+  content: 'Comirnaty EPAR documents mRNA-lipid nanoparticle vaccine manufacturing at unprecedented scale (billions of doses).
+    mRNA identity and purity (cap1 structure, 5''-UTR, coding region, 3''-UTR, poly-A tail) confirmed via HPLC-MS/MS. Full-length
+    mRNA quantified via capillary electrophoresis with acceptance ≥88% of theoretical. Bioburden testing per USP <62> with
+    limit <100 CFU per 10 mL vial. Potency assay based on in vitro transcription of mRNA template with quantification of Spike
+    protein expression via ELISA in transfected HEK293 cells or CHO-K1 cells. Relative potency units assigned based on reference
+    standard. Endotoxin levels per USP <85> with limit ≤0.175 EU/dose. Lipid nanoparticle (LNP) composition characterized
+    via HPLC for ionizable lipid, phospholipid, cholesterol, PEG-lipid; size distribution via dynamic light scattering with
+    Z-average diameter 80-120 nm. Manufacturing scale-up from pilot to commercial (100-fold increase in batch size) required
+    extensive comparability data including identical control strategy at each scale. Process analytical technology (PAT) implemented
+    for real-time release testing. Stability data at -80°C, -20°C, 2-8°C with defined shelf-life under specific storage.
+
+    '
+  applicable_categories:
+  - mRNA_vaccine
+  - potency_assay
+  - manufacturing_scale
+  - comparability_exercise
+  confidence: 0.94
+  year: 2020
+  tags:
+  - mRNA
+  - COVID-19_vaccine
+  - lipid_nanoparticle
+  - potency_assay
+  - large_scale_manufacturing
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-014
+  type: precedent
+  source: 'EMA EPAR: Spikevax (mRNA-1273 mRNA vaccine, EU approval)'
+  title: mRNA Platform Quality - Manufacturing Process Consistency Across Multiple Variants
+  content: 'Spikevax EPAR demonstrates mRNA vaccine platform approach for multiple COVID-19 variants using manufacturing process
+    consistency as primary comparability strategy. mRNA identity (cap1 structure, 5''- and 3''-UTR sequences, poly-A tail
+    length 70-100 nucleotides) confirmed via capillary gel electrophoresis and HPLC-MS/MS. Full-length mRNA percentage ≥80%
+    (higher than Comirnaty). Potency normalized to reference standard via in vitro transcription assay and immunogenicity
+    (Spike protein ELISA on transfected HEK293). Single-stranded RNA (ssRNA) impurities quantified via capillary electrophoresis
+    at <2% (potential immunogenic contaminant). Lipid nanoparticle characterization (composition, size distribution) identical
+    methodology to Comirnaty. Endotoxin limits per USP <85>. For manufacturing changes or variant transitions, comparability
+    demonstrated via: (1) identical process parameters across variants, (2) potency assay equivalence, (3) in vivo immunogenicity
+    bridging study in mouse model showing equivalent antibody titer and T-cell responses. Stability at -20°C/2-8°C for 30
+    months. Extractables from glass vial/stopper system assessed.
+
+    '
+  applicable_categories:
+  - mRNA_vaccine
+  - potency_assay
+  - platform_consistency
+  - variant_management
+  confidence: 0.92
+  year: 2021
+  tags:
+  - mRNA
+  - COVID-19_vaccine
+  - lipid_nanoparticle
+  - platform_approach
+  - variant_comparability
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-015
+  type: precedent
+  source: 'EMA EPAR: Hemlibra (emicizumab, bispecific antibody)'
+  title: Bispecific Antibody Manufacturing - Novel Format Control Strategy
+  content: 'Hemlibra EPAR covers emicizumab, a bispecific antibody bridging Factor IX and Factor X with dual variable domain
+    (DVD-Ig) format. Quaternary structure confirmed via reduced/non-reduced peptide mapping and size-exclusion chromatography.
+    Two disulfide-linked heavy chains (CH1 domains) and associated light chains verified via mass spectrometry and capillary
+    electrophoresis. N-glycosylation at two sites (Fc region, each heavy chain) characterized via MALDI-TOF with core fucosylation
+    85-95% (critical for Fc effector function but not desired here for safety; low ADCC target). Bispecific binding confirmed
+    via sandwich ELISA: plate-coated FIXa, detection with FX fluorescent tracer, with inhibition by bispecific antibody showing
+    EC50 within reference range. Functional assay based on Factor X activation (chromogenic substrate assay) in presence of
+    Factor IXa and emicizumab vs reference standard. Manufacturing process control strategy emphasized: (1) cell culture parameters
+    (pH, DO, glucose), (2) purification robustness (affinity capture, ion-exchange, hydrophobic interaction), (3) viral clearance
+    validation (low pH hold 2 hr, terminal sterilization filter). Stability at 2-8°C for 36 months. Device (prefilled syringe)
+    compatibility with formulation.
+
+    '
+  applicable_categories:
+  - bispecific_antibody
+  - potency_assay
+  - manufacturing_control
+  - comparability_exercise
+  confidence: 0.91
+  year: 2018
+  tags:
+  - bispecific_antibody
+  - emicizumab
+  - DVD-Ig_format
+  - Factor_IX_X
+  - manufacturing_control
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-016
+  type: precedent
+  source: EMA Type II Variation - Manufacturing Site Transfer (Rituximab Example)
+  title: Manufacturing Site Transfer - Comparability Study Requirements and Duration
+  content: 'EMA precedent documenting rituximab manufacturing site transfer from original facility to new contract manufacturing
+    organization (CMO) location. Comparability package included: (1) process analytical characterization at both sites with
+    side-by-side comparison of 3 batches each; (2) quality attributes tested: charge variants (IEX-HPLC), isoforms (RP-HPLC),
+    N-glycosylation profile (MALDI-TOF), aggregates (SEC-HPLC), potency (cell proliferation assay on B lymphoma cells), binding
+    affinity (ELISA, SPR); (3) statistical equivalence testing per ICH Q6A guidelines with acceptance criteria ±5-10% depending
+    on attribute criticality; (4) process validation at new site with 3 consecutive commercial batches; (5) stability protocol
+    initiated with new site material alongside historical reference data (minimum 12-month real-time data required before
+    approval); (6) technical visits by QA to new facility documenting environmental monitoring, equipment qualification, staff
+    training. Approval granted after 18-24 month timeline for complete comparability and stability demonstration. Post-approval,
+    enhanced QA oversight of new site for first year.
+
+    '
+  applicable_categories:
+  - manufacturing_transfer
+  - comparability_exercise
+  - process_validation
+  - stability
+  confidence: 0.9
+  year: 2015
+  tags:
+  - manufacturing_transfer
+  - comparability_study
+  - process_validation
+  - site_change
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-017
+  type: precedent
+  source: EMA Type II Variation - Bioreactor Scale-Up (Adalimumab Example)
+  title: Process Scale-Up - Clinical to Commercial Scale Comparability Data
+  content: 'EMA precedent for adalimumab manufacturing scale-up from Phase III clinical batches (2-5 L bioreactor) to commercial
+    scale (100-200 L bioreactor). Comparability strategy focused on: (1) identical process steps at each scale (inoculum preparation,
+    fed-batch culture parameters, harvest, downstream purification); (2) critical process parameters controlled identically:
+    cell density at inoculation (1-2 × 10^6 cells/mL), culture pH (6.8-7.2), dissolved oxygen (30-40% saturation), temperature
+    (37°C ±0.5°C); (3) quality attribute comparison via pooled in-process samples from 3 batches at each scale: potency assay
+    (TNF neutralization), purity (charge variants, aggregates), identity (peptide mapping), stability profiles under stress
+    conditions; (4) process parameters correlated to quality attributes via design of experiments (DOE) at pilot scale to
+    inform control strategy at commercial scale; (5) head-to-head batch comparison showing statistical equivalence (p-value
+    >0.05) for critical attributes between scales; (6) stability data from commercial-scale batches demonstrating shelf-life
+    of 36 months with identical storage conditions (2-8°C) as clinical batches. Manufacturing change approved as Type II Variation
+    with no clinical trial data required, supported solely by analytical comparability.
+
+    '
+  applicable_categories:
+  - process_scale_up
+  - comparability_exercise
+  - critical_process_parameters
+  confidence: 0.92
+  year: 2016
+  tags:
+  - scale_up
+  - clinical_to_commercial
+  - process_parameters
+  - comparability_data
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-018
+  type: precedent
+  source: EMA Type II Variation - Formulation Change (IV to SC, Bevacizumab Example)
+  title: Route of Administration Change - Formulation Development and Stability Impact
+  content: 'EMA precedent for bevacizumab formulation change from intravenous (IV) infusion concentrate (5 mg/mL in vial)
+    to subcutaneous (SC) injection (120 mg/0.8 mL prefilled syringe). Comparability package included: (1) drug substance identical
+    (no API changes); (2) excipient changes: addition of polysorbate 80 (0.04% w/v) to increase protein stability in smaller
+    volume, reduction in sodium phosphate buffer concentration to maintain osmolality appropriate for SC injection (280-300
+    mOsm/kg); (3) physicochemical testing: viscosity at 25°C (4-6 cP for SC formulation vs 1-2 cP for IV); osmolality; pH
+    (6.2-6.6); optical density (light scattering <0.3 at 350 nm); (4) stability studies in new formulation: real-time at 2-8°C
+    for 24 months and 25°C/60% RH for 12 months with testing every 3 months (potency, purity, aggregates, subvisible/visible
+    particulates per USP <788>); (5) immunogenicity risk assessment: injection site reaction potential via repeat-dose local
+    tolerance study in rabbits (histopathology, clinical signs); (6) extractables from prefilled syringe elastomer and glass
+    per ISO 11193; (7) bioavailability bridging via PK study in patients receiving SC formulation vs historical IV infusion
+    data. Type II Variation approved with 6-month real-time stability data and ongoing commitment to complete 24-month stability
+    studies.
+
+    '
+  applicable_categories:
+  - formulation_change
+  - route_of_administration
+  - stability
+  - bioavailability
+  confidence: 0.89
+  year: 2019
+  tags:
+  - route_change
+  - SC_formulation
+  - excipient_change
+  - stability_studies
+  - injection_site
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-019
+  type: precedent
+  source: EMA Type II Variation - Container Closure Change (Etanercept Example)
+  title: Primary Container Change - Extractables/Leachables and Device Functionality Assessment
+  content: 'EMA precedent for etanercept container closure system change from West vial/rubber stopper (20 mm, Type I borosilicate)
+    to Gerresheimer Daikyo vial/hybrid dual-layer stopper (20 mm, Type I borosilicate glass with elastomer layer). Comparability
+    package included: (1) glass and elastomer material qualification per USP <383> and ISO 11193 standards; (2) extractables
+    study: accelerated extraction at 50°C/water for 24 hours followed by LC-MS/MS analysis identifying extractable species
+    (none exceeded ICH Q3C thresholds for concern); (3) leachables study: long-term real-time storage of product in new container
+    at 2-8°C and 25°C with quarterly analysis for 6 months searching for container-derived impurities (none detected at reportable
+    levels); (4) particulate matter testing per USP <788> showing <6 particles ≥10 µm and <250 particles ≥2 µm (passed USP
+    limits); (5) stopper coring assessment via needle penetration testing (minimum 25 punctures, visual inspection for rubber
+    fragments); (6) injection force testing for prefilled pen delivery device across temperature range (-20°C to 40°C) with
+    mechanical reproducibility per ISO 6891; (7) biocompatibility per ISO 10993 (cytotoxicity, sensitization, irritation)
+    for short-term product contact. Type II Variation approved with full 6-month leachables data and commitment to extended
+    stability monitoring through shelf-life.
+
+    '
+  applicable_categories:
+  - container_closure_change
+  - extractables_leachables
+  - primary_container
+  confidence: 0.91
+  year: 2018
+  tags:
+  - container_change
+  - extractables
+  - leachables
+  - device_compatibility
+  - particulate_matter
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports
+- id: EMA-EXP-020
+  type: precedent
+  source: EMA Type II Variation - Analytical Method Replacement (Potency Assay Example)
+  title: Potency Assay Replacement - Method Validation and Cross-Validation Requirements
+  content: 'EMA precedent for potency assay replacement in TNF-inhibitor production (transition from older TNF cell killing
+    assay with L929 fibroblasts to newer recombinant human TNF receptor (TNFR) ELISA-based competitive binding assay). Comparability
+    package included: (1) Old method: L929 cell cytotoxicity with TNF/cycloheximide, readout trypan blue exclusion, reference
+    standard calibrated to WHO standard (units: IU/mL); (2) New method: sandwich ELISA with capture anti-TNF mAb, detection
+    TNFR-HRP, reference standard harmonized to WHO IU/mL; (3) Validation per ICH Q2(R2): accuracy (80-120% recovery), precision
+    (RSD <10% intra-assay, <15% inter-assay), linearity (R² >0.99 across 0.5-2× working range), range, robustness (pH, temperature
+    ±2°C); (4) Cross-validation: minimum 10 product batches (clinical + commercial) tested in parallel with both methods;
+    statistical comparison using Bland-Altman plot and regression analysis; acceptance criteria: new method results within
+    ±20% of old method mean; (5) Reference standard change: USP standard for new method calibrated against WHO reference preparation
+    (BTG-11/136); (6) Impact assessment: re-testing of full product stability data (all time points) with new method, ensuring
+    release specifications remain scientifically justified; (7) Updated analytical procedure documentation in Module 3 of
+    CTD with suitability study results. Type II Variation approved with commitment to parallel testing of 5 additional commercial
+    batches (post-approval) to provide further confidence.
+
+    '
+  applicable_categories:
+  - analytical_method_replacement
+  - method_validation
+  - potency_assay
+  confidence: 0.89
+  year: 2017
+  tags:
+  - method_replacement
+  - analytical_validation
+  - potency_assay
+  - WHO_standard
+  - cross_validation
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from EMA public assessment reports

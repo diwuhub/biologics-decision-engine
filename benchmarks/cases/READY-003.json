@@ -1,0 +1,22 @@
+{
+  "case_id": "READY-003",
+  "title": "Early-Phase Package (Bioprinted Cardiac Tissue)",
+  "category": "review_readiness",
+  "source": "synthetic (inspired by early cardiac tissue engineering for safety assessment)",
+  "expected_readiness_tier": "low",
+  "expected_readiness_score_max": 0.39,
+  "expected_gap_count_min": 3,
+  "nam_type": "bioprinted",
+  "context_of_use": "safety_pharmacology",
+  "species_replaced": "dog",
+  "validation_evidence": [
+    {
+      "study_type": "feasibility",
+      "concordance_rate": 0.55,
+      "sample_size": 10,
+      "reference": "Internal feasibility study - bioprinted cardiac tissue hERG channel assay"
+    }
+  ],
+  "regulatory_precedent": [],
+  "qualification_pathway": "none"
+}

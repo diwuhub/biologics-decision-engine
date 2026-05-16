@@ -1,0 +1,68 @@
+{
+  "case_id": "GC-06",
+  "title": "No Precedent, Strong Guideline",
+  "case_context": {
+    "molecule_class": "bispecific",
+    "change_type": "process_change",
+    "change_description": "DS formulation change for novel bispecific format with no direct precedent",
+    "lifecycle_stage": "Phase_III",
+    "target_geography": "global",
+    "flagged_attribute_ids": [],
+    "flagged_categories": [],
+    "identified_gaps": ["no_precedent"]
+  },
+  "attribute_results": [
+    {
+      "attribute_id": "potency_activity",
+      "category": "potency",
+      "pre_value": 100.0,
+      "post_value": 97.0,
+      "unit": "%",
+      "concern_level": "minor",
+      "is_cqa": true,
+      "score": 0.88,
+      "gaps": ["no_precedent"]
+    },
+    {
+      "attribute_id": "purity_sec_hplc",
+      "category": "purity",
+      "pre_value": 98.5,
+      "post_value": 98.0,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": true,
+      "score": 0.94,
+      "gaps": ["no_precedent"]
+    },
+    {
+      "attribute_id": "identity_peptide_map",
+      "category": "identity",
+      "pre_value": 100.0,
+      "post_value": 100.0,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": false,
+      "score": 1.0,
+      "gaps": ["no_precedent"]
+    },
+    {
+      "attribute_id": "aggregation_hplc",
+      "category": "purity",
+      "pre_value": 0.8,
+      "post_value": 0.9,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": true,
+      "score": 0.93,
+      "gaps": ["no_precedent"]
+    }
+  ],
+  "expected_decision": {
+    "verdict": "proceed_with_conditions",
+    "confidence_band": "moderate",
+    "blocking_cluster_count": 0,
+    "abstain_flag": false,
+    "key_reviewer_concern": "No direct precedent for bispecific format; relying on normative basis only",
+    "risk_semantics": "no_precedent_low_confidence"
+  }
+}

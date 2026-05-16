@@ -1,0 +1,38 @@
+{
+  "case_id": "READY-001",
+  "title": "Complete Submission Package (Liver Organoid DILI)",
+  "category": "review_readiness",
+  "source": "synthetic (inspired by FDA DDT qualification of liver organoid for DILI screening)",
+  "expected_readiness_tier": "high",
+  "expected_readiness_score_min": 0.75,
+  "expected_gap_count_max": 1,
+  "nam_type": "organoid",
+  "context_of_use": "safety_pharmacology",
+  "species_replaced": "rat",
+  "validation_evidence": [
+    {
+      "study_type": "concordance",
+      "concordance_rate": 0.88,
+      "sample_size": 120,
+      "reference": "Shinozawa et al. 2021 - iPSC-derived liver organoid DILI prediction"
+    },
+    {
+      "study_type": "sensitivity_analysis",
+      "concordance_rate": 0.85,
+      "sample_size": 80,
+      "reference": "Mun et al. 2019 - Liver organoid hepatotoxicity sensitivity panel"
+    },
+    {
+      "study_type": "external_validation",
+      "concordance_rate": 0.82,
+      "sample_size": 50,
+      "reference": "Multi-center ring trial 2023 - Independent organoid DILI validation"
+    }
+  ],
+  "regulatory_precedent": [
+    "FDA accepted liver organoid for DILI screening (2023)",
+    "EMA qualification opinion on liver microphysiology for hepatotoxicity (2022)",
+    "FDA ISTAND qualification of liver-on-chip for drug metabolism (2024)"
+  ],
+  "qualification_pathway": "DDT"
+}

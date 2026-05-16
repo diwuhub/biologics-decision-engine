@@ -1,0 +1,458 @@
+entries:
+- id: Q1A-1.1
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: 'Long-Term Storage Conditions: 25°C/60%RH'
+  content: 'The recommended long-term testing condition is 25°C ± 2°C and 60% ± 5% relative humidity (RH). This condition
+    is intended to simulate average room temperature storage. Data should be collected at 0, 3, 6, 9, and 12 months, with
+    continued collection at 12-month intervals thereafter. The 12-month data point is considered the minimum submission requirement.
+
+    '
+  applicable_categories:
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - storage-conditions
+  - long-term
+  - temperature
+  - humidity
+  - drug-substance
+  - drug-product
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q1A-1.2
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: 'Accelerated Storage Condition: 40°C/75%RH'
+  content: 'The recommended accelerated testing condition is 40°C ± 2°C and 75% ± 5% RH. Data should be collected at 0, 3,
+    and 6 months. This condition is intended to increase the rate of chemical degradation and physical changes. A 6-month
+    data set is required for submission; if significant change occurs before 6 months, 3-month data may be the last time point.
+
+    '
+  applicable_categories:
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - storage-conditions
+  - accelerated
+  - temperature
+  - humidity
+  - drug-substance
+  - drug-product
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q1A-1.3
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: 'Intermediate Storage Condition (Optional): 30°C/65%RH'
+  content: 'An optional intermediate condition of 30°C ± 2°C and 65% ± 5% RH may be recommended, in particular for drug products
+    for storage in a refrigerator or freezer. Data collection at 0, 6, and 9 months is recommended. This condition provides
+    additional guidance on degradation kinetics between long-term and accelerated conditions.
+
+    '
+  applicable_categories:
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - storage-conditions
+  - intermediate
+  - optional
+  - temperature
+  - humidity
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q1A-2.1
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: Minimum Stability Data at Time of Submission
+  content: 'For drug substances and drug products stored at 25°C/60% RH, a minimum of 12 months of long-term stability data
+    and 6 months of accelerated (40°C/75% RH) data should be available at the time of submission. Where 12-month long-term
+    data is not available, data from a commitment to generate the data should be provided. Continued testing is required to
+    support the proposed shelf life.
+
+    '
+  applicable_categories:
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - submission-requirements
+  - regulatory-commitment
+  - stability-data
+  - timing
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q1A-3.1
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: Stress Testing Overview
+  content: 'Stress testing is performed under more severe conditions than those used for the long-term and accelerated studies.
+    It is intended to demonstrate how the quality of the drug substance or drug product varies with time under the influence
+    of environmental factors (temperature, humidity, light, oxidation) and thereby establish the intrinsic stability of the
+    molecule. The study should be designed to identify the likely degradation products that may be formed.
+
+    '
+  applicable_categories:
+  - stability
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - stress-testing
+  - degradation
+  - safety
+  - forced-degradation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q1A-3.2
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: 'Stress Testing Conditions: Temperature and Humidity'
+  content: 'Stress testing of drug substances should include testing at temperatures above those recommended in long-term
+    studies (e.g., 50°C, 60°C) and may include testing at elevated humidity (e.g., 75% RH or greater). Stress testing of drug
+    products should follow similar principles. Testing should be conducted for a sufficient period to allow characterization
+    of degradation products and establishment of kinetic data. Adequate sample size and multiple replicates are recommended.
+
+    '
+  applicable_categories:
+  - stability
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - stress-testing
+  - temperature
+  - humidity
+  - degradation-pathways
+  - kinetics
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q1A-3.3
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: Photostability Testing (Reference Q1B)
+  content: 'Photostability testing of drug substances and drug products should be conducted following the guidance in ICH
+    Q1B. The purpose is to ensure that light exposure will not lead to unacceptable levels of degradation. If the drug substance
+    is photolabile, appropriate container-closure systems (light-resistant packaging) should be selected for the drug product.
+
+    '
+  applicable_categories:
+  - stability
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - photostability
+  - light
+  - q1b
+  - container-closure
+  - packaging
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q1A-4.1
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: Significant Change Criteria for Drug Products
+  content: 'Significant change for a drug product is defined as: (1) not more than 5% degradation from initial assay value,
+    (2) not more than 5% relative standard deviation (RSD) of assay values within the accepted range, (3) any physical or
+    chemical attribute outside the range specified in the specification, (4) pH change of more than 1 unit, (5) dissolution
+    rate outside approved specifications. Meeting any of these criteria may warrant accelerated stability or reduced shelf
+    life claims.
+
+    '
+  applicable_categories:
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - significant-change
+  - acceptance-criteria
+  - specifications
+  - degradation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q1A-5.1
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: Shelf Life Determination from Stability Data
+  content: 'The shelf life should be determined from the time-point at which the 90% confidence interval about the regression
+    line (or appropriate statistical model) intersects with the acceptance limit, whichever occurs first. Linear regression
+    with a 95% lower confidence bound is recommended when data trends are linear. Non-linear models should be used when appropriate,
+    with adequate justification. For attributes with limited data, worst-case assumptions should be applied.
+
+    '
+  applicable_categories:
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - shelf-life
+  - statistical-analysis
+  - regression
+  - acceptance-limits
+  - q1e
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q1A-5.2
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: Statistical Analysis Requirements (Reference Q1E)
+  content: 'Statistical analysis of stability data should follow ICH Q1E guidance. A sufficient number of samples should be
+    tested (typically 6 per batch and multiple batches, minimum 3 batches for drug substance) to allow reliable estimation
+    of degradation kinetics. Testing times should be appropriately spaced and fixed in advance. The data should be evaluated
+    for adequacy before use in shelf-life estimation.
+
+    '
+  applicable_categories:
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - statistical-analysis
+  - q1e
+  - sample-size
+  - kinetics
+  - regression-analysis
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q1A-6.1
+  type: guideline_clause
+  source: ICH Q1A(R2)
+  title: Container-Closure System Considerations for Drug Products
+  content: 'The stability of a drug product may be influenced by the container-closure system. Container closure integrity
+    (CCI), permeability to water vapor and oxygen, light transmission, and interaction with the formulation should be assessed.
+    Data should demonstrate that the selected package protects the drug product throughout the proposed shelf life. Alternative
+    container-closure systems (e.g., blister vs bottle) require separate justification and supporting data.
+
+    '
+  applicable_categories:
+  - stability
+  - physicochemical
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf
+  year: 2003
+  tags:
+  - container-closure
+  - packaging
+  - permeability
+  - light-transmission
+  - product-interaction
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5C-1.1
+  type: guideline_clause
+  source: ICH Q5C
+  title: Unique Aspects of Biotech Product Stability
+  content: 'Biotechnological/biological products present unique stability challenges that differ from conventional chemical
+    drugs. Potential degradation pathways include deamidation, oxidation, disulfide bond rearrangement, aggregation, precipitation,
+    proteolysis, and denaturation. These pathways are dependent on the specific protein structure and environmental factors.
+    Stability studies should be designed to assess the impact of these pathways on safety, potency, and purity. The intrinsic
+    stability of the biological molecule may require formulation modifications or specialized storage conditions.
+
+    '
+  applicable_categories:
+  - stability
+  - potency
+  - purity
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5C%20Guideline.pdf
+  year: 2003
+  tags:
+  - biologics
+  - protein
+  - degradation-pathways
+  - deamidation
+  - oxidation
+  - aggregation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5C-2.1
+  type: guideline_clause
+  source: ICH Q5C
+  title: Potency and Biological Activity Monitoring During Stability
+  content: 'For biotechnological products, potency or biological activity must be monitored throughout stability studies.
+    This is a critical attribute that should be measured at each stability time point. Changes in potency may precede physical
+    or chemical changes detectable by other analytical methods. The relationship between potency decline and other indicators
+    of degradation (e.g., aggregates, charge variants) should be established. Loss of potency may be the limiting factor in
+    shelf-life determination, even in the absence of other significant changes.
+
+    '
+  applicable_categories:
+  - potency
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5C%20Guideline.pdf
+  year: 2003
+  tags:
+  - potency
+  - biological-activity
+  - bioassay
+  - mechanism-of-action
+  - stability-testing
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5C-2.2
+  type: guideline_clause
+  source: ICH Q5C
+  title: Real-Time vs Accelerated Conditions for Protein Products
+  content: 'For proteins, accelerated stability conditions may not accurately predict degradation observed under long-term
+    storage conditions. The degradation pathways active at accelerated conditions (e.g., 40°C) may differ quantitatively or
+    qualitatively from those occurring at recommended storage temperature. Real-time (25°C or refrigerated) stability data
+    is therefore essential for establishing valid shelf life. Accelerated data should be used with caution and only when shown
+    to be predictive of real-time degradation through comparative analysis.
+
+    '
+  applicable_categories:
+  - stability
+  - potency
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5C%20Guideline.pdf
+  year: 2003
+  tags:
+  - protein-stability
+  - real-time
+  - accelerated-conditions
+  - kinetics
+  - degradation-pathways
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5C-2.3
+  type: guideline_clause
+  source: ICH Q5C
+  title: Glycoprotein-Specific Stability Considerations
+  content: 'Glycoproteins may undergo glycan-specific degradation, including deglycosylation, glycan oxidation, galactose
+    loss, or fucose loss. These changes can significantly impact potency, immunogenicity, and pharmacokinetics. Stability
+    studies should include characterization of N- and O-linked glycans using appropriate analytical methods (e.g., HPLC, mass
+    spectrometry). Changes in glycosylation patterns should be tracked as critical quality attributes. Storage conditions
+    should be selected to minimize glycan degradation.
+
+    '
+  applicable_categories:
+  - stability
+  - potency
+  - purity
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5C%20Guideline.pdf
+  year: 2003
+  tags:
+  - glycoprotein
+  - glycosylation
+  - n-linked
+  - o-linked
+  - deglycosylation
+  - galactose-loss
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5C-3.1
+  type: guideline_clause
+  source: ICH Q5C
+  title: Appropriate Storage Conditions for Biologics
+  content: 'Appropriate storage conditions for biotechnological products should be justified on the basis of stability data.
+    Many protein products require refrigerated storage (2-8°C) to maintain stability. Some products may be stable at room
+    temperature if formulation and container closure are optimized (e.g., with stabilizers, buffers). Products may require
+    storage in the frozen state (-20°C or -70°C) if degradation is prohibitive at higher temperatures. The selected storage
+    condition should be based on comprehensive stability data demonstrating adequate shelf life. Freeze-thaw stability should
+    be assessed if applicable.
+
+    '
+  applicable_categories:
+  - stability
+  - potency
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5C%20Guideline.pdf
+  year: 2003
+  tags:
+  - storage-conditions
+  - refrigerated
+  - frozen
+  - freeze-thaw
+  - formulation
+  - stabilizers
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5C-4.1
+  type: guideline_clause
+  source: ICH Q5C
+  title: Forced Degradation Studies for Biologics
+  content: 'Forced degradation studies should be conducted for biotechnological products to characterize potential degradation
+    products and pathways. Conditions may include elevated temperature, pH extremes, oxidative stress (hydrogen peroxide),
+    freeze-thaw cycling, agitation/shaking, and light exposure. The goal is to produce sufficient degradation (typically 20-30%)
+    to allow detection and characterization of degradants by stability-indicating methods. Degradants identified in forced
+    studies should be monitored in real-time and accelerated stability studies to establish kinetics.
+
+    '
+  applicable_categories:
+  - stability
+  - safety
+  - purity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5C%20Guideline.pdf
+  year: 2003
+  tags:
+  - forced-degradation
+  - stress-testing
+  - degradation-products
+  - pH
+  - oxidation
+  - freeze-thaw
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5C-5.1
+  type: guideline_clause
+  source: ICH Q5C
+  title: Comparability Stability Requirements (Cross-reference Q5E)
+  content: 'When manufacturing changes are made to a biotechnological product (e.g., cell line, process, formulation), comparability
+    studies should include side-by-side stability testing of pre- and post-change material under identical conditions. Identical
+    time points, identical analytical methods, and adequate sample sizes should be used. Stability profiles should be compared
+    to demonstrate that the change does not adversely impact product stability. Data should support continued use of the previously
+    established shelf life. Refer to ICH Q5E for detailed comparability guidance.
+
+    '
+  applicable_categories:
+  - stability
+  - potency
+  - purity
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5C%20Guideline.pdf
+  year: 2003
+  tags:
+  - comparability
+  - manufacturing-changes
+  - process-validation
+  - q5e
+  - stability-comparison
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final

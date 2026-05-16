@@ -1,0 +1,599 @@
+entries:
+- id: EU-DIR-001
+  type: guideline_clause
+  source: EMA/CHMP/BWP/247713
+  title: Guideline on Similar Biological Medicinal Products (2014 revision)
+  content: 'Establishes the overarching framework for assessment of similar biological medicinal products (biosimilars). Covers
+    the principles of comparability, quality-related factors including analytical characterization, animal toxicity testing,
+    clinical pharmacology/toxicology, and clinical efficacy and safety requirements. Emphasizes the totality of evidence approach
+    where less stringent clinical data may be justified by comprehensive quality comparability.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - stability
+  - comparability
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-similar-biological-medicinal-products_en.pdf
+  year: 2014
+  tags:
+  - biosimilar
+  - comparability
+  - quality
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-002
+  type: guideline_clause
+  source: EMA/CHMP/BWP/532517
+  title: Guideline on Similar Biological Medicinal Products Containing Biotechnology-Derived Proteins - Quality Issues (2014)
+  content: 'Detailed quality guidance for biotechnology-derived protein products including recombinant proteins, fusion proteins,
+    and antibodies. Addresses analytical characterization methodologies, manufacturing process characterization, container
+    closure systems, stability testing protocols, and specification setting. Requires comprehensive structural and functional
+    analysis (primary/higher order structure, biological activity, purity assessment).
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - stability
+  - characterization
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-similar-biological-medicinal-products-containing-biotechnology-derived-proteins-active-substance_en.pdf
+  year: 2014
+  tags:
+  - biotechnology
+  - protein
+  - quality
+  - characterization
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-003
+  type: guideline_clause
+  source: EMA/CHMP/BWP/534898
+  title: Guideline on Similar Biological Medicinal Products Containing Monoclonal Antibodies - Non-Clinical and Clinical Issues
+    (2012)
+  content: 'Specific guidance for monoclonal antibody (mAb) biosimilars addressing non-clinical toxicology (in vivo pharmacology,
+    repeat-dose toxicity, genotoxicity assessment), pharmacokinetics/pharmacodynamics, and clinical requirements. Establishes
+    that animal toxicology studies are generally required due to species-specific pharmacology of mAbs. Specifies clinical
+    requirements including dose proportionality and accumulation studies.
+
+    '
+  applicable_categories:
+  - potency
+  - immunogenicity
+  - clinical_safety
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-similar-biological-medicinal-products-containing-monoclonal-antibodies-non-clinical-and-clinical_en.pdf
+  year: 2012
+  tags:
+  - monoclonal_antibody
+  - biosimilar
+  - non-clinical
+  - clinical
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-004
+  type: guideline_clause
+  source: EMA/CHMP
+  title: Guideline on Requirements for Quality Documentation Concerning Biological Investigational Medicinal Products in Clinical
+    Trials (2021)
+  content: 'Establishes quality documentation standards for IMP (Investigational Medicinal Product) dossiers in clinical trials.
+    Covers manufacturing information disclosure, release and stability testing, characterization requirements aligned with
+    clinical trial phase, process validation scope, and quality-by-design principles. Specifies reduced requirements for early-phase
+    trials with appropriate justification and increased requirements as development progresses.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - stability
+  - process_validation
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-requirements-quality-documentation-concerning-biological-investigational-medicinal-products_en.pdf
+  year: 2021
+  tags:
+  - investigational
+  - clinical_trial
+  - quality_by_design
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-005
+  type: guideline_clause
+  source: EMA/CHMP
+  title: Guideline on Process Validation for Manufacture of Biotechnology-Derived Active Substances and Data for Regulatory
+    Submission (2016)
+  content: 'Comprehensive guidance on process validation for biotech active pharmaceutical ingredients. Requires demonstration
+    of process consistency through multiple batches (typically 3 commercial-scale batches minimum). Covers upstream processing,
+    downstream purification, viral clearance validation, and process analytical technology (PAT). Establishes requirements
+    for batch record review, control strategy definition, and change management protocols.
+
+    '
+  applicable_categories:
+  - process_validation
+  - purity
+  - potency
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-process-validation-manufacture-biotechnology-derived-active-substances-and-data-be-provided_en.pdf
+  year: 2016
+  tags:
+  - process_validation
+  - manufacturing
+  - biotech
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-006
+  type: guideline_clause
+  source: EMA/CHMP
+  title: Guideline on Virus Safety Evaluation of Biotechnological Investigational Medicinal Products (2008)
+  content: 'Establishes requirements for viral safety assessment of biotechnological products, particularly those using mammalian
+    cell culture or biological starting materials. Requires characterization of source materials, in-process viral safety
+    controls, process validation for viral clearance/inactivation, and end-product testing. Specifies acceptance criteria
+    for residual virus contamination based on product category and patient population.
+
+    '
+  applicable_categories:
+  - safety
+  - process_validation
+  - purity
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-virus-safety-evaluation-biotechnological-investigational-medicinal-products_en.pdf
+  year: 2008
+  tags:
+  - viral_safety
+  - biotech
+  - process_validation
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-007
+  type: guideline_clause
+  source: EMA/CHMP
+  title: Guideline on Development, Production, Characterisation and Specification for Monoclonal Antibodies and Related Substances
+    (2016 revision)
+  content: 'Comprehensive guidance on mAb development covering cell line characterization, upstream/downstream process development,
+    analytical characterization (primary structure, post-translational modifications, biological activity, aggregation, impurities),
+    container closure systems, and specification setting. Establishes that specifications must reflect analytical methods''
+    state-of-art and clinical relevance. Requires justification for selected acceptance criteria.
+
+    '
+  applicable_categories:
+  - characterization
+  - purity
+  - potency
+  - stability
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-development-production-characterisation-and-specification-monoclonal-antibodies-and-related_en.pdf
+  year: 2016
+  tags:
+  - monoclonal_antibody
+  - characterization
+  - specification
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-008
+  type: guideline_clause
+  source: EMA/CHMP
+  title: Guideline on Immunogenicity Assessment of Therapeutic Proteins (2017)
+  content: 'Establishes framework for assessing immunogenic potential of therapeutic proteins including monoclonal antibodies,
+    fusion proteins, and recombinant cytokines. Requires in vitro and animal model assessment of immunogenicity, patient population-specific
+    risk stratification, and recommendations for clinical immunogenicity monitoring. Addresses factors affecting immunogenicity
+    including product-related factors (structure, aggregates, impurities) and patient-related factors (disease state, concomitant
+    therapy).
+
+    '
+  applicable_categories:
+  - immunogenicity
+  - safety
+  - characterization
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-immunogenicity-assessment-therapeutic-proteins_en.pdf
+  year: 2017
+  tags:
+  - immunogenicity
+  - therapeutic_protein
+  - safety
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-009
+  type: guideline_clause
+  source: EMA/CHMP
+  title: Guideline on Comparability of Biotechnology-Derived Medicinal Products After a Change in Manufacturing Process -
+    Non-Clinical and Clinical Issues (2007)
+  content: 'Addresses quality, non-clinical, and clinical data requirements to demonstrate comparability when manufacturing
+    process changes occur. Establishes the principle that process changes require demonstration of maintained comparability
+    through analytical, animal toxicology, and potentially clinical studies depending on change magnitude. Provides examples
+    of major vs. minor changes and associated data requirements.
+
+    '
+  applicable_categories:
+  - comparability
+  - process_validation
+  - safety
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-comparability-biotechnology-derived-medicinal-products-after-change-manufacturing-process-non-clinical_en.pdf
+  year: 2007
+  tags:
+  - comparability
+  - process_change
+  - manufacturing
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-010
+  type: guideline_clause
+  source: EMA/CHMP
+  title: Reflection Paper on Statistical Methodology for Comparative Assessment of Quality Attributes (2021)
+  content: 'Provides statistical framework for comparative assessment of quality attributes between reference and biosimilar
+    products. Addresses equivalence testing methodology, acceptance criteria derivation from reference product data, and multivariate
+    analyses for multiple quality attributes. Recommends pre-specified equivalence margins based on clinical relevance rather
+    than default statistical conventions.
+
+    '
+  applicable_categories:
+  - comparability
+  - quality_assessment
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-statistical-methodology-comparative-assessment-quality-attributes-drug-development_en.pdf
+  year: 2021
+  tags:
+  - statistics
+  - comparability
+  - quality_assessment
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-011
+  type: guideline_clause
+  source: EMA/CHMP
+  title: Guideline on Stability Testing of Existing Active Substances and Related Finished Products (2004)
+  content: 'Establishes stability testing protocols for active pharmaceutical ingredients and finished products. For biologics,
+    specifies conditions based on product type and storage requirements (2-8°C, room temperature, or elevated conditions).
+    Requires testing at multiple time points with acceptance criteria justified by analytical method ruggedness. Addresses
+    specific considerations for biotechnology products including effect of freeze-thaw cycles and formulation composition
+    on stability.
+
+    '
+  applicable_categories:
+  - stability
+  - characterization
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-stability-testing-existing-active-substances-and-related-finished-products_en.pdf
+  year: 2004
+  tags:
+  - stability
+  - testing
+  content_type: paraphrase
+  document_status: final
+- id: EU-DIR-012
+  type: guideline_clause
+  source: EMA/CHMP
+  title: Guideline on the Scientific Application and Practical Arrangements for Accelerated Assessment (2018)
+  content: 'Provides guidance on accelerated assessment procedure for innovative medicinal products. While not quality-specific,
+    establishes that accelerated assessment may be granted for products addressing unmet medical needs. Biosimilars and generic
+    products are not eligible for accelerated assessment. Specifies that assessors must complete review within 100 days instead
+    of standard 210 days.
+
+    '
+  applicable_categories:
+  - regulatory_pathway
+  confidence: 0.95
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-scientific-application-and-practical-arrangements-necessary-implement-procedure-accelerated_en.pdf
+  year: 2018
+  tags:
+  - accelerated_assessment
+  - regulatory_pathway
+  content_type: paraphrase
+  document_status: final
+- id: WHO-TRS-001
+  type: guideline_clause
+  source: WHO Technical Report Series 977
+  title: Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs) (2013)
+  content: 'WHO''s overarching framework for assessment of similar biotherapeutic products (equivalent to EMA biosimilars
+    concept). Addresses quality, non-clinical and clinical assessment based on totality of evidence. Emphasizes that comparability
+    demonstration should reduce clinical data requirements. Covers characterization of starting materials, cell substrates,
+    in-process controls, and finished product specifications. Establishes that abbreviated development pathways are appropriate
+    when extensive quality comparability is demonstrated.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - comparability
+  - stability
+  confidence: 0.9
+  url: https://www.who.int/publications/details/9789241209779
+  year: 2013
+  tags:
+  - WHO
+  - biosimilar
+  - comparability
+  - global
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: WHO-TRS-002
+  type: guideline_clause
+  source: WHO Technical Report Series 999
+  title: Guidelines on Procedures and Data Requirements for Changes to Approved Biotherapeutic Products (2016)
+  content: 'WHO guidance on post-approval changes to biologics including manufacturing location changes, process modifications,
+    scale-up, equipment changes, and specification adjustments. Establishes classification scheme for changes (major vs. minor)
+    and associated data requirements. For biologics, recommends comparability studies be performed to demonstrate that changes
+    do not affect quality, safety, or efficacy.
+
+    '
+  applicable_categories:
+  - process_validation
+  - comparability
+  - stability
+  confidence: 0.9
+  url: https://www.who.int/publications/details/9789241209990
+  year: 2016
+  tags:
+  - WHO
+  - post-approval_change
+  - process_validation
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: WHO-TRS-003
+  type: guideline_clause
+  source: WHO Expert Committee on Biological Standardization
+  title: General Considerations for Establishment of International Biological Reference Standards (2006)
+  content: 'Establishes principles and procedures for development of WHO International Biological Reference Standards used
+    in potency testing of biologics. Specifies requirements for suitability studies, stability assessment of reference standards,
+    and establishment of acceptance criteria. Critical for standardization of potency assays across manufacturers and regulatory
+    jurisdictions.
+
+    '
+  applicable_categories:
+  - potency
+  - reference_standards
+  confidence: 0.9
+  url: https://www.who.int/publications/details
+  year: 2006
+  tags:
+  - WHO
+  - reference_standard
+  - potency
+  - standardization
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: WHO-TRS-004
+  type: guideline_clause
+  source: WHO
+  title: Guidelines on Quality, Safety and Efficacy of Biotherapeutic Protein Products Prepared by Recombinant DNA Technology
+    (2013)
+  content: 'Comprehensive WHO guidance on recombinant protein products covering cell substrate selection and characterization,
+    manufacturing process development, analytical characterization (primary structure, post-translational modifications, biological
+    activity, impurities), process validation, finished product specifications, and stability testing. Addresses product-specific
+    considerations for therapeutic proteins, growth factors, hormones, and enzymes.
+
+    '
+  applicable_categories:
+  - characterization
+  - purity
+  - potency
+  - stability
+  confidence: 0.9
+  url: https://www.who.int/publications/details
+  year: 2013
+  tags:
+  - WHO
+  - recombinant_protein
+  - quality
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: WHO-TRS-005
+  type: guideline_clause
+  source: WHO
+  title: Good Manufacturing Practices for Biological Products (Annex 2 to WHO TRS 937) (2016 revision)
+  content: 'WHO''s global GMP standards for biological product manufacturing. Covers facility design and environmental controls,
+    personnel qualification, equipment validation, materials management, processing and control operations, change control,
+    and quality assurance. Establishes minimum expectations for manufacturing in countries implementing WHO GMP. Specifically
+    addresses particulate control, microbial testing, viral safety, and documentation requirements.
+
+    '
+  applicable_categories:
+  - manufacturing
+  - process_validation
+  - gmp
+  confidence: 0.9
+  url: https://www.who.int/publications/details
+  year: 2016
+  tags:
+  - WHO
+  - GMP
+  - manufacturing
+  - global
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: WHO-TRS-006
+  type: guideline_clause
+  source: WHO
+  title: 'Guidelines on Quality of Biotechnological/Biological Products: Stability Testing (2011)'
+  content: 'WHO guidance on stability testing protocols specifically tailored for biotechnological products. Specifies storage
+    conditions and testing intervals, addresses long-term and intermediate testing for biologics, real-time vs. accelerated
+    studies, and product-specific considerations (freeze-thaw stability, freeze-dry products). Emphasizes importance of in-use
+    stability data for products requiring reconstitution.
+
+    '
+  applicable_categories:
+  - stability
+  - characterization
+  confidence: 0.9
+  url: https://www.who.int/publications/details
+  year: 2011
+  tags:
+  - WHO
+  - stability
+  - biotechnology
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: WHO-TRS-007
+  type: guideline_clause
+  source: WHO Prequalification Programme
+  title: Prequalification Programme Guidelines for Biological Products
+  content: 'WHO Prequalification requirements for biological products seeking approval in developing countries and UN agency
+    procurement. Establishes that products must meet stringent quality standards equivalent to WHO-listed reference standards.
+    Requires comprehensive CMC dossier, full IND-equivalent toxicology and clinical data, and post-approval surveillance.
+    Covers vaccines, blood products, hormones, and other biologics.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - stability
+  - gmp
+  confidence: 0.9
+  url: https://www.who.int/teams/prequalification-live-agent-registration/prequalification-procedures/prequalification-of-medicines
+  year: 2020
+  tags:
+  - WHO
+  - prequalification
+  - global
+  - quality
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: WHO-TRS-008
+  type: guideline_clause
+  source: WHO
+  title: 'Guidelines on Clinical Evaluation of Vaccines: Regulatory Expectations (2017)'
+  content: 'WHO guidance on clinical evaluation of vaccine products addressing immunogenicity assessment, efficacy demonstration,
+    safety monitoring in clinical trials, and post-authorization surveillance. While vaccine-specific, establishes principles
+    applicable to immunogenic biologics including need for immunogenicity data as efficacy surrogate in some cases.
+
+    '
+  applicable_categories:
+  - immunogenicity
+  - clinical_safety
+  confidence: 0.9
+  url: https://www.who.int/publications/details
+  year: 2017
+  tags:
+  - WHO
+  - vaccine
+  - clinical
+  - immunogenicity
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+  document_status: final
+- id: PICS-001
+  type: guideline_clause
+  source: PIC/S
+  title: 'Guide to GMP for Medicinal Products - Annex 2: Manufacture of Biological Medicinal Substances and Products'
+  content: 'Pharmaceutical Inspection Convention/Scheme comprehensive GMP requirements for biological products. Covers facility
+    design and environmental controls for aseptic processing, equipment cleaning and validation, personnel training, materials
+    management, manufacturing process controls, in-process testing, finished product testing, and quality assurance. Addresses
+    specific requirements for fermentation processes, mammalian cell culture, viral inactivation, and final product formulation.
+
+    '
+  applicable_categories:
+  - manufacturing
+  - gmp
+  - purity
+  - potency
+  confidence: 0.85
+  url: https://www.pic-s.org/publication/gmp-guides
+  year: 2022
+  tags:
+  - PIC/S
+  - GMP
+  - manufacturing
+  - biological
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+- id: PICS-002
+  type: guideline_clause
+  source: PIC/S
+  title: Guidance on Data Integrity (2021)
+  content: 'Establishes expectations for data integrity in pharmaceutical manufacturing including biological products. Requires
+    secure electronic records systems, audit trails, change controls, and user authentication. Addresses prevention of intentional
+    falsification, detection of unintentional data loss, and remediation procedures. Critical for CMC submission credibility
+    as competent authorities assess data integrity as part of GMP inspection.
+
+    '
+  applicable_categories:
+  - data_integrity
+  - gmp
+  confidence: 0.85
+  url: https://www.pic-s.org/publication/guides
+  year: 2021
+  tags:
+  - PIC/S
+  - data_integrity
+  - compliance
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+- id: PICS-003
+  type: guideline_clause
+  source: PIC/S
+  title: Recommendations on Validation Master Plan (2007)
+  content: 'Provides framework for comprehensive validation master planning in pharmaceutical manufacturing. Establishes hierarchy
+    of validation activities including IQ/OQ/PQ (Installation/Operational/Performance Qualification), process validation,
+    analytical method validation, and computer system validation. Requires prospective validation for new processes and retroactive/concurrent
+    validation under defined circumstances.
+
+    '
+  applicable_categories:
+  - process_validation
+  - analytical_validation
+  confidence: 0.85
+  url: https://www.pic-s.org/publication/guides
+  year: 2007
+  tags:
+  - PIC/S
+  - validation
+  - manufacturing
+  authority_quality_tier: strong_secondary
+  content_type: paraphrase
+- id: PMDA-001
+  type: guideline_clause
+  source: PMDA
+  title: Guideline for Quality, Safety and Efficacy Assurance of Follow-on Biologics (2009)
+  content: 'PMDA''s framework for follow-on biologics (Japan''s equivalent to biosimilars). Establishes comparability assessment
+    approach including analytical, non-clinical, and clinical evaluation. Requires demonstration of comparable quality through
+    comprehensive analytical characterization. Clinical data requirements may be reduced based on extent of quality comparability.
+    Addresses specific considerations for Japanese patient populations and healthcare context.
+
+    '
+  applicable_categories:
+  - comparability
+  - purity
+  - potency
+  - safety
+  confidence: 0.9
+  url: https://www.pmda.go.jp/english/index.html
+  year: 2009
+  tags:
+  - PMDA
+  - Japan
+  - follow-on_biologic
+  - comparability
+  content_type: paraphrase
+- id: PMDA-002
+  type: guideline_clause
+  source: PMDA
+  title: Notification on Quality, Efficacy and Safety of Biosimilars (2014 revision)
+  content: 'PMDA regulatory notification establishing requirements for biosimilar development including manufacturing process
+    characterization, analytical comparability studies, non-clinical pharmacology/toxicology assessment, and clinical pharmacology/efficacy/safety
+    studies. Specifies that abbreviated regulatory pathways are acceptable when extensive comparability is demonstrated. Addresses
+    post-approval surveillance requirements and risk management plans.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - comparability
+  - clinical_safety
+  confidence: 0.9
+  url: https://www.pmda.go.jp/english/index.html
+  year: 2014
+  tags:
+  - PMDA
+  - Japan
+  - biosimilar
+  - regulatory_pathway
+  content_type: paraphrase

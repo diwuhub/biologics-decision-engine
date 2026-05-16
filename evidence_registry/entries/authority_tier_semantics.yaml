@@ -1,0 +1,169 @@
+entries:
+- id: ATS-ICH-PRIMARY
+  type: guideline_clause
+  decision_type: Normative
+  source: ICH Harmonised Tripartite Guideline
+  title: ICH guidelines as primary authority tier
+  content: 'ICH guidelines (Q5E, Q6B, Q5C, Q1A, Q2, Q5A, Q3D, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, M4Q, M7) represent the
+    highest tier of regulatory authority for biologics comparability decisions. When an ICH guideline directly addresses a
+    quality attribute or analytical requirement, it constitutes primary authority. Primary authority entries carry the strongest
+    weight in cluster-level evidence matching and should be prioritized as top decision drivers.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - physicochemical
+  - process_validation
+  - specifications
+  confidence: 1.0
+  authority_quality_tier: primary
+  evidence_weight: binding
+  temporal_status: current
+  year: 2024
+  tags:
+  - authority_tier
+  - primary
+  - ICH
+  - normative
+  recommended_followup:
+    type: none
+    rationale: Primary authority requires no supplemental follow-up when directly applicable.
+  content_type: structured_metadata
+- id: ATS-FDA-SECONDARY
+  type: guideline_clause
+  decision_type: Normative
+  source: FDA CBER/CDER Guidance Documents
+  title: FDA guidance as strong secondary authority tier
+  content: 'FDA guidance documents (Comparability Protocols, Biosimilarity Guidance, Process Validation Guidance, Statistical
+    Approaches) represent strong secondary authority. They provide implementation-level detail beyond ICH principles. When
+    FDA guidance addresses a specific analytical or manufacturing concern, it carries strong_secondary weight. These are particularly
+    important for US-targeted submissions and geography-specific analysis.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - physicochemical
+  - process_validation
+  - specifications
+  confidence: 0.9
+  authority_quality_tier: contextual
+  evidence_weight: normative
+  temporal_status: current
+  year: 2024
+  tags:
+  - authority_tier
+  - strong_secondary
+  - FDA
+  - guidance
+  recommended_followup:
+    type: none
+    rationale: Strong secondary authority sufficient for cluster-level evidence when combined with primary.
+  content_type: structured_metadata
+- id: ATS-EMA-SECONDARY
+  type: guideline_clause
+  decision_type: Normative
+  source: EMA Scientific Guidelines
+  title: EMA guidelines as strong secondary authority tier
+  content: 'EMA scientific guidelines (Guideline on Similar Biological Medicinal Products, Guideline on Comparability Studies)
+    provide EU-specific regulatory authority at the strong_secondary tier. Critical for global or EU-targeted submissions.
+    EMA and FDA may diverge on specific acceptance criteria (particularly stability and specification setting), making both
+    necessary for cross-geography analysis.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - physicochemical
+  - specifications
+  confidence: 0.88
+  authority_quality_tier: strong_secondary
+  evidence_weight: normative
+  temporal_status: current
+  geography:
+  - EU
+  - global
+  year: 2024
+  tags:
+  - authority_tier
+  - strong_secondary
+  - EMA
+  - EU
+  recommended_followup:
+    type: none
+    rationale: Strong secondary authority for EU-relevant analysis.
+  content_type: structured_metadata
+- id: ATS-CONTEXTUAL-DEFAULT
+  type: issue_taxonomy
+  decision_type: Concern Pattern
+  source: Industry/Regulatory Consensus
+  title: Default contextual authority tier
+  content: 'Registry entries without explicit authority tier assignment default to contextual. Contextual entries include
+    industry consensus documents, concern pattern references, historical precedents without direct regulatory endorsement,
+    and method standards not directly cited in ICH/FDA/EMA guidelines. Contextual entries contribute to evidence completeness
+    but cannot independently drive blocking decisions (GUARD-001).
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - physicochemical
+  - process_validation
+  - specifications
+  confidence: 0.6
+  authority_quality_tier: contextual
+  evidence_weight: contextual
+  temporal_status: current
+  year: 2024
+  tags:
+  - authority_tier
+  - contextual
+  - default
+  recommended_followup:
+    type: enhanced_monitoring
+    rationale: Contextual-only authority typically requires supplemental evidence gathering.
+  content_type: structured_metadata
+- id: ATS-PRECEDENT-TIERING
+  type: precedent
+  decision_type: Precedent
+  source: FDA BLA Precedent Database
+  title: Precedent authority tiering rules
+  content: 'BLA/NDA precedent entries are tiered based on recency and direct applicability. Recent precedents (< 5 years)
+    with matching molecule class and change type receive strong_secondary tier. Older precedents or those with partial applicability
+    receive contextual tier. Precedents from a different molecule class or modality always receive contextual tier regardless
+    of recency. This tiering ensures precedent evidence is weighted appropriately relative to normative guideline authority.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - process_validation
+  confidence: 0.8
+  authority_quality_tier: strong_secondary
+  evidence_weight: informative
+  temporal_status: current
+  year: 2024
+  tags:
+  - authority_tier
+  - precedent
+  - tiering_rules
+  recommended_followup:
+    type: none
+    rationale: Precedent tiering is a classification rule, not an evidence gap.
+  content_type: structured_metadata

@@ -1,0 +1,94 @@
+{
+  "case_id": "NISTMAB-E2E",
+  "title": "NISTmAb E2E Vertical Slice — Column Resin Change Comparability",
+  "category": "comparability",
+  "source": "synthetic (NIST RM 8671 public reference material; SP v5 E2E validation case)",
+  "description": "End-to-end SP v5 vertical slice: NISTmAb column resin change comparability",
+  "product_name": "NISTmAb RM 8671",
+  "molecule_class": "mAb",
+  "modality": "IV",
+  "reference_product": "NIST RM 8671 Lot 14HB-D-002",
+  "change_description": "Protein A column resin change from MabSelect SuRe to MabSelect PrismA",
+  "expected_verdict": "Not Comparable",
+  "expected_actions": {},
+  "expected_behavior": {
+    "overall_action": "SUPPLEMENT or INVESTIGATE (HCP increase is notable)",
+    "sec_monomer": "PROCEED (small delta, good lot count, orthogonal coverage)",
+    "hmw": "SUPPLEMENT (delta + high CV, but within typical range)",
+    "hcp": "INVESTIGATE (47% relative increase in HCP; safety attribute)"
+  },
+  "attributes": [
+    {
+      "name": "SEC Monomer Purity",
+      "category": "purity",
+      "pre_value": 98.5,
+      "post_value": 98.1,
+      "unit": "%",
+      "n_lots": 5,
+      "cv_pct": 0.8,
+      "n_methods": 2,
+      "functional_support_level": "indirect",
+      "orthogonal_coverage": "partial"
+    },
+    {
+      "name": "HMW Aggregates",
+      "category": "purity",
+      "pre_value": 1.2,
+      "post_value": 1.6,
+      "unit": "%",
+      "n_lots": 5,
+      "cv_pct": 12.0,
+      "n_methods": 2,
+      "functional_support_level": "none",
+      "orthogonal_coverage": "partial"
+    },
+    {
+      "name": "Charge Variant Acidic Species",
+      "category": "physicochemical",
+      "pre_value": 22.3,
+      "post_value": 24.1,
+      "unit": "%",
+      "n_lots": 5,
+      "cv_pct": 5.5,
+      "n_methods": 1,
+      "functional_support_level": "none",
+      "orthogonal_coverage": "none"
+    },
+    {
+      "name": "FcRn Binding",
+      "category": "potency",
+      "pre_value": 100.0,
+      "post_value": 98.5,
+      "unit": "% relative",
+      "n_lots": 3,
+      "cv_pct": 8.0,
+      "n_methods": 1,
+      "functional_support_level": "direct",
+      "orthogonal_coverage": "none"
+    },
+    {
+      "name": "Thermal Stability (Tm1)",
+      "category": "stability",
+      "pre_value": 71.2,
+      "post_value": 70.8,
+      "unit": "\u00b0C",
+      "n_lots": 3,
+      "cv_pct": 0.5,
+      "n_methods": 1,
+      "functional_support_level": "none",
+      "orthogonal_coverage": "none"
+    },
+    {
+      "name": "Host Cell Protein",
+      "category": "safety",
+      "pre_value": 15.0,
+      "post_value": 22.0,
+      "unit": "ppm",
+      "n_lots": 5,
+      "cv_pct": 25.0,
+      "n_methods": 1,
+      "functional_support_level": "none",
+      "orthogonal_coverage": "none"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# W2-3a: Pathway Awareness — Category emphasis shifts per regulatory pathway.
+# These are category-weight adjustments, NOT tolerance multipliers.
+# Used as CATEGORY_WEIGHTS override when lifecycle_stage matches a known pathway.
+
+510k:
+  emphasis: { identity: 0.12, purity: 0.28, potency: 0.28, safety: 0.12, stability: 0.12, physicochemical: 0.08 }
+
+BLA_supplement:
+  emphasis: { identity: 0.10, purity: 0.22, potency: 0.22, safety: 0.20, stability: 0.18, physicochemical: 0.08 }
+
+biosimilar:
+  emphasis: { identity: 0.08, purity: 0.20, potency: 0.25, safety: 0.15, stability: 0.15, physicochemical: 0.17 }

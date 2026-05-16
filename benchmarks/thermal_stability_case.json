@@ -1,0 +1,77 @@
+{
+  "comparison_id": "COMP-2026-001-thermal-stability",
+  "lots": [
+    {"lot_id": "LOT-A-001", "manufacturing_site": "Site Alpha", "process_version": "v2.1", "date": "2025-06-15"},
+    {"lot_id": "LOT-B-001", "manufacturing_site": "Site Alpha", "process_version": "v2.2", "date": "2026-01-20"}
+  ],
+  "attributes": [
+    {
+      "attribute_id": "sec_monomer",
+      "name": "SEC Monomer %",
+      "category": "purity",
+      "measurements": [
+        {"lot_id": "LOT-A-001", "assay": "SE-HPLC", "value": 98.8, "unit": "%", "specification": ">= 95.0%", "within_spec": true},
+        {"lot_id": "LOT-B-001", "assay": "SE-HPLC", "value": 98.5, "unit": "%", "specification": ">= 95.0%", "within_spec": true}
+      ]
+    },
+    {
+      "attribute_id": "sec_hmw",
+      "name": "SEC HMW %",
+      "category": "purity",
+      "measurements": [
+        {"lot_id": "LOT-A-001", "assay": "SE-HPLC", "value": 0.9, "unit": "%", "specification": "<= 5.0%", "within_spec": true},
+        {"lot_id": "LOT-B-001", "assay": "SE-HPLC", "value": 1.2, "unit": "%", "specification": "<= 5.0%", "within_spec": true}
+      ]
+    },
+    {
+      "attribute_id": "tm1",
+      "name": "Thermal Stability Tm1",
+      "category": "stability",
+      "measurements": [
+        {"lot_id": "LOT-A-001", "assay": "DSF", "value": 71.5, "unit": "C", "specification": ">= 65.0 C", "within_spec": true},
+        {"lot_id": "LOT-B-001", "assay": "DSF", "value": 70.8, "unit": "C", "specification": ">= 65.0 C", "within_spec": true}
+      ]
+    },
+    {
+      "attribute_id": "potency",
+      "name": "Relative Potency",
+      "category": "potency",
+      "measurements": [
+        {"lot_id": "LOT-A-001", "assay": "Cell-based bioassay", "value": 102, "unit": "% relative", "specification": "80-120%", "within_spec": true},
+        {"lot_id": "LOT-B-001", "assay": "Cell-based bioassay", "value": 98, "unit": "% relative", "specification": "80-120%", "within_spec": true}
+      ]
+    },
+    {
+      "attribute_id": "cief_main",
+      "name": "cIEF Main Peak %",
+      "category": "physicochemical",
+      "measurements": [
+        {"lot_id": "LOT-A-001", "assay": "cIEF", "value": 58.2, "unit": "%", "specification": "50-70%", "within_spec": true},
+        {"lot_id": "LOT-B-001", "assay": "cIEF", "value": 56.8, "unit": "%", "specification": "50-70%", "within_spec": true}
+      ]
+    },
+    {
+      "attribute_id": "g0f",
+      "name": "G0F Glycan %",
+      "category": "physicochemical",
+      "measurements": [
+        {"lot_id": "LOT-A-001", "assay": "HILIC-FLD", "value": 35.2, "unit": "%", "within_spec": true},
+        {"lot_id": "LOT-B-001", "assay": "HILIC-FLD", "value": 33.8, "unit": "%", "within_spec": true}
+      ]
+    },
+    {
+      "attribute_id": "hcp",
+      "name": "Host Cell Protein",
+      "category": "safety",
+      "measurements": [
+        {"lot_id": "LOT-A-001", "assay": "ELISA", "value": 45, "unit": "ng/mg", "specification": "<= 100 ng/mg", "within_spec": true},
+        {"lot_id": "LOT-B-001", "assay": "ELISA", "value": 52, "unit": "ng/mg", "specification": "<= 100 ng/mg", "within_spec": true}
+      ]
+    }
+  ],
+  "edges": [
+    {"from_attribute": "tm1", "to_attribute": "sec_hmw", "relationship": "predicts", "confidence": 0.85, "evidence_source": "PROPHET-Ab benchmark: k_40c vs Tm1 rho=-0.624"},
+    {"from_attribute": "sec_hmw", "to_attribute": "sec_monomer", "relationship": "impacts", "confidence": 0.95, "evidence_source": "Mass balance: monomer + HMW + LMW = 100%"},
+    {"from_attribute": "g0f", "to_attribute": "potency", "relationship": "correlates_with", "confidence": 0.60, "evidence_source": "G0F afucosylation affects ADCC"}
+  ]
+}

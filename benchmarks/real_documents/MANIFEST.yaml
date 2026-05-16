@@ -1,0 +1,100 @@
+# Real Document Benchmark Manifest
+# These are publicly available regulatory documents used to test
+# the biologics-decision-engine against real-world CMC content.
+#
+# DOWNLOAD INSTRUCTIONS:
+#   python benchmarks/real_documents/download.py
+#   OR download each file manually from the URL and save to this directory.
+#
+# These documents are public domain / publicly released regulatory submissions.
+
+documents:
+
+  - id: NISTMAB-CHAR-001
+    filename: NISTmAb_SP260-237.pdf
+    url: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.260-237.pdf
+    document_type: CHARACTERIZATION
+    description: >
+      NIST Special Publication 260-237: Characterization of NIST Monoclonal Antibody
+      Reference Material 8671. Gold-standard characterization dataset covering SEC-HPLC,
+      charge heterogeneity (CEX/icIEF), glycan profiling, potency, HOS (DSC/CD),
+      primary structure confirmation, across multiple lots and laboratories.
+      The canonical reference for testing characterization report ingestion.
+    molecule: IgG1 kappa monoclonal antibody (NIH anti-HER2 surrogate)
+    expected_classification: CHARACTERIZATION
+    expected_completeness_score_min: 0.70
+    expected_sections:
+      - primary_structure
+      - higher_order_structure
+      - glycosylation
+      - charge_heterogeneity
+      - purity
+      - potency
+    expected_attributes_min: 15
+    test_assertions:
+      - "hmw_pct is not None"
+      - "afucosylation_pct is not None"
+      - "main_charge_peak_pct is not None"
+      - "reference_standard_identified == True"
+
+  - id: FDA-BLA761081-CMC-001
+    filename: BLA761081_ChemistryReview.pdf
+    url: https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/761081Orig1s000ChemR.pdf
+    document_type: CHARACTERIZATION
+    description: >
+      FDA Chemistry Review for BLA 761081 — TRAZIMERA (trastuzumab-qyyp), a biosimilar
+      to Herceptin. Contains FDA reviewer's analysis of the comparability and
+      characterization package submitted for biosimilar approval. Real regulatory
+      assessment language, CQA-level commentary, reviewer concerns and responses.
+    molecule: Biosimilar trastuzumab (anti-HER2 IgG1)
+    expected_classification: CHARACTERIZATION
+    expected_lifecycle_stage: submission
+    expected_attributes_min: 10
+    note: >
+      This document contains the FDA REVIEWER's perspective — extremely valuable for
+      training the reviewer_concern_engine because it shows what FDA actually asked.
+
+  - id: EMA-DARZALEX-CMC-001
+    filename: Darzalex_EPAR.pdf
+    url: https://www.ema.europa.eu/en/documents/assessment-report/darzalex-epar-public-assessment-report_en.pdf
+    document_type: CHARACTERIZATION
+    description: >
+      EMA Public Assessment Report for Darzalex (daratumumab). Contains detailed
+      Module 3 quality assessment including characterization, comparability data,
+      and manufacturing process discussion. EU regulatory perspective.
+    molecule: Anti-CD38 IgG1 kappa mAb
+    expected_classification: CHARACTERIZATION
+    expected_lifecycle_stage: submission
+
+  - id: EMA-XBONZY-STABILITY-001
+    filename: Xbonzy_EPAR.pdf
+    url: https://www.ema.europa.eu/en/documents/assessment-report/xbonzy-epar-public-assessment-report_en.pdf
+    document_type: STABILITY
+    description: >
+      EMA EPAR for Xbonzy (denosumab biosimilar). Contains comparability and
+      stability data for a biosimilar product, with real stability tables and
+      shelf-life discussion. Use for testing StabilityExtractor.
+    molecule: Anti-RANKL IgG2 mAb (denosumab biosimilar)
+    expected_classification: STABILITY
+    expected_attributes_min: 8
+
+  - id: ICH-Q14-ANALYTICAL-001
+    filename: ICH_Q14_2023.pdf
+    url: https://database.ich.org/sites/default/files/ICH_Q14_Guideline_2023_1116.pdf
+    document_type: ANALYTICAL_METHOD
+    description: >
+      ICH Q14 Analytical Procedure Development guideline (2023). Contains worked
+      example for an anti-TNF-alpha mAb analytical procedure. Use for testing
+      AnalyticalMethodExtractor and verifying ICH Q2/Q14 coverage detection.
+    expected_classification: ANALYTICAL_METHOD
+
+  - id: NISTMAB-CERT-001
+    filename: NISTmAb_RM8671_Certificate.pdf
+    url: https://tsapps.nist.gov/srmext/certificates/8671.pdf
+    document_type: CHARACTERIZATION
+    description: >
+      NIST RM 8671 Reference Material Certificate (latest, 2026).
+      Contains certified values for NISTmAb with measurement uncertainty.
+      Compact document — good for testing rapid classification and attribute extraction.
+    expected_classification: CHARACTERIZATION
+    expected_attributes_min: 5

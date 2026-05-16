@@ -1,0 +1,345 @@
+{
+  "documents": [
+    {
+      "id": "NISTMAB-CHAR-001",
+      "filename": "NISTmAb_SP260-237.pdf",
+      "time_seconds": 2.1,
+      "source_format": "pdf",
+      "classification": {
+        "expected": "CHARACTERIZATION",
+        "actual": "CHARACTERIZATION",
+        "pass": true
+      },
+      "attributes": {
+        "count": 76,
+        "expected_min": 15,
+        "pass": true
+      },
+      "evidence": {
+        "completeness_score": 0.875,
+        "reference_standard_identified": true,
+        "hmw_pct": null,
+        "afucosylation_pct": null,
+        "main_charge_peak_pct": null,
+        "sections_found": [
+          "Primary Structure",
+          "Higher-Order Structure",
+          "Aggregation / Size Variants",
+          "Charge Heterogeneity",
+          "Glycosylation / PTMs",
+          "Immunochemical Properties",
+          "Purity / Impurities"
+        ],
+        "critical_gaps": [
+          "Missing potency/biological activity data -- critical for regulatory submission"
+        ],
+        "reviewer_concerns": [
+          "CRITICAL: No potency data provided. Reviewer will require biological activity assessment per ICH Q6B Section 2."
+        ]
+      },
+      "assertions": [
+        {
+          "assertion": "hmw_pct is not None",
+          "result": false,
+          "pass": false
+        },
+        {
+          "assertion": "afucosylation_pct is not None",
+          "result": false,
+          "pass": false
+        },
+        {
+          "assertion": "main_charge_peak_pct is not None",
+          "result": false,
+          "pass": false
+        },
+        {
+          "assertion": "reference_standard_identified == True",
+          "result": true,
+          "pass": true
+        }
+      ],
+      "signals_count": 20,
+      "issues": [],
+      "sample_attributes": [
+        {
+          "name": "1.58",
+          "category": "physicochemical"
+        },
+        {
+          "name": "1.80",
+          "category": "physicochemical"
+        },
+        {
+          "name": "n.d.",
+          "category": "physicochemical"
+        },
+        {
+          "name": "2.69",
+          "category": "physicochemical"
+        },
+        {
+          "name": "3.74",
+          "category": "physicochemical"
+        }
+      ]
+    },
+    {
+      "id": "FDA-BLA761081-CMC-001",
+      "filename": "BLA761081_ChemistryReview.pdf",
+      "status": "SKIPPED",
+      "reason": "File not downloaded (404)"
+    },
+    {
+      "id": "EMA-DARZALEX-CMC-001",
+      "filename": "Darzalex_EPAR.pdf",
+      "time_seconds": 3.8,
+      "source_format": "pdf",
+      "classification": {
+        "expected": "CHARACTERIZATION",
+        "actual": "CHARACTERIZATION",
+        "pass": true
+      },
+      "attributes": {
+        "count": 78,
+        "expected_min": 0,
+        "pass": true
+      },
+      "evidence": {
+        "completeness_score": 1.0,
+        "reference_standard_identified": false,
+        "hmw_pct": null,
+        "afucosylation_pct": null,
+        "main_charge_peak_pct": null,
+        "sections_found": [
+          "Primary Structure",
+          "Higher-Order Structure",
+          "Aggregation / Size Variants",
+          "Charge Heterogeneity",
+          "Glycosylation / PTMs",
+          "Biological Activity / Potency",
+          "Immunochemical Properties",
+          "Purity / Impurities"
+        ],
+        "critical_gaps": [
+          "No reference standard traceability -- results cannot be verified"
+        ],
+        "reviewer_concerns": [
+          "Only one analytical method detected for Primary Structure. Reviewer may request orthogonal method for confirmation.",
+          "Only one analytical method detected for Aggregation / Size Variants. Reviewer may request orthogonal method for confirmation.",
+          "Only one analytical method detected for Charge Heterogeneity. Reviewer may request orthogonal method for confirmation.",
+          "Only one analytical method detected for Purity / Impurities. Reviewer may request orthogonal method for confirmation.",
+          "No reference standard identified. Reviewer will flag traceability gap."
+        ]
+      },
+      "assertions": [],
+      "signals_count": 19,
+      "issues": [],
+      "sample_attributes": [
+        {
+          "name": "8754-070\n1",
+          "category": "physicochemical"
+        },
+        {
+          "name": "MM patients relapsed from\nor refractory to at least 2\ndiffer",
+          "category": "physicochemical"
+        },
+        {
+          "name": "MM patients who have\nreceived at least 3 prior\nlines of ther",
+          "category": "physicochemical"
+        },
+        {
+          "name": "MM patients who received\nvarious chemotherapy,\nusually a com",
+          "category": "physicochemical"
+        },
+        {
+          "name": "MM patients who had\nrelapsed or were refractory\nto at least ",
+          "category": "physicochemical"
+        }
+      ]
+    },
+    {
+      "id": "EMA-XBONZY-STABILITY-001",
+      "filename": "Xbonzy_EPAR.pdf",
+      "time_seconds": 6.3,
+      "source_format": "pdf",
+      "classification": {
+        "expected": "STABILITY",
+        "actual": "STABILITY",
+        "pass": true
+      },
+      "attributes": {
+        "count": 45,
+        "expected_min": 8,
+        "pass": true
+      },
+      "evidence": {
+        "completeness_score": null,
+        "reference_standard_identified": null,
+        "hmw_pct": null,
+        "afucosylation_pct": null,
+        "main_charge_peak_pct": null,
+        "sections_found": [],
+        "critical_gaps": [],
+        "reviewer_concerns": [
+          "4 OOS/OOT event(s) detected. Reviewer will require root cause analysis and investigation report."
+        ]
+      },
+      "assertions": [],
+      "signals_count": 85,
+      "issues": [],
+      "sample_attributes": [
+        {
+          "name": "At least one serious TEAE",
+          "category": "stability"
+        },
+        {
+          "name": "At least one serious IP-related TEAE",
+          "category": "stability"
+        },
+        {
+          "name": "Any TEAE leading to death",
+          "category": "stability"
+        },
+        {
+          "name": "Any TEAE leading to discontinuation from\nthe study",
+          "category": "stability"
+        },
+        {
+          "name": "Severe",
+          "category": "stability"
+        }
+      ]
+    },
+    {
+      "id": "ICH-Q14-ANALYTICAL-001",
+      "filename": "ICH_Q14_2023.pdf",
+      "time_seconds": 2.6,
+      "source_format": "pdf",
+      "classification": {
+        "expected": "ANALYTICAL_METHOD",
+        "actual": "ANALYTICAL_METHOD",
+        "pass": true
+      },
+      "attributes": {
+        "count": 87,
+        "expected_min": 0,
+        "pass": true
+      },
+      "evidence": {
+        "completeness_score": 0.778,
+        "reference_standard_identified": null,
+        "hmw_pct": null,
+        "afucosylation_pct": null,
+        "main_charge_peak_pct": null,
+        "sections_found": [],
+        "critical_gaps": [
+          "Missing LOD for impurity method -- major gap per ICH Q2(R2)",
+          "Missing LOQ for impurity method -- major gap per ICH Q2(R2)"
+        ],
+        "reviewer_concerns": []
+      },
+      "assertions": [],
+      "signals_count": 21,
+      "issues": [],
+      "sample_attributes": [
+        {
+          "name": "Change of analytical procedure\nprinciple\n(physicochemical/bi",
+          "category": "analytical_method"
+        },
+        {
+          "name": "Change within same analytical\nprocedure principle",
+          "category": "analytical_method"
+        },
+        {
+          "name": "Transfer of analytical\nprocedure to a different site\nwith no",
+          "category": "analytical_method"
+        },
+        {
+          "name": "Quantitation of the six stereoisomers A-F in Sakuratinib Mal",
+          "category": "analytical_method"
+        },
+        {
+          "name": "Link to CQA (Stereoisomeric Purity)",
+          "category": "analytical_method"
+        }
+      ]
+    },
+    {
+      "id": "NISTMAB-CERT-001",
+      "filename": "NISTmAb_RM8671_Certificate.pdf",
+      "time_seconds": 0.4,
+      "source_format": "pdf",
+      "classification": {
+        "expected": "CHARACTERIZATION",
+        "actual": "CHARACTERIZATION",
+        "pass": true
+      },
+      "attributes": {
+        "count": 9,
+        "expected_min": 5,
+        "pass": true
+      },
+      "evidence": {
+        "completeness_score": 0.75,
+        "reference_standard_identified": true,
+        "hmw_pct": 3.06,
+        "afucosylation_pct": null,
+        "main_charge_peak_pct": null,
+        "sections_found": [
+          "Primary Structure",
+          "Higher-Order Structure",
+          "Aggregation / Size Variants",
+          "Charge Heterogeneity",
+          "Glycosylation / PTMs",
+          "Purity / Impurities"
+        ],
+        "critical_gaps": [
+          "Missing potency/biological activity data -- critical for regulatory submission"
+        ],
+        "reviewer_concerns": [
+          "CRITICAL: No potency data provided. Reviewer will require biological activity assessment per ICH Q6B Section 2.",
+          "Only one analytical method detected for Higher-Order Structure. Reviewer may request orthogonal method for confirmation."
+        ]
+      },
+      "assertions": [],
+      "signals_count": 0,
+      "issues": [
+        "Attribute '10.004' has value but missing pre/post split",
+        "Attribute '9.92' has value but missing pre/post split"
+      ],
+      "sample_attributes": [
+        {
+          "name": "10.004",
+          "category": "physicochemical"
+        },
+        {
+          "name": "9.92",
+          "category": "physicochemical"
+        },
+        {
+          "name": "nrCE-SDS(c)",
+          "category": "purity"
+        },
+        {
+          "name": "rCE-SDS(d)",
+          "category": "purity"
+        },
+        {
+          "name": "FI(b)",
+          "category": "physicochemical"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_documents": 6,
+    "tested": 5,
+    "skipped": 1,
+    "classification_pass": 5,
+    "attributes_pass": 5,
+    "assertions_pass": 1,
+    "assertions_total": 4,
+    "all_no_errors": false
+  }
+}

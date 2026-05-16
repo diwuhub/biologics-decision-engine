@@ -1,0 +1,73 @@
+{
+  "case_id": "MEMO-001",
+  "title": "mAb-X BLA Gap Memo -- Incomplete Module 3 with Numerical Inconsistency",
+  "category": "gap_memo",
+  "source": "synthetic (designed for A-2 gap memo pipeline validation)",
+  "description": "Mock CTD Module 3 submission for mAb-X BLA with intentional gaps and a numerical inconsistency",
+  "product_name": "mAb-X (ExampleMab)",
+  "product_type": "mAb",
+  "submission_type": "BLA",
+  "expected_readiness": "Not Ready",
+  "sections": [
+    {
+      "name": "S.2.2",
+      "title": "Description of Manufacturing Process and Process Controls",
+      "content": "The manufacturing process for mAb-X drug substance consists of cell culture in a 2000L bioreactor using a fed-batch process with CHO-K1 cells. The upstream process includes seed train expansion through T-flask, shake flask, and wave bioreactor stages. The production bioreactor is operated at 37°C with a pH set point of 7.0. Harvest is performed by depth filtration followed by 0.2 µm filtration. The purification process includes Protein A chromatography (MabSelect SuRe resin) with elution at pH 3.5, followed by cation exchange chromatography (SP Sepharose HP). Viral inactivation is performed by low pH hold at pH 3.5 for 60 minutes. A nanofiltration step using Planova 20N filter provides additional viral clearance."
+    },
+    {
+      "name": "S.2.3",
+      "title": "Control of Materials",
+      "content": "The Master Cell Bank (MCB) was established from the CHO-K1 host cell line transfected with the expression construct encoding mAb-X. The Working Cell Bank (WCB) was derived from the MCB at passage 5. Cell culture media are chemically defined and free of animal-derived components. All chromatography resins are qualified for reuse with defined lifetime studies."
+    },
+    {
+      "name": "S.4.1",
+      "title": "Specification",
+      "content": "The drug substance specification includes tests for identity, purity, potency, and safety. The protein concentration is measured at 50 mg/mL by UV spectrophotometry. Acceptance criteria: Identity by peptide mapping (conforms), SEC purity NLT 95.0%, Potency by cell-based assay 80-125% relative to reference standard."
+    },
+    {
+      "name": "S.3.2",
+      "title": "Impurities",
+      "content": "Process-related impurities include host cell protein (HCP) measured by ELISA with acceptance criteria of NMT 100 ppm, and residual DNA measured by qPCR with acceptance criteria of NMT 10 ng/dose. Product-related substances include aggregates measured by SEC (NMT 5.0%) and charge variants measured by iCIEF."
+    },
+    {
+      "name": "P.1",
+      "title": "Description and Composition of the Drug Product",
+      "content": "mAb-X drug product is a sterile solution for subcutaneous injection supplied in pre-filled syringes. Each syringe contains 150 mg of mAb-X in 1 mL. The formulation contains 25 mM histidine buffer pH 6.0, 200 mM sucrose, and 0.02% polysorbate 80."
+    },
+    {
+      "name": "P.3.3",
+      "title": "Description of Manufacturing Process and Process Controls (Drug Product)",
+      "content": "The drug product manufacturing process involves thawing of drug substance, buffer preparation, pooling and mixing, sterile filtration through a 0.2 µm filter, aseptic filling into pre-filled syringes, stoppering, and visual inspection. Fill volume is 1.0 mL with a target protein concentration of 150 mg/mL."
+    },
+    {
+      "name": "P.5.1",
+      "title": "Specification(s) (Drug Product)",
+      "content": "Drug product release specifications include: Appearance (clear to slightly opalescent), pH (5.5-6.5), Protein concentration (142.5-157.5 mg/mL), Particulate matter per USP <788>, Sterility per USP <71>, Bacterial endotoxin NMT 5 EU/mL."
+    },
+    {
+      "name": "S.7.3",
+      "title": "Stability Data",
+      "content": "Long-term stability studies are ongoing at 5°C ± 3°C. Data are available through 12 months. Accelerated stability at 25°C/60% RH shows acceptable results through 6 months. The drug substance protein concentration was measured at 48 mg/mL at the 12-month time point."
+    },
+    {
+      "name": "P.7",
+      "title": "Container Closure System (Drug Product)",
+      "content": "The primary container closure system consists of a Type I borosilicate glass syringe barrel with a bromobutyl rubber stopper and a rigid needle shield. The syringe is compatible with standard autoinjector devices."
+    }
+  ],
+  "expected_results": {
+    "min_gaps": 3,
+    "max_gaps": 8,
+    "min_consistency_flags": 1,
+    "min_predicted_questions": 5,
+    "expected_gap_sections": ["S.2.2", "S.7.3", "P.7"],
+    "expected_consistency_issue": "Protein concentration: 50 mg/mL in S.4.1 vs 48 mg/mL in S.7.3",
+    "notes": [
+      "S.2.2 is missing hold time information",
+      "S.7.3 has limited stability data (no shelf-life conclusion in S.7.1 which is absent)",
+      "P.7 is missing extractables/leachables data",
+      "Protein concentration inconsistency between S.4.1 (50 mg/mL) and S.7.3 (48 mg/mL)",
+      "No S.7.1 stability summary section provided"
+    ]
+  }
+}

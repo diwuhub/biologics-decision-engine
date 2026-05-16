@@ -1,0 +1,79 @@
+{
+  "case_id": "GC-01",
+  "title": "Normal Sufficient Comparability",
+  "case_context": {
+    "molecule_class": "mAb",
+    "change_type": "scale_up",
+    "change_description": "Scale-up from 2L to 2000L bioreactor for commercial manufacturing",
+    "lifecycle_stage": "Phase_III",
+    "target_geography": "global",
+    "flagged_attribute_ids": [],
+    "flagged_categories": [],
+    "identified_gaps": []
+  },
+  "attribute_results": [
+    {
+      "attribute_id": "potency_activity",
+      "category": "potency",
+      "pre_value": 100.0,
+      "post_value": 97.5,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": true,
+      "score": 0.95,
+      "gaps": []
+    },
+    {
+      "attribute_id": "purity_sec_hplc",
+      "category": "purity",
+      "pre_value": 99.1,
+      "post_value": 98.8,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": true,
+      "score": 0.96,
+      "gaps": []
+    },
+    {
+      "attribute_id": "identity_peptide_map",
+      "category": "identity",
+      "pre_value": 100.0,
+      "post_value": 100.0,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": false,
+      "score": 1.0,
+      "gaps": []
+    },
+    {
+      "attribute_id": "aggregation_hplc",
+      "category": "purity",
+      "pre_value": 1.2,
+      "post_value": 1.3,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": true,
+      "score": 0.92,
+      "gaps": []
+    },
+    {
+      "attribute_id": "charge_variants_cief",
+      "category": "physicochemical",
+      "pre_value": 45.0,
+      "post_value": 44.2,
+      "unit": "%_main_peak",
+      "concern_level": "none",
+      "is_cqa": false,
+      "score": 0.93,
+      "gaps": []
+    }
+  ],
+  "expected_decision": {
+    "verdict": "proceed",
+    "confidence_band": "high",
+    "blocking_cluster_count": 0,
+    "abstain_flag": false,
+    "key_reviewer_concern": null,
+    "risk_semantics": "sufficient_evidence"
+  }
+}

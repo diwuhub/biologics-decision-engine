@@ -1,0 +1,79 @@
+{
+  "case_id": "GC-11",
+  "title": "Hidden Package Insufficiency",
+  "case_context": {
+    "molecule_class": "mAb",
+    "change_type": "process_change",
+    "change_description": "All attributes individually comparable but potency cluster missing required method type per ICH Q5E",
+    "lifecycle_stage": "post_approval",
+    "target_geography": "global",
+    "flagged_attribute_ids": ["potency_activity"],
+    "flagged_categories": ["potency"],
+    "identified_gaps": ["missing_method_type"]
+  },
+  "attribute_results": [
+    {
+      "attribute_id": "potency_activity",
+      "category": "potency",
+      "pre_value": 100.0,
+      "post_value": 99.0,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": true,
+      "score": 0.95,
+      "gaps": ["missing_method_type"]
+    },
+    {
+      "attribute_id": "purity_sec_hplc",
+      "category": "purity",
+      "pre_value": 99.0,
+      "post_value": 98.8,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": true,
+      "score": 0.96,
+      "gaps": []
+    },
+    {
+      "attribute_id": "identity_peptide_map",
+      "category": "identity",
+      "pre_value": 100.0,
+      "post_value": 100.0,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": false,
+      "score": 1.0,
+      "gaps": []
+    },
+    {
+      "attribute_id": "aggregation_hplc",
+      "category": "purity",
+      "pre_value": 1.0,
+      "post_value": 1.0,
+      "unit": "%",
+      "concern_level": "none",
+      "is_cqa": true,
+      "score": 0.98,
+      "gaps": []
+    },
+    {
+      "attribute_id": "charge_variants_cief",
+      "category": "physicochemical",
+      "pre_value": 45.0,
+      "post_value": 44.8,
+      "unit": "%_main_peak",
+      "concern_level": "none",
+      "is_cqa": false,
+      "score": 0.97,
+      "gaps": []
+    }
+  ],
+  "expected_decision": {
+    "verdict": "supplement_required",
+    "confidence_band": "moderate",
+    "blocking_cluster_count": 1,
+    "abstain_flag": false,
+    "key_reviewer_concern": "Package-level gap: required potency method type missing per ICH Q5E despite individual comparability",
+    "risk_semantics": "assay_gap"
+  }
+}

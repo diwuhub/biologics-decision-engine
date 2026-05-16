@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Comparability Evidence Graph",
+  "description": "Schema for lot-to-lot biologics comparability evidence",
+  "type": "object",
+  "required": ["comparison_id", "lots", "attributes", "edges"],
+  "properties": {
+    "comparison_id": { "type": "string" },
+    "lots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["lot_id", "manufacturing_site", "process_version"],
+        "properties": {
+          "lot_id": { "type": "string" },
+          "manufacturing_site": { "type": "string" },
+          "process_version": { "type": "string" },
+          "date": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["attribute_id", "name", "category", "measurements"],
+        "properties": {
+          "attribute_id": { "type": "string" },
+          "name": { "type": "string" },
+          "category": { "type": "string", "enum": ["identity", "purity", "potency", "safety", "stability", "physicochemical"] },
+          "measurements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["lot_id", "assay", "value", "unit"],
+              "properties": {
+                "lot_id": { "type": "string" },
+                "assay": { "type": "string" },
+                "value": {},
+                "unit": { "type": "string" },
+                "specification": { "type": "string" },
+                "within_spec": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from_attribute", "to_attribute", "relationship", "confidence"],
+        "properties": {
+          "from_attribute": { "type": "string" },
+          "to_attribute": { "type": "string" },
+          "relationship": { "type": "string", "enum": ["correlates_with", "impacts", "caused_by", "predicts", "contradicts"] },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence_source": { "type": "string" }
+        }
+      }
+    },
+    "verdict": {
+      "type": "object",
+      "properties": {
+        "comparable": { "type": "boolean" },
+        "confidence": { "type": "number" },
+        "residual_uncertainties": { "type": "array", "items": { "type": "string" } },
+        "narrative": { "type": "string" }
+      }
+    }
+  }
+}

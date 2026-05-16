@@ -1,0 +1,476 @@
+entries:
+- id: Q5A-1
+  type: guideline_clause
+  source: ICH Q5A(R1)
+  title: Cell Line Characterization for Adventitious Agents
+  content: 'Cell lines used in the production of biotechnology-derived products must be characterized for the presence of
+    adventitious agents. Characterization should include testing for known viruses, mycoplasma, and other potential contaminants.
+    The cell line history, including passage number and origin, must be thoroughly documented. All cells should be traced
+    back to their original source, and evidence of safety through the manufacturing history must be provided.
+
+    '
+  applicable_categories:
+  - safety
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q5a-viral-safety-evaluation-biotechnology-products-derived-mammalian-cell-lines-step-5_en.pdf
+  year: 1999
+  tags:
+  - cell_characterization
+  - adventitious_agents
+  - master_cell_bank
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5A-2
+  type: guideline_clause
+  source: ICH Q5A(R1)
+  title: Testing of Master Cell Bank (MCB) and Working Cell Bank (WCB) for Viruses
+  content: 'Master Cell Banks and Working Cell Banks must be tested for a comprehensive panel of viruses using both in vitro
+    cell culture and in vivo assays. Testing requirements include mammalian viruses (e.g., bovine viral diarrhea virus, reovirus,
+    parainfluenza virus), avian viruses where applicable, and retrovirus- like particles. Each cell bank lot must be tested
+    individually. Detection methods should include electron microscopy, reverse transcriptase assay, and specific viral assays.
+    Acceptance criteria must be established and documented before testing commences.
+
+    '
+  applicable_categories:
+  - safety
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q5a-viral-safety-evaluation-biotechnology-products-derived-mammalian-cell-lines-step-5_en.pdf
+  year: 1999
+  tags:
+  - cell_bank_testing
+  - viral_assays
+  - master_working_cell_bank
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5A-3
+  type: guideline_clause
+  source: ICH Q5A(R1)
+  title: Testing of Unprocessed Bulk Harvest and Production Bulk
+  content: 'Unprocessed bulk harvest must be tested for adventitious viruses and other agents. Testing should be conducted
+    on representative lots from the production process. For continuous cell lines, testing at the beginning, middle, and end
+    of production may be appropriate. For product batches, testing should cover the manufacturing period. Detection assays
+    must include both general methods (electron microscopy, reverse transcriptase assay) and specific viral assays relevant
+    to the production system. Results should be evaluated against pre-established acceptance criteria.
+
+    '
+  applicable_categories:
+  - safety
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q5a-viral-safety-evaluation-biotechnology-products-derived-mammalian-cell-lines-step-5_en.pdf
+  year: 1999
+  tags:
+  - bulk_harvest
+  - production_controls
+  - viral_testing
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5A-4
+  type: guideline_clause
+  source: ICH Q5A(R1)
+  title: Viral Clearance Validation Studies - Inactivation
+  content: 'Viral inactivation studies must demonstrate the effectiveness of purification and inactivation steps in removing
+    or inactivating viruses. Studies should use model viruses representing both enveloped and non-enveloped viruses. The inactivation
+    process must be validated by spiking with high titers of test virus and demonstrating logarithmic reduction. Parameters
+    affecting viral inactivation (pH, temperature, chemical treatment duration) should be studied. The robustness of the process
+    should be demonstrated with reduced/enhanced parameters. Acceptance criteria typically require ≥4 log10 reduction, though
+    higher reductions may be required depending on risk assessment outcomes.
+
+    '
+  applicable_categories:
+  - safety
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q5a-viral-safety-evaluation-biotechnology-products-derived-mammalian-cell-lines-step-5_en.pdf
+  year: 1999
+  tags:
+  - viral_clearance
+  - inactivation
+  - validation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5A-5
+  type: guideline_clause
+  source: ICH Q5A(R1)
+  title: Viral Clearance Validation Studies - Removal
+  content: 'Viral removal studies must demonstrate the effectiveness of purification steps in physically removing viruses
+    from the product. Studies should employ model viruses of appropriate size and physical characteristics. Filtration steps
+    (microfiltration, ultrafiltration) must be validated using virus spiking experiments. The log10 reduction value (LRV)
+    should be determined for each model virus and purification step. Intermediate steps contributing to viral clearance should
+    be evaluated and credited. The data should support the claimed safety margins and robustness of the manufacturing process
+    across typical operating parameters.
+
+    '
+  applicable_categories:
+  - safety
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q5a-viral-safety-evaluation-biotechnology-products-derived-mammalian-cell-lines-step-5_en.pdf
+  year: 1999
+  tags:
+  - viral_clearance
+  - removal
+  - filtration
+  - purification
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5A-6
+  type: guideline_clause
+  source: ICH Q5A(R1)
+  title: Retrovirus-Like Particles in CHO Cell Lines
+  content: 'Chinese Hamster Ovary (CHO) cells may contain retrovirus-like particles (RLPs). The presence, quantity, and potential
+    infectivity of RLPs must be evaluated. Testing includes electron microscopy to detect particles, reverse transcriptase
+    assays to assess potential infectivity, and in vitro infection assays where appropriate. Even if RLPs are detected, evidence
+    of their non-infectivity should be provided through appropriate assays. The impact of RLPs on product safety must be evaluated,
+    including their removal or inactivation by downstream purification and viral inactivation steps. Documentation of RLP
+    characterization is essential for regulatory approval of CHO-derived products.
+
+    '
+  applicable_categories:
+  - safety
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q5a-viral-safety-evaluation-biotechnology-products-derived-mammalian-cell-lines-step-5_en.pdf
+  year: 1999
+  tags:
+  - retrovirus_like_particles
+  - CHO_cells
+  - reverse_transcriptase
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5A-7
+  type: guideline_clause
+  source: ICH Q5A(R1)
+  title: Panel of Model Viruses for Clearance Studies
+  content: 'A representative panel of model viruses must be used in viral clearance studies. The panel should include both
+    enveloped and non-enveloped viruses, and both RNA and DNA viruses, to challenge different purification mechanisms. Typical
+    viruses include poliovirus (RNA, non-enveloped), pseudorabies virus (DNA, enveloped), reovirus (RNA, non-enveloped), minute
+    virus of mice (DNA, non-enveloped), and bovine viral diarrhea virus (RNA, enveloped). The selection of model viruses should
+    be scientifically justified based on size, resistance to inactivation, and relevance to potential contaminating viruses.
+    For each manufacturing step, the most resistant virus in the panel should be used for validation.
+
+    '
+  applicable_categories:
+  - safety
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q5a-viral-safety-evaluation-biotechnology-products-derived-mammalian-cell-lines-step-5_en.pdf
+  year: 1999
+  tags:
+  - model_viruses
+  - panel_selection
+  - clearance_validation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5A-8
+  type: guideline_clause
+  source: ICH Q5A(R1)
+  title: Raw Material Viral Safety - Bovine and Human-Derived Materials
+  content: 'Raw materials of bovine or human origin used in manufacturing must be evaluated for viral safety. For bovine-derived
+    materials (serum, growth factors), testing or certification from approved sources should be provided. Materials should
+    come from countries with BSE surveillance and minimal viral disease risk. Human-derived raw materials must undergo appropriate
+    viral testing (HIV, HBV, HCV antibodies/nucleic acids) and should be sourced from screened and tested donors where possible.
+    The viral safety of raw materials should be established before incorporation into the manufacturing process. Inactivation
+    or removal steps for adventitious viruses from raw materials should be validated where applicable.
+
+    '
+  applicable_categories:
+  - safety
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q5a-viral-safety-evaluation-biotechnology-products-derived-mammalian-cell-lines-step-5_en.pdf
+  year: 1999
+  tags:
+  - raw_materials
+  - bovine_serum
+  - human_derived
+  - viral_safety
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q3D-1
+  type: guideline_clause
+  source: ICH Q3D(R2)
+  title: Classification of Elemental Impurities - Class 1 (Carcinogenic/Mutagenic)
+  content: 'Class 1 elemental impurities are those with evidence of carcinogenicity and/or mutagenicity and are considered
+    undesirable in pharmaceutical products. These include cadmium, lead, and mercury. The Permitted Daily Exposure (PDE) values
+    for Class 1 elements are derived from carcinogenic potency and are set at the threshold below which non-threshold carcinogenic
+    effects are considered unlikely. Exposure to Class 1 elemental impurities should be minimized as much as reasonably achievable
+    (ALARA principle), and their presence in drug substances and products should be controlled through specification limits
+    based on the established PDEs.
+
+    '
+  applicable_categories:
+  - safety
+  - purity
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q3d-elemental-impurities-step-5_en.pdf
+  year: 2019
+  tags:
+  - elemental_impurities
+  - classification
+  - carcinogenic
+  - PDE
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q3D-2
+  type: guideline_clause
+  source: ICH Q3D(R2)
+  title: Permitted Daily Exposures (PDEs) for Parenteral Route
+  content: 'PDEs are derived from point of departure values identified from hazard characterization studies and adjusted by
+    uncertainty factors. For the parenteral route of administration, PDEs generally reflect systemic bioavailability of elemental
+    impurities. PDEs vary by element: Class 1 elements (Cd: 3 μg/day, Pb: 1.5 μg/day, Hg: 30 μg/day), Class 2A elements (As:
+    15 μg/day, Co: 50 μg/day, Ni: 200 μg/day, V: 100 μg/day), Class 2B elements (Ag: 150 μg/day, Au: 100 μg/day, Pd: 100 μg/day,
+    Pt: 100 μg/day, Tl: 8 μg/day), and Class 3 elements (Fe: 2100 μg/day, Cu: 300 μg/day, Mn: 613 μg/day, Mo: 2000 μg/day,
+    Zn: 7300 μg/day). Concentration limits for individual drug substances/products should be calculated based on the maximum
+    recommended dose.
+
+    '
+  applicable_categories:
+  - safety
+  - purity
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q3d-elemental-impurities-step-5_en.pdf
+  year: 2019
+  tags:
+  - PDE
+  - permitted_daily_exposure
+  - parenteral_route
+  - dose_calculation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q3D-3
+  type: guideline_clause
+  source: ICH Q3D(R2)
+  title: Risk Assessment Approach for Elemental Impurities in Biologics
+  content: 'A risk assessment framework should be applied to determine control requirements for elemental impurities in biologics.
+    The approach includes identifying sources of elemental impurities (raw materials, catalysts, equipment, container closure
+    systems), assessing the likelihood and magnitude of contamination, and establishing appropriate control measures. For
+    biologics derived from cell culture systems, metal content in cell culture media, growth factors, and supplements should
+    be evaluated. The risk assessment should justify which elements require analytical testing and which can be controlled
+    through component specifications or process controls. A tiered approach may be used: elements with low risk may not require
+    routine testing if process controls are demonstrated.
+
+    '
+  applicable_categories:
+  - safety
+  - purity
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q3d-elemental-impurities-step-5_en.pdf
+  year: 2019
+  tags:
+  - risk_assessment
+  - elemental_impurities
+  - biologics
+  - process_controls
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q3D-4
+  type: guideline_clause
+  source: ICH Q3D(R2)
+  title: Catalysts and Process-Related Metal Residuals
+  content: 'Metal catalysts and reagents intentionally used in synthesis or manufacturing processes must be controlled to
+    acceptable levels. Common catalysts in biopharmaceutical manufacturing include palladium, platinum, nickel, and iron.
+    The residual metal content should be minimized through process optimization and/or purification steps. Specification limits
+    should be set based on ICH Q3D PDE values, accounting for the maximum recommended dose of the drug product. Process validation
+    should demonstrate consistent removal of catalytic metals across the manufacturing range. Documentation of catalyst selection,
+    usage, removal procedures, and analytical testing requirements is essential for regulatory compliance. Consideration should
+    be given to potential metal contamination from equipment (e.g., stainless steel components).
+
+    '
+  applicable_categories:
+  - safety
+  - purity
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q3d-elemental-impurities-step-5_en.pdf
+  year: 2019
+  tags:
+  - catalysts
+  - metal_residuals
+  - process_related
+  - specification
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q3D-5
+  type: guideline_clause
+  source: ICH Q3D(R2)
+  title: Container Closure System Contributions to Elemental Impurities
+  content: 'Container closure systems (vials, syringes, stoppers, needles) may contribute elemental impurities to pharmaceutical
+    products, particularly for parenteral formulations. Common sources include iron, nickel, chromium, and manganese from
+    stainless steel components, and boron from glass vials. Compatibility studies should evaluate leaching of elemental impurities
+    from container materials into the product over the intended shelf life and storage conditions. Suppliers of primary packaging
+    materials should provide elemental composition data or certificates of analysis. The cumulative elemental burden from
+    all sources (raw materials, process steps, container closure system) should not exceed PDE-based concentration limits.
+    For biologics, this assessment is particularly important given the typically small injection volumes and concentrated
+    dosages.
+
+    '
+  applicable_categories:
+  - safety
+  - purity
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q3d-elemental-impurities-step-5_en.pdf
+  year: 2019
+  tags:
+  - container_closure_system
+  - leaching
+  - packaging_materials
+  - elemental_burden
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q14-1
+  type: guideline_clause
+  source: ICH Q14
+  title: Analytical Target Profile (ATP) Concept
+  content: 'The Analytical Target Profile (ATP) defines the intended use and performance characteristics required of an analytical
+    procedure. The ATP is established at the beginning of analytical procedure development and serves as the foundation for
+    method design and validation strategy. The ATP should specify: the analyte (drug substance, impurity, or product attribute),
+    matrix composition, expected concentration range, required accuracy and precision, selectivity requirements, and intended
+    use (release testing, shelf-life stability, in-process controls). For biologics, the ATP may include specifications for
+    identity, strength, purity, and potency of the drug substance and product. The ATP should be scientifically justified
+    based on regulatory requirements, drug product characteristics, and intended clinical use.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - identity
+  - physicochemical
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q14-analytical-procedure-development-step-5_en.pdf
+  year: 2023
+  tags:
+  - ATP
+  - analytical_target_profile
+  - method_design
+  - validation_strategy
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q14-2
+  type: guideline_clause
+  source: ICH Q14
+  title: Minimal and Enhanced Approaches to Analytical Procedure Development
+  content: 'ICH Q14 describes two development approaches based on available prior knowledge: the Minimal Approach and the
+    Enhanced Approach. The Minimal Approach is appropriate when prior knowledge of method performance exists (e.g., well-
+    established methods from literature or previous regulatory submissions). Development studies focus on method verification
+    to demonstrate suitability for the intended use. The Enhanced Approach is employed when prior knowledge is limited, requiring
+    comprehensive studies to understand method performance across the design space. For biologics, the Enhanced Approach is
+    typically necessary, involving systematic investigation of critical method parameters (buffer pH, temperature, flow rate,
+    column batch) and their effects on critical quality attributes. The Enhanced Approach builds knowledge to establish the
+    Method Operable Design Region (MODR) and supports lifecycle management.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - identity
+  - physicochemical
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q14-analytical-procedure-development-step-5_en.pdf
+  year: 2023
+  tags:
+  - minimal_approach
+  - enhanced_approach
+  - development_strategy
+  - prior_knowledge
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q14-3
+  type: guideline_clause
+  source: ICH Q14
+  title: Robustness Evaluation as Part of Analytical Development
+  content: 'Robustness is evaluated during the analytical procedure development phase (not exclusively during validation)
+    to assess the procedure''s ability to remain unaffected by small deliberate variations in method parameters. Robustness
+    studies are typically conducted using factorial designs to evaluate the combined effects of parameter variations. For
+    chromatographic methods applied to biologics, parameters evaluated include column temperature, mobile phase pH, flow rate,
+    and column batch variations. Acceptance criteria should be established such that the procedure is considered robust if
+    no failures or excessive variation occurs within the study design. Results of robustness evaluation inform the selection
+    of critical method parameters, specification of the MODR, and control measures. Procedures demonstrating poor robustness
+    may require redesign or enhanced process controls.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - identity
+  - physicochemical
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q14-analytical-procedure-development-step-5_en.pdf
+  year: 2023
+  tags:
+  - robustness
+  - parameter_variations
+  - factorial_design
+  - MODR
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q14-4
+  type: guideline_clause
+  source: ICH Q14
+  title: Method Operable Design Region (MODR)
+  content: 'The Method Operable Design Region (MODR) is the multidimensional operational space within which an analytical
+    procedure is expected to operate reliably and produce valid results. The MODR encompasses the ranges of critical method
+    parameters (CMPs) that have been demonstrated to yield acceptable performance. Development of the MODR involves systematic
+    evaluation of parameter ranges through factorial or similar experimental designs, followed by multivariate statistical
+    analysis to define the boundaries. For biologics, the MODR might include column temperature range (e.g., 20-30°C for size-exclusion
+    chromatography), mobile phase pH range (e.g., pH 6.8-7.2), and flow rate ranges. The MODR should be sufficiently wide
+    to accommodate routine operational variations while maintaining method performance. Definition and documentation of the
+    MODR supports regulatory flexibility and lifecycle management of the analytical procedure post-approval.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - identity
+  - physicochemical
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q14-analytical-procedure-development-step-5_en.pdf
+  year: 2023
+  tags:
+  - MODR
+  - method_parameters
+  - design_space
+  - lifecycle_management
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q14-5
+  type: guideline_clause
+  source: ICH Q14
+  title: Lifecycle Management of Analytical Procedures
+  content: 'Analytical procedures are subject to continuous lifecycle management post- approval. The lifecycle includes development,
+    validation, implementation, and ongoing monitoring and improvement. Changes to analytical procedures may be classified
+    as: 1) changes within the established MODR (routine changes that may not require full revalidation), 2) changes requiring
+    verification studies, or 3) changes requiring full revalidation. Establishment of the MODR during development enables
+    a risk-based approach to post-approval changes. Regular review of analytical data (control charts, out-of-specification
+    results, method performance trends) should be conducted to identify potential method drift or issues. Continuous improvement
+    initiatives may optimize procedure parameters or enhance robustness. Documentation of the analytical lifecycle, including
+    rationale for changes and supporting data, supports regulatory compliance and ensures sustained method performance and
+    reliability.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - identity
+  - physicochemical
+  confidence: 1.0
+  url: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q14-analytical-procedure-development-step-5_en.pdf
+  year: 2023
+  tags:
+  - lifecycle_management
+  - post_approval_changes
+  - monitoring
+  - continuous_improvement
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final

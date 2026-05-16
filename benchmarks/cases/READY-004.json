@@ -1,0 +1,38 @@
+{
+  "case_id": "READY-004",
+  "title": "iPSC-Derived Cardiomyocyte for QT Prolongation (CiPA Precedent)",
+  "category": "review_readiness",
+  "source": "synthetic (inspired by FDA CiPA initiative — iPSC-CM accepted for proarrhythmia risk assessment)",
+  "expected_readiness_tier": "high",
+  "expected_readiness_score_min": 0.75,
+  "expected_gap_count_max": 1,
+  "nam_type": "iPSC_derived",
+  "context_of_use": "cardiotoxicity_screening",
+  "species_replaced": "dog",
+  "validation_evidence": [
+    {
+      "study_type": "concordance",
+      "concordance_rate": 0.89,
+      "sample_size": 130,
+      "reference": "Blinova et al. 2018 - CiPA Phase II multi-site iPSC-CM validation"
+    },
+    {
+      "study_type": "sensitivity_analysis",
+      "concordance_rate": 0.87,
+      "sample_size": 90,
+      "reference": "Fermini et al. 2016 - iPSC-CM proarrhythmia sensitivity across 28 drugs"
+    },
+    {
+      "study_type": "external_validation",
+      "concordance_rate": 0.84,
+      "sample_size": 60,
+      "reference": "CiPA Phase III 2022 - Multi-center blinded validation of iPSC-CM for QT risk"
+    }
+  ],
+  "regulatory_precedent": [
+    "FDA CiPA initiative accepted iPSC-CM for proarrhythmia risk assessment (2018)",
+    "ICH E14/S7B Q&A endorsed in silico + iPSC-CM integrated approach (2022)",
+    "FDA accepted CiPA data as supportive evidence in multiple NDA submissions (2020-2024)"
+  ],
+  "qualification_pathway": "DDT"
+}

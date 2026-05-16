@@ -1,0 +1,229 @@
+# Gold Standard Values for Real-Document Benchmarking
+# ====================================================
+# This file defines expected values for real public regulatory PDFs.
+# Used by qa/value_correctness_probe.py to test extractor accuracy.
+#
+# INSTRUCTIONS FOR DI:
+#   1. Review each "expected_values" field below
+#   2. Accept, modify, or delete based on your domain knowledge
+#   3. Resolve flagged decisions marked with DECISION:
+#   4. Save as gold_standard.yaml (remove _TEMPLATE suffix) once approved
+#
+# PRE-POPULATED FROM:
+#   - Direct reading of NISTmAb SP 260-237 pages 48-49 (Appendix A tables)
+#   - System extraction output on Xbonzy EPAR
+#   - Flags on known ambiguities
+
+version: "1.0"
+created: "2026-04-13"
+reviewer: "Di (pending)"
+
+documents:
+
+  # =====================================================================
+  # NISTmAb SP 260-237 (Characterization) — 248 pages, most complex case
+  # =====================================================================
+  - doc_id: NISTMAB-CHAR-001
+    filename: NISTmAb_SP260-237.pdf
+    document_type: CHARACTERIZATION
+
+    # ---------------------------------------------------------
+    # DECISION 1: Which lot is the reference for value correctness?
+    #
+    # NISTmAb has TWO materials reported side-by-side:
+    #   - PS 8670 (Primary Sample, earlier lot used as internal reference)
+    #   - RM 8671 (Reference Material, current lots: 14HB-D-001/002/003)
+    #
+    # The system currently extracts from the Monomeric Purity column of
+    # Table A2, which reads the PS 8670 value. But the "true" reference
+    # material is RM 8671. These values differ significantly.
+    #
+    # PS 8670 HMW:      1.050%  (system currently returns 1.256%)
+    # RM 8671 HMW avg:  3.155%  (14HB-D-001)
+    #
+    # CHOOSE ONE approach below and delete the others:
+    # ---------------------------------------------------------
+
+    expected_values:
+      # --- Option A: PS 8670 values (what system currently extracts) ---
+      hmw_pct:
+        value: 1.05
+        tolerance: 0.30
+        source_page: 48
+        source_table: "A2 (SEC)"
+        note: "PS 8670 HMW = 100 - 98.744 Monomeric = 1.256%; actual Table A2 average = 1.050%"
+
+      main_charge_peak_pct:
+        value: 74.4
+        tolerance: 1.0
+        source_page: 49
+        source_table: "A4 (CZE)"
+        note: "PS 8670 Charge Purity (CZE) = 74.356% average"
+
+      acidic_variants_pct:
+        value: 16.8
+        tolerance: 1.0
+        source_page: 49
+        source_table: "A4 (CZE)"
+
+      basic_variants_pct:
+        value: 8.85
+        tolerance: 1.0
+        source_page: 49
+        source_table: "A4 (CZE)"
+
+      # --- Option B: RM 8671 values (across 3 lots, averaged) ---
+      # hmw_pct:
+      #   value: 3.15
+      #   tolerance: 0.30
+      #   note: "RM 8671 lots 14HB-D-001/002/003 HMW avg ~3.1-3.3%"
+      # main_charge_peak_pct:
+      #   value: 73.0
+      #   tolerance: 1.0
+
+      # --- Uncertain / absent by design ---
+      # NISTmAb SP 260-237 does NOT quantify afucosylation % (only qualitatively
+      # identifies G0F/G1F/G2F glycan structures). System correctly marks UNCERTAIN.
+      # Leave commented out — no expected value.
+      #
+      # NISTmAb SP 260-237 does NOT include bioassay potency numbers in this PDF.
+      # System correctly marks potency UNCERTAIN. Leave commented out.
+
+    expected_classification: CHARACTERIZATION
+    expected_classification_confidence_min: 0.70
+    expected_completeness_score_min: 0.80
+    expected_completeness_score_max: 0.95
+
+    # Fields that should be POPULATED (not None, not empty)
+    required_populated_fields:
+      - hmw_pct
+      - main_charge_peak_pct
+
+    # Fields that should be UNCERTAIN (not CONFIRMED_ABSENT, not PRESENT-with-value)
+    required_uncertain_fields:
+      - afucosylation_pct
+      - potency_relative_pct
+
+    # Must have ZERO of these
+    forbidden_critical_gaps:
+      - "Missing potency"
+      - "Missing bioactivity"
+      - "Missing afucosylation"
+
+    # Should have AT LEAST these sections found
+    required_sections_found:
+      - "Primary Structure"
+      - "Higher-Order Structure"
+      - "Aggregation / Size Variants"
+      - "Charge Heterogeneity"
+      - "Glycosylation / PTMs"
+
+    expected_reference_standard_identified: true
+
+
+  # =====================================================================
+  # Xbonzy EPAR (Stability — denosumab biosimilar)
+  # =====================================================================
+  - doc_id: XBONZY-STAB-001
+    filename: Xbonzy_EPAR.pdf
+    document_type: STABILITY
+
+    expected_values:
+      proposed_shelf_life_months:
+        value: 24
+        tolerance: 0
+        source_page: 25
+        source_text: "The applicant proposed a shelf life of 24 months at 2-8C"
+
+      max_timepoint_months:
+        value: 60
+        tolerance: 6
+        note: "System extracts 60 — may be cumulative across lots, or longest stability study available"
+
+    expected_classification: STABILITY
+    expected_classification_confidence_min: 0.80
+
+    required_conditions_tested:
+      - "5C"       # real-time / recommended storage
+      - "25C/60RH" # accelerated
+      - "40C/75RH" # accelerated harsh
+
+    # DECISION 2: OOS event flag is currently false-positive
+    # System flags 4 OOS events but 2-3 are from extracting glossary definitions
+    # ("OOS = Out of Specifications") as events. Real OOS is on page 26:
+    # "identity by peptide mapping did not comply at 6-month accelerated timepoint"
+    # Gold standard should assert EXACTLY 1 real OOS event; current output has noise.
+    expected_oos_events_max: 2  # allow some noise, but current 4 is too many
+    expected_oos_events_min: 1
+
+    # Fields that should be populated
+    required_populated_fields:
+      - proposed_shelf_life
+      - conditions_tested
+
+
+  # =====================================================================
+  # NISTmAb RM8671 Certificate — smaller, simpler characterization doc
+  # =====================================================================
+  - doc_id: NISTMAB-CERT-001
+    filename: NISTmAb_RM8671_Certificate.pdf
+    document_type: CHARACTERIZATION
+
+    # DECISION 3: Certificate may have certified values for RM 8671 specifically.
+    # Review the PDF briefly and fill in if applicable — otherwise leave blank
+    # and delete this entire block (the system will skip it).
+
+    expected_classification: CHARACTERIZATION
+    expected_classification_confidence_min: 0.60
+    expected_completeness_score_min: 0.50
+
+
+  # =====================================================================
+  # ICH Q14 Analytical Method Validation Guideline
+  # =====================================================================
+  - doc_id: ICH-Q14-ANALYTICAL-001
+    filename: ICH_Q14_2023.pdf
+    document_type: ANALYTICAL_METHOD
+
+    expected_classification: ANALYTICAL_METHOD
+    expected_classification_confidence_min: 0.90
+
+    # Current extraction finds 7/8 Q2 studies. Good baseline.
+    required_validation_studies_min: 5  # of 8 possible per ICH Q2(R2)
+
+    # DECISION 4: ICH Q14 is a GUIDELINE, not a validation report itself.
+    # It contains an example for an anti-TNF-alpha mAb but is not itself a
+    # validation study. Some extracted fields may not apply.
+    # Consider deleting this document from gold standard if it's not a
+    # representative test case.
+
+
+# =====================================================================
+# Thresholds and Tolerances (global)
+# =====================================================================
+global:
+  # Any extracted value within tolerance of expected is considered correct
+  default_numeric_tolerance_pct: 10  # within 10% of expected value
+
+  # If extractor returns None but should have a value, that's a failure
+  treat_none_as_failure: true
+
+  # If extractor returns CONFIRMED_ABSENT but field should be UNCERTAIN, that's a failure
+  confirmed_absent_vs_uncertain_strict: true
+
+  # Test passes if: all required_populated_fields are populated AND within tolerance
+  #                 AND all required_uncertain_fields are UNCERTAIN (not missing, not wrong)
+  #                 AND zero forbidden_critical_gaps are produced
+
+
+# =====================================================================
+# FLAGGED DECISIONS REQUIRING DI'S INPUT
+# =====================================================================
+# Before this file is saved as gold_standard.yaml, please resolve:
+#
+# DECISION 1 (NISTmAb): PS 8670 or RM 8671 values? Currently template uses PS 8670.
+# DECISION 2 (Xbonzy): OOS events max should be 1 (real) or 2 (allow noise)?
+# DECISION 3 (NISTmAb Certificate): Keep or delete from gold standard?
+# DECISION 4 (ICH Q14): Keep or delete (it's a guideline, not a validation report)?
+#
+# Estimated review time: 30-60 minutes

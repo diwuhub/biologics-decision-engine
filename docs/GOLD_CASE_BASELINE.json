@@ -1,0 +1,212 @@
+{
+  "baseline_timestamp": "2026-04-08T02:55:59.878219+00:00",
+  "n_cases": 12,
+  "n_success": 12,
+  "n_error": 0,
+  "cases": [
+    {
+      "case_id": "GC-01",
+      "title": "Normal Sufficient Comparability",
+      "current_verdict": "proceed_with_conditions",
+      "current_confidence_band": "high",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "158 evidence gap(s) remain -- see evidence closure details",
+        "Document comparability conclusion in regulatory submission"
+      ],
+      "current_top_ref": "21 CFR 600.3: 21CFR-600.3",
+      "current_overall_verdict": "Comparable",
+      "current_evidence_strength_index": 0.9063,
+      "current_package_verdict": "proceed_with_conditions",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-02",
+      "title": "Orthogonal Method Gap",
+      "current_verdict": "proceed_with_conditions",
+      "current_confidence_band": "high",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "180 evidence gap(s) remain -- see evidence closure details",
+        "Document comparability conclusion in regulatory submission"
+      ],
+      "current_top_ref": "21 CFR 600.3: 21CFR-600.3",
+      "current_overall_verdict": "Comparable",
+      "current_evidence_strength_index": 0.9094,
+      "current_package_verdict": "proceed_with_conditions",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-03",
+      "title": "Trending Stability Within Spec",
+      "current_verdict": "proceed_with_conditions",
+      "current_confidence_band": "high",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "115 evidence gap(s) remain -- see evidence closure details",
+        "Document comparability conclusion in regulatory submission"
+      ],
+      "current_top_ref": "21 CFR 211.192: 21CFR-211.192-stability",
+      "current_overall_verdict": "Comparable",
+      "current_evidence_strength_index": 0.9152,
+      "current_package_verdict": "proceed_with_conditions",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-04",
+      "title": "Better-Than-Reference Purity",
+      "current_verdict": "supplement_required",
+      "current_confidence_band": "high",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "158 evidence gap(s) remain -- see evidence closure details",
+        "Document comparability conclusion in regulatory submission"
+      ],
+      "current_top_ref": "21 CFR 600.3: 21CFR-600.3",
+      "current_overall_verdict": "Comparable",
+      "current_evidence_strength_index": 0.9017,
+      "current_package_verdict": "supplement_required",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-05",
+      "title": "Conflicting Methods",
+      "current_verdict": "proceed_with_conditions",
+      "current_confidence_band": "moderate",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "potency_cell_based has major concern (delta=-25.0%) -- verify with additional testing",
+        "181 evidence gap(s) remain -- see evidence closure details"
+      ],
+      "current_top_ref": "21 CFR 600.3: 21CFR-600.3",
+      "current_overall_verdict": "Not Comparable",
+      "current_evidence_strength_index": 0.7805,
+      "current_package_verdict": "proceed_with_conditions",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-06",
+      "title": "No Precedent, Strong Guideline",
+      "current_verdict": "supplement_required",
+      "current_confidence_band": "high",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "180 evidence gap(s) remain -- see evidence closure details",
+        "Document comparability conclusion in regulatory submission"
+      ],
+      "current_top_ref": "21 CFR 600.3: 21CFR-600.3",
+      "current_overall_verdict": "Comparable",
+      "current_evidence_strength_index": 0.8932,
+      "current_package_verdict": "supplement_required",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-07",
+      "title": "Should Abstain",
+      "current_verdict": "proceed_with_conditions",
+      "current_confidence_band": "moderate",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "CRITICAL: glycosylation_profile shows -13.7% change -- investigate root cause and consider additional lots",
+        "199 evidence gap(s) remain -- see evidence closure details"
+      ],
+      "current_top_ref": "21 CFR 600.3: 21CFR-600.3",
+      "current_overall_verdict": "Not Comparable",
+      "current_evidence_strength_index": 0.7382,
+      "current_package_verdict": "proceed_with_conditions",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-08",
+      "title": "Geography Conflict",
+      "current_verdict": "proceed_with_conditions",
+      "current_confidence_band": "high",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "115 evidence gap(s) remain -- see evidence closure details",
+        "Document comparability conclusion in regulatory submission"
+      ],
+      "current_top_ref": "21 CFR 211.192: 21CFR-211.192-stability",
+      "current_overall_verdict": "Comparable",
+      "current_evidence_strength_index": 0.9116,
+      "current_package_verdict": "proceed_with_conditions",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-09",
+      "title": "Dated Support Dominates",
+      "current_verdict": "supplement_required",
+      "current_confidence_band": "high",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "180 evidence gap(s) remain -- see evidence closure details",
+        "Document comparability conclusion in regulatory submission"
+      ],
+      "current_top_ref": "21 CFR 600.3: 21CFR-600.3",
+      "current_overall_verdict": "Comparable",
+      "current_evidence_strength_index": 0.8919,
+      "current_package_verdict": "supplement_required",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-10",
+      "title": "Concern Pattern Only / Weak Normative",
+      "current_verdict": "proceed_with_conditions",
+      "current_confidence_band": "moderate",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "charge_variants_cief has major concern (delta=-6.7%) -- verify with additional testing",
+        "159 evidence gap(s) remain -- see evidence closure details"
+      ],
+      "current_top_ref": "ICH Q1A(R2): Q1A-6.1",
+      "current_overall_verdict": "Not Comparable",
+      "current_evidence_strength_index": 0.7764,
+      "current_package_verdict": "proceed_with_conditions",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-11",
+      "title": "Hidden Package Insufficiency",
+      "current_verdict": "supplement_required",
+      "current_confidence_band": "high",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "158 evidence gap(s) remain -- see evidence closure details",
+        "Document comparability conclusion in regulatory submission"
+      ],
+      "current_top_ref": "21 CFR 600.3: 21CFR-600.3",
+      "current_overall_verdict": "Comparable",
+      "current_evidence_strength_index": 0.9075,
+      "current_package_verdict": "supplement_required",
+      "status": "success"
+    },
+    {
+      "case_id": "GC-12",
+      "title": "Mixed Weak Evidence, Non-Blocking",
+      "current_verdict": "supplement_required",
+      "current_confidence_band": "high",
+      "current_blocking_cluster_count": 0,
+      "current_abstain_flag": false,
+      "current_reviewer_concern_sample": [
+        "180 evidence gap(s) remain -- see evidence closure details",
+        "Document comparability conclusion in regulatory submission"
+      ],
+      "current_top_ref": "21 CFR 600.3: 21CFR-600.3",
+      "current_overall_verdict": "Comparable",
+      "current_evidence_strength_index": 0.903,
+      "current_package_verdict": "supplement_required",
+      "status": "success"
+    }
+  ]
+}

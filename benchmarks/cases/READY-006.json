@@ -1,0 +1,22 @@
+{
+  "case_id": "READY-006",
+  "title": "In Silico Viral Clearance Model (No Regulatory Precedent)",
+  "category": "review_readiness",
+  "source": "synthetic (inspired by emerging computational viral clearance modeling with no regulatory acceptance)",
+  "expected_readiness_tier": "low",
+  "expected_readiness_score_max": 0.39,
+  "expected_gap_count_min": 2,
+  "nam_type": "in_silico",
+  "context_of_use": "viral_safety",
+  "species_replaced": null,
+  "validation_evidence": [
+    {
+      "study_type": "feasibility",
+      "concordance_rate": 0.60,
+      "sample_size": 12,
+      "reference": "Internal feasibility study - computational viral clearance prediction vs spiking studies"
+    }
+  ],
+  "regulatory_precedent": [],
+  "qualification_pathway": "none"
+}

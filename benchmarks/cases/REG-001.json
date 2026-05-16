@@ -1,0 +1,47 @@
+{
+  "case_id": "REG-001",
+  "title": "GMP Data Integrity Finding",
+  "category": "regulatory_classification",
+  "source": "synthetic (inspired by FDA warning letter patterns: data integrity violations per 21 CFR 211)",
+  "expected_action": "observe",
+  "expected_severity": "critical",
+  "expected_categories": ["data_integrity", "cGMP_violation", "laboratory_controls"],
+  "description": "Biologics manufacturing facility received FDA Form 483 observations citing systematic data integrity failures in QC laboratory. Audit trail disabled on HPLC systems, manual integration of chromatograms without justification, and deletion of failing OOS results.",
+  "claims": [
+    {
+      "claim_text": "HPLC audit trails were disabled on 3 of 5 analytical instruments used for release testing of biological drug substance over a 14-month period",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["HPLC", "audit trail", "release testing", "drug substance", "data integrity"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Manual integration of chromatographic peaks was performed on 47% of release test results without documented scientific justification per 21 CFR 211.68",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["chromatography", "manual integration", "release testing", "21 CFR 211.68"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "QC laboratory personnel deleted 12 out-of-specification (OOS) results for SEC-HPLC purity testing without initiating OOS investigations per 21 CFR 211.192",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["OOS", "SEC-HPLC", "purity", "deletion", "21 CFR 211.192"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Facility had prior FDA warning letter in 2022 for similar data integrity observations that were inadequately remediated",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["warning letter", "repeat observation", "inadequate remediation"],
+      "evidence_strength": "strong",
+      "regulatory_relevance": "directly_cited"
+    },
+    {
+      "claim_text": "Root cause analysis attributed findings to lack of data integrity training program and absence of periodic data integrity audit",
+      "source_type": "fda_announcement",
+      "extracted_entities": ["root cause", "training", "data integrity audit", "CAPA"],
+      "evidence_strength": "moderate",
+      "regulatory_relevance": "directly_cited"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+entries:
+- id: PREC-001
+  type: precedent
+  source: FDA BLA 761024 (Amjevita/adalimumab-atto)
+  title: Biosimilar approval with SEC monomer purity difference
+  content: 'Amjevita demonstrated comparability to Humira despite ~0.5% lower SEC monomer purity. FDA accepted this based
+    on: (1) functional potency equivalence in TNF-alpha neutralization assay, (2) comparable HMW species characterization,
+    (3) consistent lot-to-lot variability within both products.
+
+    '
+  applicable_categories:
+  - purity
+  confidence: 0.85
+  year: 2016
+  tags:
+  - biosimilar
+  - adalimumab
+  - SEC
+  - purity
+  - HMW
+  authority_quality_tier: strong_secondary
+  verified: true
+  verification_method: BLA number confirmed
+  content_type: paraphrase
+  confidence_basis: Based on FDA BLA 761024 public review documents
+- id: PREC-002
+  type: precedent
+  source: EMA EPAR Benepali (etanercept biosimilar)
+  title: Glycosylation difference accepted with functional bridging
+  content: 'Benepali showed differences in N-glycan profile compared to Enbrel reference. EMA accepted comparability based
+    on demonstration that glycosylation differences did not affect TNF-alpha binding or Fc-gamma receptor binding. Functional
+    bridging data was key to the positive assessment.
+
+    '
+  applicable_categories:
+  - physicochemical
+  - potency
+  confidence: 0.8
+  year: 2016
+  tags:
+  - biosimilar
+  - etanercept
+  - glycosylation
+  - functional_bridging
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from public regulatory summaries
+- id: PREC-003
+  type: precedent
+  source: FDA CMC Post-Approval Change (various)
+  title: Typical acceptance range for mAb process changes
+  content: 'For standard mAb manufacturing process changes (e.g., cell culture media, purification resin, fill/finish), FDA
+    has historically accepted differences within: SEC monomer ≤1%, charge variants ≤5%, potency ±20% of reference. These ranges
+    are not formal specifications but reflect observed patterns in approved supplements.
+
+    '
+  applicable_categories:
+  - purity
+  - potency
+  - physicochemical
+  confidence: 0.7
+  year: 2020
+  tags:
+  - mAb
+  - process_change
+  - acceptance_range
+  - supplement
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from public regulatory summaries
+- id: PREC-004
+  type: precedent
+  source: FDA Warning Letter 320-20-23
+  title: Comparability failure due to insufficient trending data
+  content: 'FDA issued a warning letter citing insufficient comparability data for a manufacturing site transfer. Specifically:
+    only 2 lots of post-change material were tested (minimum 3 expected), and no accelerated stability comparison was provided.
+
+    '
+  applicable_categories:
+  - stability
+  - purity
+  - potency
+  confidence: 0.9
+  year: 2020
+  tags:
+  - warning_letter
+  - insufficient_data
+  - site_transfer
+  - lot_count
+  authority_quality_tier: strong_secondary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from public regulatory summaries
+- id: PREC-005
+  type: precedent
+  source: ICH Q5E + FDA Guidance (2003) combined interpretation
+  title: No precedent does not mean DEFER
+  content: 'Absence of directly matching precedent should not automatically trigger DEFER. Instead, it should lower confidence
+    in the assessment and trigger SUPPLEMENT (collect additional data) or INVESTIGATE (deeper analysis). This interpretation
+    aligns with SP v5 softened abstain logic.
+
+    '
+  applicable_categories:
+  - identity
+  - purity
+  - potency
+  - safety
+  - stability
+  - physicochemical
+  confidence: 0.75
+  year: 2004
+  tags:
+  - abstain
+  - no_precedent
+  - softened
+  - confidence_lowering
+  authority_quality_tier: primary
+  verified: false
+  verification_method: not_verified
+  content_type: paraphrase
+  confidence_basis: Derived from public regulatory summaries

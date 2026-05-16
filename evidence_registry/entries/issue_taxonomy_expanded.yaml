@@ -1,0 +1,406 @@
+entries:
+- applicable_categories:
+  - efficacy
+  - safety
+  - stability
+  confidence: 0.85
+  content: 'Incorrect inter- or intra-chain disulfide pairing during manufacturing/storage; typically from exposure to reducing
+    agents or alkaline pH Typical sources: Purification resin residuals (DTT carryover); pH excursions (>8) during formulation/hold
+    steps; Oxidative stress with insufficient native disulfide stability; Freeze-thaw cycling with redox-active impurities.
+    Detection: Intact MS with native/denaturing comparison; Peptide mapping with reduction/non-reduction; Isoelectric focusing
+    (native vs denaturing); HDX-MS (structural perturbation). Severity: High. Regulatory significance: Critical comparability
+    marker; direct impact on Fc-receptor binding and target engagement Mitigation: Tight pH control during manufacturing;
+    validated disulfide reduction/oxidation protocols; reducing agent removal verification'
+  id: ISS-EXP-DISULFIDE_SCRAMBLING
+  source: 'FDA Guidance: Comparability for Therapeutic Protein Products (2019), ICH Q5C (Quality of Biotechnology Products)'
+  tags:
+  - disulfide_scrambling
+  - higher-order_structure_protein_modification
+  - high
+  title: Disulfide Bond Scrambling and Mispaired Species
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - efficacy
+  - pk_pd
+  confidence: 0.85
+  content: 'Oxidation of methionine residues (M252, M431 in IgG1 Fc) to methionine sulfoxide; reduces Fc-FcRn binding and
+    shortens serum half-life Typical sources: Oxidative stress during manufacturing (oxygen exposure); Hydrogen peroxide or
+    peroxide-generating impurities; Metal ion catalysis (Fe2+, Cu2+); Extended storage at elevated temperature or light exposure;
+    Freeze-thaw cycling with oxidative headspace. Detection: Peptide mapping with oxidation-specific fragmentation; Intact
+    MS (mass shift 16 Da per oxidized Met); Reversed-phase HPLC (FcγRIIIa variant separation); FcRn binding assay (functional
+    confirmation). Severity: High. Regulatory significance: PK alterations can require different clinical positioning vs innovator;
+    comparability-critical Mitigation: Antioxidant excipients (EDTA, ascorbic acid); nitrogen headspace; light-protected containers;
+    manufacturing redox control'
+  id: ISS-EXP-MET_OXIDATION_FC
+  source: 'FDA Guidance: Comparability for Therapeutic Protein Products (2019), EMA Guideline: Similar Biological Medicinal
+    Products'
+  tags:
+  - met_oxidation_fc
+  - protein_modification
+  - high
+  title: Methionine Oxidation in Fc Region Affecting FcRn Binding
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: strong_secondary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - efficacy
+  - potency
+  confidence: 0.85
+  content: 'Oxidation of tryptophan residues (typically in CDRs or Fab interface) to kynurenine/other oxidation products;
+    alters binding kinetics Typical sources: Oxidative stress (singlet oxygen, ROS); Light exposure (especially 300-400 nm);
+    Metal-catalyzed oxidation; Hydrogen peroxide from cell culture or purification steps; Extended storage without protection.
+    Detection: Peptide mapping with differential UV detection (340 nm); Intact MS (variable mass shift depending on oxidation
+    product); Potency assay trending (early indicator); HPLC with fluorescence detection. Severity: Medium-High. Regulatory
+    significance: Loss of potency through oxidation is a comparability concern; must be controlled to <0.5-1% Mitigation:
+    Light-protected storage (amber vials); antioxidant excipients; oxygen removal (nitrogen flush); EDTA/metal chelation'
+  id: ISS-EXP-TRP_OXIDATION
+  source: 'ICH Q3B (Impurities), FDA Guidance: Analytical Procedures and Methods Validation'
+  tags:
+  - trp_oxidation
+  - protein_modification
+  - medium-high
+  title: Tryptophan Oxidation Affecting Potency
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: strong_secondary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - efficacy
+  - potency
+  confidence: 0.85
+  content: 'Asparagine or glutamine residue in CDR undergoes deamidation (Asn→Asp/isoAsp; Gln→Glu/isoGlu); charge shift and
+    geometry change disrupt target recognition Typical sources: Elevated pH during manufacturing (>7.5); Elevated temperature
+    during processing/storage; Acidic residues or amino acids in n+1/n-1 positions accelerate reaction (Asn/Gln adjacent to
+    small residues); Asparagine in CDR2 or CDR3 of many clones (hotspot residues identified). Detection: Peptide mapping with
+    deamidation-specific chromatography (isoAsp detection by MS); Isoelectric focusing (charge variant analysis); Capillary
+    electrophoresis (native or IEF mode); Potency/binding assay (functional impact); cIEF or RP-HPLC-UV with high resolution.
+    Severity: High. Regulatory significance: Critical comparability marker; even low deamidation in critical CDR residues
+    can impact efficacy Mitigation: Strict pH control (pH 6.5-7.5 during manufacturing); controlled temperature; excipient
+    selection (avoid Mg2+, promotes deamidation)'
+  id: ISS-EXP-DEAMIDATION_CDR
+  source: 'FDA Guidance: Comparability for Therapeutic Protein Products (2019), ICH Q5C (Quality of Biotechnology Products)'
+  tags:
+  - deamidation_cdr
+  - protein_modification
+  - high
+  title: Deamidation Hotspot in CDR Affecting Target Binding
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - comparability
+  - manufacturing_consistency
+  confidence: 0.85
+  content: 'Variation in whether C-terminal residue is amidated (e.g., Ser-CONH2 vs Ser-COOH); affects charge and potentially
+    FcRn/receptor binding Typical sources: Incomplete C-terminal post-translational modification in CHO cells (variable extent);
+    Proteolytic cleavage partial, leading to free carboxyl vs amide; Cell culture media/pH effects on amidation enzyme activity;
+    Difference between mammalian vs microbial expression (platform-dependent). Detection: Peptide mapping focusing on C-terminal
+    region (MS or HPLC); Intact MS (mass difference 0.984 Da between COOH and CONH2); Capillary electrophoresis (charge difference);
+    Amino acid sequencing (Edman degradation). Severity: Medium. Regulatory significance: Process-dependent marker; impacts
+    manufacturability claims and bioequivalence assessment Mitigation: Characterize baseline amidation level; establish process
+    control and specification; monitor in-process control'
+  id: ISS-EXP-C_TERMINAL_AMIDATION
+  source: 'ICH Q6B (Acceptance Criteria for Biotechnology Products), FDA Guidance: Comparability for Therapeutic Protein Products'
+  tags:
+  - c_terminal_amidation
+  - protein_modification
+  - medium
+  title: C-Terminal Amidation Variation
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - comparability
+  - stability
+  confidence: 0.85
+  content: 'N-terminal glutamine cyclizes to form pyroglutamic acid (pGlu); increases molecular weight by -18 Da (loss of
+    ammonia), charge changes Typical sources: Elevated pH during formulation/hold (>7.0); Elevated temperature; Extended manufacturing
+    hold times; Direct expression from CHO cells may produce heterogeneous N-terminal processing. Detection: Peptide mapping
+    (mass shift -18 Da for pGlu-modified N-terminus); Intact MS (mixture of populations); Capillary electrophoresis (heterogeneity
+    detection); Amino acid sequencing (Edman shows pGlu blockage). Severity: Medium. Regulatory significance: Comparability
+    concern; must match innovator distribution (often as charge variants) Mitigation: pH control <pH 7.5 during manufacturing;
+    minimize hold times at room temperature; accelerated stability studies to quantify rate'
+  id: ISS-EXP-N_TERMINAL_PYR_GLU
+  source: 'ICH Q5C (Quality of Biotechnology Products), FDA Guidance: Comparability for Therapeutic Protein Products'
+  tags:
+  - n_terminal_pyr_glu
+  - protein_modification
+  - medium
+  title: N-Terminal Pyroglutamate Formation
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - efficacy
+  - safety
+  - potency
+  confidence: 0.85
+  content: 'Proteolytic cleavage of antibody chains (heavy chain, light chain, or Fab-Fc junction) during manufacturing hold
+    steps; leads to loss of function and novel species Typical sources: Residual proteases from cell culture or purification
+    resins; Endogenous protease activation at elevated temperature/pH; Extended hold times at room temperature; Contaminating
+    proteases (bacterial or fungal from manufacturing environment); Serum proteases in media batches (BSA or FBS contamination).
+    Detection: Intact MS (loss of mass corresponding to cleaved fragment); SE-HPLC (increased peak asymmetry or new peaks);
+    SDS-PAGE reducing/non-reducing (chain fragmentation visible); Peptide mapping (new cleavage products); SEC-MALS (heterogeneous
+    MW). Severity: High. Regulatory significance: Critical quality issue; fragments may lack efficacy and pose safety concern;
+    must remain <0.5% Mitigation: Minimize hold times at room temperature; protease inhibitors during manufacturing; validated
+    inactivation steps; aseptic processing controls'
+  id: ISS-EXP-FRAGMENTATION_CLIPPING
+  source: 'ICH Q5B (Quality Overall Summary for Biotechnology Products), FDA Guidance: Analytical Procedures and Methods Validation'
+  tags:
+  - fragmentation_clipping
+  - protein_integrity
+  - high
+  title: Fragmentation and Clipping During Hold Steps
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: strong_secondary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - safety_perception
+  - regulatory_compliance
+  - manufacturing_consistency
+  confidence: 0.85
+  content: 'Color shift (yellowing, browning) from oxidation/degradation of excipients (polysorbate, EDTA), metal ion catalysis,
+    or protein oxidation; turbidity from aggregation or precipitation Typical sources: Polysorbate peroxide formation (hydrolysis
+    to peroxide); EDTA or other chelators precipitate with trace metals; Phenolic excipients oxidize to colored quinone products;
+    Aggregate formation visible as haze/cloudiness; Container-closure interaction (glass leachables, plastic discoloration);
+    Light exposure (photodegradation). Detection: Visual inspection (manual or automated); Turbidity measurement (NTU); Spectrophotometry
+    (UV-Vis absorbance at 420 nm for discoloration); HPLC (colored oxidation products); Microscopy (particle morphology).
+    Severity: Medium. Regulatory significance: Regulatory rejection risk; color/appearance specification must be clear and
+    measurable Mitigation: Antioxidant excipients; light-protected containers; metal ion control (EDTA chelation); avoid redox-active
+    impurities in manufacturing'
+  id: ISS-EXP-COLOR_APPEARANCE_CHANGES
+  source: ICH Q6B (Acceptance Criteria), USP <790>/<1790> (Visual Inspection), Ph.Eur. 2.2.1 (Appearance of Solutions)
+  tags:
+  - color_appearance_changes
+  - appearance
+  - medium
+  title: Color and Appearance Changes in Drug Product
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - potency_loss
+  - lot-to-lot_consistency
+  - pk_pd
+  confidence: 0.85
+  content: 'Protein adsorbs to container inner surfaces (glass, polycarbonate, polypropylene) via hydrophobic interactions
+    or electrostatic binding; reduces solution concentration over time Typical sources: Direct glass contact (inadequate silicone
+    or other coating); Container type change (glass to plastic, vendor change); Formulation pH/ionic strength change; Elevated
+    temperature accelerating adsorption kinetics; Underfilled containers with high surface-area-to-volume ratio. Detection:
+    HPLC/SEC quantification at T0 and after hold (concentration loss); Radiolabeled protein tracing (125I-labeled protein
+    tracking); Surface analysis (XPS, Raman) identifying adsorbed protein; Potency assay trending (functional loss correlates);
+    Container leachate analysis (identifying glass/plastic leachables that promote adsorption). Severity: High. Regulatory
+    significance: Critical manufacturing consistency concern; must be controlled and characterized in CMC; can invalidate
+    bioequivalence if uncontrolled Mitigation: Siliconized glass vials; neutral glass preferred (Type I); surfactant addition
+    to formulation if compatible; pre-coating of containers; minimize headspace'
+  id: ISS-EXP-CONTAINER_CLOSURE_PROTEIN_ADSORPTION
+  source: 'ICH Q3B (Impurities), FDA Guidance: Container Closure System (2017), Ph.Eur. 3.2.1 (Container/Closure Suitability
+    Study)'
+  tags:
+  - container_closure_protein_adsorption
+  - manufacturing_formulation
+  - high
+  title: Container-Closure Interaction - Protein Adsorption to Glass/Thermoplastic
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: strong_secondary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - product_quality
+  - safety
+  - customer_acceptance
+  confidence: 0.85
+  content: 'Mechanical agitation, vibration, or temperature cycling during transport causes protein aggregation, container
+    stress fractures, or glass delamination releasing particles Typical sources: Vibration from vehicle transport (truck,
+    air freight); Temperature cycling (loading dock temperature swings); Improper cushioning/packaging (vials contact rigid
+    surfaces); Freeze-thaw cycling during cold chain breaks; Pressure changes during air transport; Glass delamination from
+    temperature shock (cold package → warm storage). Detection: Subvisible particle count pre- and post-shipment (MFI/FlowCam);
+    Particle size/morphology analysis (protein vs glass origin); Potency/appearance trending; Accelerated transport simulation
+    (vibration chamber, thermal cycling). Severity: Medium-High. Regulatory significance: Post-approval surveillance concern;
+    regulatory action if acceptance criteria exceeded; trend data critical for CMC Mitigation: Optimize secondary packaging
+    (foam insert design); thermal stability testing under transport conditions; vibration testing of package; cold chain management;
+    particle size specification monitoring'
+  id: ISS-EXP-SUBVISIBLE_PARTICLE_SHIPPING
+  source: 'ICH Q3B (Stability Testing), ICH Q1F (Photostability Testing), FDA Guidance: Container Closure System (2017)'
+  tags:
+  - subvisible_particle_shipping
+  - manufacturing_logistics
+  - medium-high
+  title: Subvisible Particle Increase During Shipping and Transport
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: strong_secondary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - patient_acceptability
+  - manufacturability
+  - administration
+  confidence: 0.85
+  content: 'Protein concentration >100 mg/mL increases solution viscosity; impacts injectability, flowability, and syringe
+    fill accuracy Typical sources: High protein concentration (inherent property); Excipient choices (some stabilizers, sugars
+    increase viscosity); pH and ionic strength affecting protein hydration shell; Aggregation or partial misfolding increasing
+    effective volume; Temperature sensitivity of viscosity. Detection: Viscosity measurement (cone-and-plate or capillary
+    rheometer); Viscosity trending during stability; Flow-time measurement (Ph.Eur. <2.2.9>); Syringe fill accuracy/consistency
+    testing; Injectability assessment (needle penetration force, plunger friction). Severity: Medium. Regulatory significance:
+    CMC control point; affects patient acceptability and manufacturing (fill/finish operations); specification critical Mitigation:
+    Excipient optimization (sugar alcohols, amino acids reduce viscosity); pH/ionic strength adjustment; silicone oil application
+    (syringes); rheology study during development; pre-filled syringe design optimization'
+  id: ISS-EXP-VISCOSITY_HIGH_CONC_SC
+  source: ICH Q6B (Acceptance Criteria), Ph.Eur. <2.2.9> (Flow Time)
+  tags:
+  - viscosity_high_conc_sc
+  - formulation
+  - medium
+  title: Viscosity Challenges for High-Concentration Subcutaneous Formulations
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - product_quality
+  - stability
+  - ph_control
+  confidence: 0.85
+  content: 'Buffer salts crystallize at low temperature (eutectic crystallization) during freezing, altering solution pH and
+    ionic strength; protein can aggregate in altered microenvironment Typical sources: Phosphate buffer at pH 7.0-7.5 (eutectic
+    -17°C); Acetate buffer at certain concentrations; Multiple freeze-thaw cycles; Vial headspace variability (nucleation
+    sites); Slow freezing rate (allows crystal nucleation). Detection: Visual inspection (crystals visible at bottom of frozen
+    vials); pH measurement post-thaw (pH shift indicates crystallization); Osmolality measurement (osmolyte concentration
+    change); Stability data (potency loss, aggregation increase post-thaw); Microscopy (crystal identification). Severity:
+    Medium. Regulatory significance: CMC control point; affects stability data interpretation; must be characterized in frozen
+    product studies Mitigation: Buffer selection (use buffering species with minimal eutectic effect); formulation pH optimization;
+    cryoprotectant excipients (mannitol, trehalose); controlled freezing rate; vial-to-vial variability control'
+  id: ISS-EXP-BUFFER_CRYSTALLIZATION
+  source: ICH Q1A (Stability Testing), ICH Q3B (Excipient Justification)
+  tags:
+  - buffer_crystallization
+  - formulation_stability
+  - medium
+  title: Buffer Crystallization During Freeze-Thaw Cycling
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - protein_stability
+  - product_quality
+  - safety
+  confidence: 0.85
+  content: 'Polysorbate (80, 20) undergoes oxidation (peroxide formation) and hydrolysis (ester bond cleavage to oleic acid/sorbitan);
+    degradation products can aggregate or oxidize protein Typical sources: Exposure to light (especially UV or visible light);
+    Metal ion catalysis (Fe2+, Cu2+, trace metals from manufacturing); Oxygen in headspace (unsaturated fatty acid side chains
+    oxidize); Elevated temperature; Extended storage time; Mechanical stress (agitation during manufacturing). Detection:
+    HPLC analysis of polysorbate (free fatty acids, peroxides, hydrolysis products); Peroxide number determination (iodometric
+    titration); GC-MS (fatty acid profile); Protein aggregation assay (indicator of oxidation impact); pH/conductivity trending
+    (hydrolysis produces acidic species). Severity: High. Regulatory significance: Critical stability concern; polysorbate
+    peroxides/hydrolysis products directly impact protein stability; specification justification required Mitigation: Polysorbate
+    supplier qualification (peroxide, free fatty acid acceptance criteria); antioxidants (EDTA, ascorbic acid); light protection
+    (amber vials); nitrogen headspace; metal ion control; temperature control during manufacturing/storage'
+  id: ISS-EXP-EXCIPIENT_DEGRADATION_POLYSORBATE
+  source: 'ICH Q3B (Impurities: Excipients), FDA Guidance: Polysorbate Excipient Degradation Study (2018), USP <467> (Residual
+    Solvents)'
+  tags:
+  - excipient_degradation_polysorbate
+  - excipient_stability
+  - high
+  title: Excipient Degradation - Polysorbate Oxidation and Hydrolysis
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: strong_secondary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - safety
+  - product_identity
+  - regulatory_compliance
+  confidence: 0.85
+  content: 'Residual protein from previous manufacturing run (same facility, different product) contaminates current batch
+    via inadequate cleaning or shared equipment Typical sources: Shared bioreactors, chromatography resins, fill-finish equipment
+    without validated cleaning; Inadequate campaign separation (different antibodies on same line); Environmental contamination
+    (air handling, personnel, splash); Transfer of filters, tubing, equipment between products; Carryover in recirculating
+    water systems (WFI loops). Detection: Species-specific HPLC or SEC-HPLC (co-elution detection difficult); Mass spectrometry
+    (intact MS, peptide mapping - species identification); Product-specific ELISA or immunoassay; Cell line-specific PCR (if
+    CHO product contaminated with mammalian product); ATP bioluminescence (microbial risk assessment). Severity: High. Regulatory
+    significance: Critical regulatory concern; product safety and identity issue; can trigger product recall; requires robust
+    cleaning validation and in-process controls Mitigation: Facility segregation (dedicated suites); validated cleaning procedures
+    (ATP monitoring, product-specific swabs); campaign separation; dedicated equipment; environmental monitoring; product-specific
+    tests in release specifications'
+  id: ISS-EXP-CROSS_CONTAMINATION_MULTIPRODUCT
+  source: 'FDA Guidance: Contamination of Injectables (2003), ICH Q7 (Good Manufacturing Practice), FDA Guidance: Risk-Based
+    Inspection of Pharmaceutical Facilities (2019)'
+  tags:
+  - cross_contamination_multiproduct
+  - manufacturing_controls
+  - high
+  title: Cross-Contamination from Multi-Product Manufacturing Facility
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: structured_metadata
+  document_status: final
+- applicable_categories:
+  - lot-to-lot_consistency
+  - product_quality
+  - yield_titer
+  confidence: 0.85
+  content: 'Cell culture media components (amino acids, vitamins, growth factors, trace elements) vary batch-to-batch from
+    suppliers; affects cell growth kinetics, protein yield, and posttranslational modification patterns Typical sources: Amino
+    acid composition variability (especially branched-chain amino acids); Trace metal content variations (Fe, Zn, Cu levels);
+    Growth factor potency variability (EGF, FGF, HGF); Vitamin concentration differences (biotin, folate); Osmolality or pH
+    drift of media components; Supplier changes or component sourcing changes (geographical, seasonal). Detection: Cell growth
+    rate monitoring (viable cell concentration, growth kinetics); Protein titer measurement (yield impact); Charge variant
+    profile assessment (cIEF/RP-HPLC - affects PTM patterns); Potency assay trending; ICP-MS (trace metal content in media);
+    Amino acid profiling. Severity: Medium-High. Regulatory significance: CMC impact on lot-to-lot consistency; can trigger
+    release hold if charge variants or potency shift observed; requires supplier qualification and in-process control monitoring
+    Mitigation: Media supplier qualification (stability profile, USP/EP specification); established cell culture control parameters
+    (pH, osmolality, amino acid profiling); in-process monitoring (titer, charge variants, potency); specification tolerance
+    ranges; media lot acceptance testing before manufacturing use'
+  id: ISS-EXP-RAW_MATERIAL_VARIABILITY_MEDIA
+  source: 'ICH Q7 (Good Manufacturing Practice), ICH Q9 (Quality Risk Management), FDA Guidance: Changes to Established Drug
+    Products (2002)'
+  tags:
+  - raw_material_variability_media
+  - manufacturing_controls
+  - medium-high
+  title: Raw Material Variability - Cell Culture Media Lot-to-Lot
+  type: issue_taxonomy
+  url: ''
+  year: 2024
+  authority_quality_tier: primary
+  content_type: structured_metadata
+  document_status: final

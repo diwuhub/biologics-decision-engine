@@ -1,0 +1,353 @@
+entries:
+- id: CFR-58-001
+  type: guideline_clause
+  source: 21 CFR Part 58
+  title: Good Laboratory Practice (GLP) General Requirements
+  content: GLP standards ensure quality and integrity of safety data. Applies to in vitro/in vivo non-clinical laboratory
+    studies. Covers personnel, facilities, equipment, procedures, and record-keeping for investigational articles.
+  applicable_categories:
+  - safety
+  - testing
+  - quality
+  confidence: 0.99
+  url: https://www.ecfr.gov/current/title-21/part-58
+  year: 1978
+  tags:
+  - glp
+  - non-clinical
+  - safety
+  - testing
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-58-002
+  type: guideline_clause
+  source: 21 CFR Part 58
+  title: GLP Facility and Equipment Management
+  content: Facilities must prevent contamination and mix-ups; equipment must be suitable and maintained. Environmental monitoring
+    addresses temperature, humidity, lighting. Specimen storage ensures preservation of samples throughout study duration.
+  applicable_categories:
+  - safety
+  - quality
+  - environment
+  confidence: 0.98
+  url: https://www.ecfr.gov/current/title-21/part-58
+  year: 1978
+  tags:
+  - glp
+  - facilities
+  - equipment
+  - environmental_control
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-58-003
+  type: guideline_clause
+  source: 21 CFR Part 58
+  title: GLP Study Director and Management Responsibility
+  content: Study director is responsible for overall conduct, quality assurance reviews, and data integrity. Quality assurance
+    unit performs quality checks independent of study conduct. Written Standard Operating Procedures (SOPs) required for all
+    phases.
+  applicable_categories:
+  - safety
+  - quality
+  - management
+  confidence: 0.99
+  url: https://www.ecfr.gov/current/title-21/part-58
+  year: 1978
+  tags:
+  - glp
+  - study_director
+  - quality_assurance
+  - management
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-210-001
+  type: guideline_clause
+  source: 21 CFR Part 210
+  title: Current Good Manufacturing Practice (cGMP) General Provisions
+  content: cGMP requirements apply to manufacturing, processing, packing, or holding of drug products. Covered facilities
+    must ensure products meet safety/identity/quality standards. Compliance demonstrates commitment to product quality.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - regulatory
+  confidence: 0.99
+  url: https://www.ecfr.gov/current/title-21/part-210
+  year: 1978
+  tags:
+  - cgmp
+  - manufacturing
+  - fda
+  - regulatory
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-210-002
+  type: guideline_clause
+  source: 21 CFR Part 210
+  title: cGMP Personnel Requirements
+  content: 21 CFR 211.1(b) requires sufficient qualified personnel. Educational background, training, and experience must
+    match duties. Training program must address GMP principles and specific operations. Supervision ensures competent performance.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - management
+  confidence: 0.99
+  url: https://www.ecfr.gov/current/title-21/part-210
+  year: 1978
+  tags:
+  - cgmp
+  - personnel
+  - training
+  - qualification
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-210-003
+  type: guideline_clause
+  source: 21 CFR Part 210
+  title: cGMP Facility Design and Environment Control
+  content: 21 CFR 211.42-211.56 prescribe facility design to prevent contamination and mix-ups. Separate areas for different
+    operations; environmental monitoring per documented protocol. Facilities must be cleaned and maintained to ensure product
+    quality.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - environment
+  confidence: 0.99
+  url: https://www.ecfr.gov/current/title-21/part-210
+  year: 1978
+  tags:
+  - cgmp
+  - facility_design
+  - environmental_control
+  - contamination
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-210-004
+  type: guideline_clause
+  source: 21 CFR Part 210
+  title: cGMP Equipment Qualification and Maintenance
+  content: 21 CFR 211.63-211.72 require equipment suitable for manufacturing and capable of clean operation. Equipment must
+    be qualified (Installation Qualification, Operational Qualification, Performance Qualification) and regularly calibrated/maintained.
+    Records document all service.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - validation
+  confidence: 0.99
+  url: https://www.ecfr.gov/current/title-21/part-210
+  year: 1978
+  tags:
+  - cgmp
+  - equipment
+  - validation
+  - maintenance
+  - iq_oq_pq
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-210-005
+  type: guideline_clause
+  source: 21 CFR Part 210
+  title: cGMP Production and Process Controls
+  content: 21 CFR 211.110-211.192 establish requirements for batch production records, component controls, in-process testing,
+    finished product specifications, and batch release. Production records must enable traceability and support regulatory
+    documentation.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - process_control
+  confidence: 0.99
+  url: https://www.ecfr.gov/current/title-21/part-210
+  year: 1978
+  tags:
+  - cgmp
+  - production_controls
+  - batch_records
+  - specifications
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-606-001
+  type: guideline_clause
+  source: 21 CFR Part 606
+  title: Good Manufacturing Practice for Blood and Blood Products
+  content: 21 CFR Part 606 applies to collection, testing, processing, storage, and distribution of blood/blood products for
+    transfusion. Requirements address facility design, equipment, personnel, donor qualification, and product testing/labeling.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - safety
+  - biologics
+  confidence: 0.97
+  url: https://www.ecfr.gov/current/title-21/part-606
+  year: 1985
+  tags:
+  - blood_gmp
+  - biologics
+  - transfusion
+  - donor_screening
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-820-001
+  type: guideline_clause
+  source: 21 CFR Part 820
+  title: Quality System Regulation (QSR) for Medical Devices
+  content: 21 CFR Part 820 establishes minimum quality system requirements for medical device manufacturing. Covers design,
+    manufacturing, labeling, packaging, and distribution. System must ensure device safety and effectiveness.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - regulatory
+  - medical_devices
+  confidence: 0.97
+  url: https://www.ecfr.gov/current/title-21/part-820
+  year: 1995
+  tags:
+  - qsr
+  - medical_devices
+  - quality_system
+  - manufacturing
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-820-002
+  type: guideline_clause
+  source: 21 CFR Part 820
+  title: QSR Design Controls and Verification/Validation
+  content: 21 CFR 820.30 requires design controls including design planning, input specifications, design output documentation,
+    design review, verification, and validation. V&V ensures device meets user needs and intended use.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - validation
+  - medical_devices
+  confidence: 0.97
+  url: https://www.ecfr.gov/current/title-21/part-820
+  year: 1995
+  tags:
+  - qsr
+  - design_controls
+  - verification
+  - validation
+  - medical_devices
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-1271-001
+  type: guideline_clause
+  source: 21 CFR Part 1271
+  title: Human Cells, Tissues, and Cellular/Tissue-Based Products (HCT/P)
+  content: 21 CFR Part 1271 establishes requirements for donor eligibility, manufacturing, labeling, and tracking of HCT/Ps
+    intended for transplantation/implantation. Applies to reproductive tissues, bone, cartilage, ligament, tendon, skin, and
+    other tissues.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - safety
+  - biologics
+  confidence: 0.96
+  url: https://www.ecfr.gov/current/title-21/part-1271
+  year: 1997
+  tags:
+  - hct_p
+  - tissues
+  - donor_eligibility
+  - transplantation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-1271-002
+  type: guideline_clause
+  source: 21 CFR Part 1271
+  title: HCT/P Donor Eligibility Determination and Testing
+  content: 21 CFR 1271.85-1271.90 require donor screening/testing for transmissible diseases (HIV, hepatitis B/C, HTLV-1,
+    syphilis). Test results must satisfy FDA criteria. Donor eligibility determination documented; testing performed by qualified
+    laboratory.
+  applicable_categories:
+  - safety
+  - quality
+  - testing
+  - biologics
+  confidence: 0.97
+  url: https://www.ecfr.gov/current/title-21/part-1271
+  year: 1997
+  tags:
+  - hct_p
+  - donor_eligibility
+  - infectious_disease_testing
+  - safety
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-1271-003
+  type: guideline_clause
+  source: 21 CFR Part 1271
+  title: HCT/P Manufacturing and Environmental Monitoring
+  content: 21 CFR 1271.195-1271.210 require environmental monitoring, cleaning validation, and manufacturing controls. Facilities
+    must prevent contamination; equipment qualified and maintained. Microbial testing addresses product and process safety.
+  applicable_categories:
+  - manufacturing
+  - quality
+  - safety
+  - biologics
+  confidence: 0.96
+  url: https://www.ecfr.gov/current/title-21/part-1271
+  year: 1997
+  tags:
+  - hct_p
+  - manufacturing_controls
+  - environmental_monitoring
+  - microbiology
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-1271-004
+  type: guideline_clause
+  source: 21 CFR Part 1271
+  title: HCT/P Labeling and Traceability Requirements
+  content: 21 CFR 1271.75-1271.80 require labeling with donor eligibility determination results, test results, and restricted
+    use statements where applicable. Traceability system must identify processing history and distribution.
+  applicable_categories:
+  - quality
+  - safety
+  - labeling
+  - biologics
+  confidence: 0.96
+  url: https://www.ecfr.gov/current/title-21/part-1271
+  year: 1997
+  tags:
+  - hct_p
+  - labeling
+  - traceability
+  - communication
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: CFR-1271-005
+  type: guideline_clause
+  source: 21 CFR Part 1271
+  title: HCT/P Adverse Event Reporting and Tracking
+  content: 21 CFR 1271.350-1271.390 require tracking of adverse events, receipt and processing of tissue, and reporting to
+    FDA for serious adverse events. Tracking mechanisms enable recall capability and post-market surveillance.
+  applicable_categories:
+  - safety
+  - quality
+  - regulatory
+  - biologics
+  confidence: 0.96
+  url: https://www.ecfr.gov/current/title-21/part-1271
+  year: 1997
+  tags:
+  - hct_p
+  - adverse_events
+  - tracking
+  - post_market_surveillance
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final

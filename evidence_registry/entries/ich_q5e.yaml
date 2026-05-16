@@ -1,0 +1,132 @@
+entries:
+- id: Q5E-2.1
+  type: guideline_clause
+  source: ICH Q5E
+  title: Physicochemical and biological characterization
+  content: 'The manufacturer should compare relevant quality attributes of the pre-change and post-change product using state-of-the-art
+    analytical methodology. The extent of characterization depends on the nature and complexity of the manufacturing change.
+
+    '
+  applicable_categories:
+  - identity
+  - purity
+  - potency
+  - physicochemical
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5E%20Guideline.pdf
+  year: 2004
+  tags:
+  - characterization
+  - analytical
+  - comparability
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5E-2.2
+  type: guideline_clause
+  source: ICH Q5E
+  title: Purity and impurity profiles
+  content: 'Product-related substances and impurities, as well as process-related impurities, should be evaluated. The comparison
+    should include an assessment of any new impurities or changes in impurity profiles resulting from the manufacturing change.
+
+    '
+  applicable_categories:
+  - purity
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5E%20Guideline.pdf
+  year: 2004
+  tags:
+  - purity
+  - impurity
+  - HCP
+  - HCD
+  - aggregates
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5E-2.3
+  type: guideline_clause
+  source: ICH Q5E
+  title: Biological activity
+  content: 'Biological activity/potency testing is essential. When the post-change product differs in potency, the manufacturer
+    should investigate the cause and assess clinical relevance.
+
+    '
+  applicable_categories:
+  - potency
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5E%20Guideline.pdf
+  year: 2004
+  tags:
+  - potency
+  - bioassay
+  - biological_activity
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5E-3
+  type: guideline_clause
+  source: ICH Q5E
+  title: Stability assessment
+  content: 'Stability data should be provided to demonstrate that the post-change product meets the same stability profile
+    as the pre-change product. Accelerated and real-time stability data from the post-change product should be compared.
+
+    '
+  applicable_categories:
+  - stability
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5E%20Guideline.pdf
+  year: 2004
+  tags:
+  - stability
+  - ICH_Q1A
+  - accelerated
+  - shelf_life
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5E-4
+  type: guideline_clause
+  source: ICH Q5E
+  title: Non-clinical and clinical studies
+  content: 'Non-clinical and clinical studies may be needed when quality data alone are insufficient to establish comparability.
+    The need depends on the nature and extent of quality differences observed.
+
+    '
+  applicable_categories:
+  - safety
+  - potency
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q5E%20Guideline.pdf
+  year: 2004
+  tags:
+  - clinical
+  - non_clinical
+  - bridging
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q5E-functional-support
+  type: guideline_clause
+  source: ICH Q5E
+  title: Functional characterization to support comparability
+  content: 'When analytical methods show differences that are within acceptable ranges, functional characterization (e.g.,
+    receptor binding, cell-based assays) can provide additional evidence of comparability. The level of functional support
+    ranges from indirect (binding only) to direct (cell-based potency correlation).
+
+    '
+  applicable_categories:
+  - potency
+  - identity
+  confidence: 0.9
+  url: https://database.ich.org/sites/default/files/Q5E%20Guideline.pdf
+  year: 2004
+  tags:
+  - functional
+  - binding
+  - cell_based
+  - potency_correlation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final

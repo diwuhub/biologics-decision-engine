@@ -1,0 +1,36 @@
+# W1-3a: Change-Type Expected Impact Lookup
+# Defines expected impact per change_type x category combination.
+# Used by score_attribute() to annotate expected vs unexpected shifts.
+
+media_change:
+  glycosylation: { expected: true, typical_range_pct: 20.0, rationale: 'Media directly affects glycan biosynthesis' }
+  purity: { expected: true, typical_range_pct: 10.0, rationale: 'HCP/HMW may shift with media composition' }
+  potency: { expected: false, typical_range_pct: 5.0, rationale: 'Primary structure unaffected by media' }
+  identity: { expected: false, typical_range_pct: 0.0, rationale: 'Amino acid sequence unchanged' }
+
+site_transfer:
+  glycosylation: { expected: false, typical_range_pct: 3.0, rationale: 'Same process should produce same glycans' }
+  potency: { expected: false, typical_range_pct: 3.0, rationale: 'Any shift is unexpected and concerning' }
+
+scale_up:
+  glycosylation: { expected: true, typical_range_pct: 10.0, rationale: 'Mixing/DO differences affect glycosylation' }
+  purity: { expected: true, typical_range_pct: 8.0, rationale: 'Scale effects on aggregation and HCP' }
+
+column_resin:
+  purity: { expected: true, typical_range_pct: 8.0, rationale: 'Resin type directly affects HCP/HMW clearance' }
+  potency: { expected: false, typical_range_pct: 3.0, rationale: 'Purification should not affect function' }
+
+formulation:
+  stability: { expected: true, typical_range_pct: 15.0, rationale: 'Formulation changes may affect degradation kinetics' }
+  physicochemical: { expected: true, typical_range_pct: 10.0, rationale: 'Buffer/excipient changes affect physicochemical properties' }
+  potency: { expected: false, typical_range_pct: 5.0, rationale: 'Formulation should preserve biological function' }
+
+fill_finish:
+  purity: { expected: false, typical_range_pct: 3.0, rationale: 'Fill-finish should not introduce impurities' }
+  stability: { expected: true, typical_range_pct: 10.0, rationale: 'Container closure changes may affect stability' }
+
+cell_line_change:
+  glycosylation: { expected: true, typical_range_pct: 25.0, rationale: 'Cell line determines glycosylation pattern' }
+  purity: { expected: true, typical_range_pct: 15.0, rationale: 'Different HCP profile expected' }
+  potency: { expected: true, typical_range_pct: 10.0, rationale: 'Expression differences may affect function' }
+  identity: { expected: false, typical_range_pct: 0.0, rationale: 'Sequence should be identical' }

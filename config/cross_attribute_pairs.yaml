@@ -1,0 +1,28 @@
+# W2-2a: Cross-Attribute Pair Reasoning
+# HIGH-CONFIDENCE known attribute pairs for linked escalation.
+# Escalation only — NO attenuation from pair independence.
+
+pairs:
+  - pair_id: GLYC_POTENCY
+    attributes: [glycosylation, potency]
+    relationship: structure_function
+    both_shifted: 'Linked concern — structure-function coupling between glycosylation and potency'
+    function_only: 'Function changed without structure explanation — investigate glycosylation-potency link'
+
+  - pair_id: CHARGE_POTENCY
+    attributes: [charge_variants, potency]
+    relationship: structure_function
+    both_shifted: 'Linked concern — charge variant profile and potency may be coupled'
+    function_only: 'Potency shift without charge variant explanation — investigate charge-potency link'
+
+  - pair_id: HMW_SAFETY
+    attributes: [hmw_aggregates, immunogenicity]
+    relationship: safety_implication
+    both_shifted: 'Linked concern — aggregate increase with immunogenicity signal requires safety review'
+    function_only: 'Immunogenicity signal without aggregate increase — investigate alternative mechanism'
+
+  - pair_id: GLYC_CHARGE
+    attributes: [glycosylation, charge_variants]
+    relationship: structural_correlation
+    both_shifted: 'Linked concern — glycosylation changes often drive charge variant redistribution'
+    function_only: 'Charge variant shift without glycosylation change — investigate non-glycan root cause'

@@ -1,0 +1,241 @@
+entries:
+- id: ICH-M4Q-001
+  type: guideline_clause
+  source: ICH M4Q(R1)
+  title: Common Technical Document (CTD) Quality Section Overview
+  content: The CTD Quality section (Module 3) standardizes drug substance and product chemistry/manufacturing data submission
+    across regulatory regions. Module 3 comprises S (substance), P (product), and regional/specific sections. Structure facilitates
+    review efficiency and global harmonization.
+  applicable_categories:
+  - documentation
+  - quality
+  - regulatory
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2002
+  tags:
+  - ctd
+  - m4q
+  - documentation
+  - structure
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-M4Q-002
+  type: guideline_clause
+  source: ICH M4Q(R1)
+  title: 'S.1: Drug Substance General Information'
+  content: Section S.1 includes nomenclature, structure, physical form, salt/hydrate information, molecular weight, and pharmacopeial
+    monographs. Salts, hydrates, and polymorphs require separate characterization. Cross-references establish links between
+    S and P sections.
+  applicable_categories:
+  - documentation
+  - identity
+  - physicochemical
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2002
+  tags:
+  - ctd
+  - substance
+  - identification
+  - polymorphs
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-M4Q-003
+  type: guideline_clause
+  source: ICH M4Q(R1)
+  title: 'S.3: Drug Substance Specifications and Methods'
+  content: Specifications define acceptance criteria for identity, assay, purity (related substances, impurities), water,
+    microbial limits, and other attributes. Methods must be described with validation data. Justification required for limits
+    and test selection.
+  applicable_categories:
+  - documentation
+  - quality
+  - analytical
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2002
+  tags:
+  - ctd
+  - specifications
+  - analytical_methods
+  - acceptance_criteria
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-M4Q-004
+  type: guideline_clause
+  source: ICH M4Q(R1)
+  title: 'S.4: Drug Substance Characterization'
+  content: Comprehensive characterization includes structure determination (NMR, MS, HPLC), stereochemistry, polymorphs/salt
+    forms, moisture, particle size, and solubility. Data supports qualification as new active pharmaceutical ingredient.
+  applicable_categories:
+  - documentation
+  - physicochemical
+  - quality
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2002
+  tags:
+  - ctd
+  - characterization
+  - polymorphs
+  - structure
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-M4Q-005
+  type: guideline_clause
+  source: ICH M4Q(R1)
+  title: 'P.3: Drug Product Specification and Analytical Methods'
+  content: Product specification includes identity (product-specific), assay (potency), degradation products, water content,
+    microbial limits, and container integrity where applicable. Methods per ICH Q2(R1). Specification limits justified by
+    stability and batch data.
+  applicable_categories:
+  - documentation
+  - quality
+  - analytical
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2002
+  tags:
+  - ctd
+  - product
+  - specifications
+  - potency
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-M4Q-006
+  type: guideline_clause
+  source: ICH M4Q(R1)
+  title: 'P.7: Container Closure System and Stability'
+  content: Section P.7 describes container-closure compatibility for primary and secondary packaging. Discusses material composition,
+    design, and interaction with drug product. Stability data demonstrating protection under recommended storage conditions.
+  applicable_categories:
+  - documentation
+  - quality
+  - stability
+  confidence: 0.96
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2002
+  tags:
+  - ctd
+  - packaging
+  - container_closure
+  - stability
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-M4Q-007
+  type: guideline_clause
+  source: ICH M4Q(R1)
+  title: 'P.8.1: Stability Data - Long-Term, Intermediate, Accelerated'
+  content: Stability protocol must address long-term (real-time), intermediate, and accelerated conditions per ICH Q1A(R2)/Q1B(R1).
+    Data package supports shelf life determination. Testing frequency and duration justify proposed retest period.
+  applicable_categories:
+  - documentation
+  - stability
+  - quality
+  confidence: 0.98
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2002
+  tags:
+  - ctd
+  - stability
+  - shelf_life
+  - degradation
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-M7-001
+  type: guideline_clause
+  source: ICH M7(R2)
+  title: Mutagenic Impurities Assessment and Qualification
+  content: Mutagenic impurities require assessment and control during drug substance/product development. Impurities identified
+    as mutagenic (in vitro or in vivo) must be qualified through toxicological evaluation (rat study at clinically relevant
+    exposure).
+  applicable_categories:
+  - quality
+  - safety
+  - impurity_management
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2014
+  tags:
+  - m7
+  - mutagenic_impurities
+  - qualification
+  - safety
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-M7-002
+  type: guideline_clause
+  source: ICH M7(R2)
+  title: Identification of Potential Mutagenic Impurities
+  content: 'Potential mutagenic impurities identified from: synthetic route analysis, process chemistry assessment, and database
+    searches (e.g., EMBL, AMES database). Structural alerts screened using in silico tools; positive findings require confirmatory
+    testing.'
+  applicable_categories:
+  - quality
+  - safety
+  - impurity_management
+  confidence: 0.96
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2014
+  tags:
+  - m7
+  - mutagenic_impurities
+  - screening
+  - structural_alerts
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-M7-003
+  type: guideline_clause
+  source: ICH M7(R2)
+  title: Control of Mutagenic Impurities - Specification and Limits
+  content: 'Mutagenic impurities must be controlled via specification with acceptance criteria. Limits based on: qualification
+    study, structural class, therapeutic indication, and population exposure. Limits typically <5-50 ppm depending on qualification
+    data and toxicology.'
+  applicable_categories:
+  - quality
+  - safety
+  - impurity_management
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2014
+  tags:
+  - m7
+  - mutagenic_impurities
+  - specification_limits
+  - control
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: ICH-M7-004
+  type: guideline_clause
+  source: ICH M7(R2)
+  title: Qualification Strategy for Known Mutagenic Impurities
+  content: Known mutagenic impurities require qualification through toxicology studies demonstrating safety margin. Rat study
+    (28-day or longer) must achieve systemic exposure above expected patient exposure. Safety margin calculation supports
+    acceptable dose/level.
+  applicable_categories:
+  - quality
+  - safety
+  - toxicology
+  confidence: 0.97
+  url: https://www.ich.org/page/quality-guidelines
+  year: 2014
+  tags:
+  - m7
+  - mutagenic_impurities
+  - qualification
+  - toxicology
+  - safety_margin
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final

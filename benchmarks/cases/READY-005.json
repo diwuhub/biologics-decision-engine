@@ -1,0 +1,31 @@
+{
+  "case_id": "READY-005",
+  "title": "Liver-on-Chip for DILI Prediction (Published Concordance, No Formal Qualification)",
+  "category": "review_readiness",
+  "source": "synthetic (inspired by IQ-MPS consortium liver-on-chip data without formal DDT qualification)",
+  "expected_readiness_tier": "medium",
+  "expected_readiness_score_min": 0.40,
+  "expected_readiness_score_max": 0.74,
+  "expected_gap_count_max": 1,
+  "nam_type": "liver_on_chip",
+  "context_of_use": "hepatotoxicity_screening",
+  "species_replaced": "rat",
+  "validation_evidence": [
+    {
+      "study_type": "concordance",
+      "concordance_rate": 0.80,
+      "sample_size": 50,
+      "reference": "Ewart et al. 2022 - Liver-chip DILI concordance with clinical outcomes"
+    },
+    {
+      "study_type": "sensitivity_analysis",
+      "concordance_rate": 0.74,
+      "sample_size": 35,
+      "reference": "Jang et al. 2019 - Liver-chip sensitivity for hepatotoxicants vs non-hepatotoxicants"
+    }
+  ],
+  "regulatory_precedent": [
+    "FDA ISTAND qualification of liver-on-chip for drug metabolism (2024, related context)"
+  ],
+  "qualification_pathway": "voluntary_submission"
+}

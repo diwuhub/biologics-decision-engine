@@ -1,0 +1,127 @@
+entries:
+- id: FHS-ADDITIONAL-TESTING
+  type: guideline_clause
+  decision_type: Normative
+  source: ICH Q5E Section 4; FDA Comparability Guidance
+  title: Additional testing follow-up type definition
+  content: 'Canonical follow-up type: additional_testing. Definition: One or more additional analytical tests are required
+    to resolve an evidence gap, contradiction, or insufficient characterization. This is the most common follow-up type and
+    applies when the existing data package lacks a required method or when contradictory results require resolution through
+    an independent assay. Triggers: orthogonal_gap, assay_gap, contradiction, hidden package insufficiency. Typical actions:
+    Add orthogonal potency assay, conduct forced degradation comparison, perform additional characterization (MS, HDX, DSC),
+    validate method for new matrix.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - physicochemical
+  confidence: 0.95
+  authority_quality_tier: primary
+  evidence_weight: normative
+  temporal_status: current
+  year: 2024
+  tags:
+  - followup_type
+  - additional_testing
+  - canonical
+  recommended_followup:
+    type: additional_testing
+    rationale: Additional testing is the primary resolution path for evidence gaps and contradictions.
+  content_type: structured_metadata
+- id: FHS-ENHANCED-MONITORING
+  type: guideline_clause
+  decision_type: Normative
+  source: ICH Q5E Section 3; ICH Q5C
+  title: Enhanced monitoring follow-up type definition
+  content: 'Canonical follow-up type: enhanced_monitoring. Definition: Extended stability or in-process monitoring is required
+    beyond the standard protocol. Applies when data shows trending, marginal results, or when precedent support is limited.
+    Does not block proceed decisions but adds conditions. Triggers: trend_requires_monitoring, favorable_shift, no_precedent_low_confidence,
+    mixed weak evidence, marginal results within specification. Typical actions: Extended real-time stability at 6/12/24 months,
+    enhanced in-process monitoring, additional lot testing, trending analysis commitment.
+
+    '
+  applicable_categories:
+  - stability
+  - purity
+  - potency
+  - safety
+  confidence: 0.9
+  authority_quality_tier: primary
+  evidence_weight: normative
+  temporal_status: current
+  year: 2024
+  tags:
+  - followup_type
+  - enhanced_monitoring
+  - canonical
+  recommended_followup:
+    type: enhanced_monitoring
+    rationale: Enhanced monitoring resolves trending and marginal-evidence scenarios without blocking.
+  content_type: structured_metadata
+- id: FHS-BRIDGING-STUDY
+  type: guideline_clause
+  decision_type: Normative
+  source: ICH Q5E Section 4; FDA Biosimilarity Guidance
+  title: Bridging study follow-up type definition
+  content: 'Canonical follow-up type: bridging_study. Definition: A formal bridging study (analytical, non-clinical, or clinical)
+    is required to establish comparability across a significant gap. This is the most resource-intensive follow-up type and
+    typically indicates that analytical data alone is insufficient. Triggers: cross_geography_divergence requiring jurisdiction-specific
+    data, major manufacturing changes with quality impact, novel formats without precedent requiring PK/PD demonstration.
+    Typical actions: Analytical bridging protocol with statistical design, non-clinical PK study, clinical bioequivalence
+    study, geography-specific stability program.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - stability
+  - safety
+  - pharmacokinetics
+  confidence: 0.9
+  authority_quality_tier: primary
+  evidence_weight: normative
+  temporal_status: current
+  year: 2024
+  tags:
+  - followup_type
+  - bridging_study
+  - canonical
+  recommended_followup:
+    type: bridging_study
+    rationale: Bridging studies resolve gaps where analytical data alone is insufficient.
+  content_type: structured_metadata
+- id: FHS-NONE
+  type: guideline_clause
+  decision_type: Normative
+  source: ICH Q5E
+  title: No follow-up required type definition
+  content: 'Canonical follow-up type: none. Definition: No additional follow-up is required. The existing evidence package
+    is sufficient for a defensible judgment. This applies when all quality attributes are comparable, authority support is
+    strong (primary + precedent), and no gaps or contradictions exist. Triggers: sufficient_evidence risk_semantics, all attributes
+    within specification, strong authority match with no sparsity flags.
+
+    '
+  applicable_categories:
+  - potency
+  - purity
+  - identity
+  - stability
+  - safety
+  - physicochemical
+  confidence: 1.0
+  authority_quality_tier: primary
+  evidence_weight: normative
+  temporal_status: current
+  year: 2024
+  tags:
+  - followup_type
+  - none
+  - canonical
+  recommended_followup:
+    type: none
+    rationale: No follow-up needed when evidence is sufficient.
+  content_type: structured_metadata

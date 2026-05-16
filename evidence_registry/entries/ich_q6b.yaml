@@ -1,0 +1,87 @@
+entries:
+- id: Q6B-2.1
+  type: guideline_clause
+  source: ICH Q6B
+  title: 'Characterization: physicochemical properties'
+  content: 'The physicochemical properties of the desired product and product-related substances should be characterized as
+    thoroughly as possible. This includes primary structure, higher-order structure, and post-translational modifications.
+
+    '
+  applicable_categories:
+  - identity
+  - physicochemical
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q6B%20Guideline.pdf
+  year: 1999
+  tags:
+  - characterization
+  - physicochemical
+  - structure
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q6B-2.2
+  type: guideline_clause
+  source: ICH Q6B
+  title: 'Characterization: biological activity'
+  content: 'Biological assays to assess the biological activity should be part of the specification for lot release. The assay(s)
+    should reflect the known or intended biological/pharmacological mechanism of action.
+
+    '
+  applicable_categories:
+  - potency
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q6B%20Guideline.pdf
+  year: 1999
+  tags:
+  - potency
+  - bioassay
+  - mechanism_of_action
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q6B-3.1
+  type: guideline_clause
+  source: ICH Q6B
+  title: Purity, impurities, and contaminants
+  content: 'Process-related impurities (e.g., host cell proteins, host cell DNA, cell culture residuals) and product-related
+    impurities (e.g., aggregates, fragments, charge variants) should be quantified and controlled within acceptable limits.
+
+    '
+  applicable_categories:
+  - purity
+  - safety
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q6B%20Guideline.pdf
+  year: 1999
+  tags:
+  - purity
+  - impurity
+  - HCP
+  - aggregates
+  - charge_variants
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
+- id: Q6B-4
+  type: guideline_clause
+  source: ICH Q6B
+  title: Reference standards and materials
+  content: 'Appropriate reference standards should be established and used to evaluate consistency of manufacturing. When
+    a manufacturing change occurs, comparison against the pre-change reference standard is essential.
+
+    '
+  applicable_categories:
+  - identity
+  - purity
+  - potency
+  confidence: 1.0
+  url: https://database.ich.org/sites/default/files/Q6B%20Guideline.pdf
+  year: 1999
+  tags:
+  - reference_standard
+  - consistency
+  - comparability
+  authority_quality_tier: primary
+  content_type: paraphrase
+  document_status: final
